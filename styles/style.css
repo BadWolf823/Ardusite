@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.smooth{transition: 0.4s}
+.title{
+    padding: 10px 10px;
+}
+.list-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project{
+    width: 360px;
+    background-color: whitesmoke;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project__illustration{
+    width: 360px;
+    height: 270px;
+}
+.project__img{
+    position: absolute;
+}
+.project__about{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bolder;
+    visibility: hidden;
+    color: rgba(255, 255, 255, 0);
+}
+.project:hover .project__about{visibility: visible; color: white;background-color: rgba(0, 151, 156, 0.85);}
+.project__name{
+    color: black;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 5px;
+}
+.project__information{
+    background-color: #00979c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 5px 5px;
+
+}
+.project__maker{font-weight: lighter}
+.project__respect{
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+.project__btn{
+    padding: 0 5px;
+    fill: white;
+    width: 32px;
+    height: 32px;
+}
+.project__btn_press-respect{
+    fill: red;
+}
+.project__num-stat_respect{
+    font-weight: bold;
+}
+.no-press{
+    fill: white;
+}
+.project:hover .project__name{background-color: #00979c; color: white}
+.project:hover .project__information{background-color: #007074;}
+.add-project__btn{
+    border-color: #00979c;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    color: #00979c;
+    font-weight: bold;
+    padding: 8px;
+}
