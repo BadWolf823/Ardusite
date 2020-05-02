@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    transition: 0.4s;
 }
 a{
     color: inherit;
@@ -8,19 +9,28 @@ a{
 }
 .main{
     font-family: 'Noto Sans', sans-serif;
+    background-color: #efefef;
 }
-.smooth{transition: 0.4s}
 .title{
-    padding: 10px 10px;
+    padding: 1em;
+    font-size: 1.6em;
 }
-.list-projects{
+.content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+.list-projects{
+    max-width: 1200px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-shrink: 30%;
+}
 .project{
+    background-color: #fbfbfb;
     width: 360px;
-    background-color: whitesmoke;
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -75,13 +85,14 @@ a{
 .project__btn_press-respect{
     fill: red;
 }
-.project__num-stat_respect{
+.project__num-stat-respect{
     font-weight: bold;
 }
 .no-press{
     fill: white;
 }
-.project:hover .project__name{background-color: #00979c; color: white}
+.project:hover{background-color: #00979c;}
+.project:hover .project__name{color: white}
 .project:hover .project__information{background-color: #007074;}
 .add-project__btn{
     border-color: #00979c;
