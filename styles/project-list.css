@@ -9,7 +9,6 @@ a{
 .main{
     font-family: 'Noto Sans', sans-serif;
 }
-}
 .smooth{transition: 0.4s}
 .title{
     padding: 10px 10px;
@@ -49,6 +48,7 @@ a{
     color: black;
     font-size: 1.4em;
     font-weight: bold;
+    min-height: 2.8em;
     padding: 5px;
 }
 .project__information{

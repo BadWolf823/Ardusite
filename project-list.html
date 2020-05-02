@@ -5,41 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghj</title>
     <link rel="stylesheet" href="styles\project-list.css">
+    <link rel="stylesheet" href="styles\Common.css">
+    <link rel="stylesheet" href="styles\commonmedia.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="add-project">
-        <a href="#" class="add-project__btn">Добавить проект</a>
-    </div>
-</header>
-<main class="main">
-    <div class="title">
-        <h1 class="title__main">Проекты</h1>
-        <p class="title__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, ullam?</p>
-    </div>
-    <div class="list-projects">
-        <div class="project">
-            <a href="#" class="project__link">
-                <div class="project__illustration">
-                    <img src="images/proj1.gif" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
-                    <div class="project__about project__illustration smooth">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
-                    </div>
-                </div>
-                <div class="project__name smooth">Lorem, ipsum dolor</div>
-            </a>
-            <div class="project__information smooth">
-                <a href="#" class="project__maker">@KLOUN1337</a>
-                <ul class="project__stat">
-                    <li class="project__respect">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="project__btn smooth" viewBox="0 0 24 24">
-                            <path d="M18 1l-6 4-6-4-6 5v7l12 10 12-10v-7z"/></svg><span class="project__num-stat_respect">129</span>
-                    </li>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html"> <img class="logo__ref" src="images/arduino-white.svg" alt="logo"> </a>
+            </div>
+            <div class="navpanel">
+                <a class="navpanel__item" href="software.html"> Программирование </a>
+                <a class="navpanel__item" href="hardware.html"> Контроллеры</a>
+                <a class="navpanel__item" href="projects.html"> Проекты </a>
+            </div>
+            <a href="singin.html" class="nav__singin">Вход</a>
+            <div class="menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="software.html">Программирование</a></li>
+                    <li><a class="menu__item" href="hardware.html">Контроллеры</a></li>
+                    <li><a class="menu__item" href="projects.html">Проекты</a></li>
                 </ul>
             </div>
+        </nav>   
+    </header>
+    <main class="main">
+        <div class="title">
+            <h1 class="title__main">Проекты</h1>
+            <p class="title__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, ullam?</p>
         </div>
-    </div>
-</main>
+        <div class="list-projects">
+            <div class="project">
+                <a href="#" class="project__link">
+                    <div class="project__illustration">
+                        <img src="images/proj1.gif" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
+                        <div class="project__about project__illustration smooth">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
+                        </div>
+                    </div>
+                    <div class="project__name smooth">Lorem, ipsum dolor</div>
+                </a>
+                <div class="project__information smooth">
+                    <a href="#" class="project__maker">@KLOUN1337</a>
+                    <ul class="project__stat">
+                        <li class="project__respect">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="project__btn smooth" viewBox="0 0 24 24">
+                                <path d="M18 1l-6 4-6-4-6 5v7l12 10 12-10v-7z"/></svg><span class="project__num-stat_respect">129</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <a href="#" class="project__link">
+                    <div class="project__illustration">
+                        <img src="images/project2.jpeg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
+                        <p class="project__about project__illustration smooth">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
+                        </p>
+                    </div>
+                    <div class="project__name smooth">Детектор социальной дистанции</div>
+                </a>
+                <div class="project__information smooth">
+                    <a href="#" class="project__maker">@KRAKEN</a>
+                    <ul class="project__stat">
+                        <li class="project__respect">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="project__btn smooth" viewBox="0 0 24 24">
+                                <path d="M18 1l-6 4-6-4-6 5v7l12 10 12-10v-7z"/></svg><span class="project__num-stat_respect">129</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <a href="#" class="project__link">
+                    <div class="project__illustration">
+                        <img src="images/project3.jpeg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
+                        <p class="project__about project__illustration smooth">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
+                        </p>
+                    </div>
+                    <div class="project__name smooth">Безконтактный звонок</div>
+                </a>
+                <div class="project__information smooth">
+                    <a href="#" class="project__maker">@MrJohn</a>
+                    <ul class="project__stat">
+                        <li class="project__respect">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="project__btn smooth" viewBox="0 0 24 24">
+                                <path d="M18 1l-6 4-6-4-6 5v7l12 10 12-10v-7z"/></svg><span class="project__num-stat_respect">129</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+            <ul>
+                <li>
+                    <a href="ptivacy_policy.html">
+                        Политика конфиденциальности
+                    </a>
+                </li>
+                <li>
+                    <a href="terms_of_service.html">
+                        Условия использования
+                    </a>
+                </li>
+                <li>
+                    <a href="about_us.html">
+                        О нас
+                    </a>
+                </li>
+            </ul>
+        </div>  
+        <div class="footer__copyright">
+            <a href="copyright.html" >
+                © 2020 МоклякМуравьёв
+           </a>
+        </div>
+        <div class="goup">
+            <a href="#">
+                <svg class="block center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg>
+            </a>
+        </div>
+        <div class="go2fb"> 
+            <a href="https://www.facebook.com/profile.php?id=100022277227464&__tn__=%2CdC-R-R&eid=ARDY8PjTlcacGCRqtpFWjoeDJTHaPeMY0nHfb8aKwQcPcWy-dfDBSYdkxDy1vfmHgg9joUT_39IhwgTc&hc_ref=ARTw8vcZvS-fHRJPj5hxRt4U_5IiAiX06ofk5h4JjL0RrdMMAKWbxpLCIFJaiqRrcNE&fref=nf"  target="_blank">
+                <img class="block centerfb" src="https://content.arduino.cc/website/social_icons/icon-facebook.svg" alt="facebook">
+            </a>
+        </div>
+        <div class="go2vk"> 
+            <a href="https://vk.com/press______f"  target="_blank">
+                <img class="block centervk" src="http://vk.com/images/svg_icons/ic_head_logo.svg" alt="vkontakte">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
