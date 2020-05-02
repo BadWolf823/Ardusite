@@ -6,6 +6,7 @@
     <title>Проекты</title>
     <link rel="stylesheet" href="styles\project-list.css">
     <link rel="stylesheet" href="styles\project-header.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,12 +15,19 @@
             <div class="logo">
                 <a href="#" class="logo__link"></a>
             </div>
-            <div class="navpanel">
-                <a class="navpanel__item" href="projects.html">Главная</a>
-                <a class="navpanel__item" href="software.html">Программирование </a>
-                <a class="navpanel__item" href="hardware.html">Контроллеры</a>
+            <div class="nav-panel">
+                <a class="nav-panel__item" href="projects.html">Главная</a>
+                <a class="nav-panel__item" href="software.html">Программирование </a>
+                <a class="nav-panel__item" href="hardware.html">Контроллеры</a>
             </div>
-            <a href="singin.html" class="nav__signin">Вход</a>
+            <form action="" method="get" class="search">
+                <input name="search-input" class="search__input" placeholder="Поиск проекта" type="search">
+                <button type="submit" class="search__btn"><img src="images/search-icon.png" width="32" alt="Поиск"></button>
+            </form>
+            <div class="nav__user">
+                <a class="nav__add-project" href="">Добавить проект</a>
+                <a href="#" class="nav__sign-in">Вход</a>
+            </div>
             <!--
             <div class="menu">
                 <input id="menu__toggle" type="checkbox" />
@@ -104,15 +112,55 @@
                 <div class="project">
                     <a href="#" class="project__link">
                         <div class="project__illustration">
-                            <img src="images/project4.jpeg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
+                            <img src="images/project5.jpeg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
                             <p class="project__about project__illustration">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
                             </p>
                         </div>
-                        <div class="project__name">Игра Dyno на Arduino</div>
+                        <div class="project__name">Частота электросети</div>
+                    </a>
+                    <div class="project__information">
+                        <a href="#" class="project__maker">@MrHiense</a>
+                        <ul class="project__stat">
+                            <li class="project__respect">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="project__btn project__btn_press-respect" viewBox="0 0 24 24">
+                                    <path d="M18 1l-6 4-6-4-6 5v7l12 10 12-10v-7z"/></svg><span class="project__num-stat-respect">130</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project">
+                    <a href="#" class="project__link">
+                        <div class="project__illustration">
+                            <img src="images/project6.jpeg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
+                            <p class="project__about project__illustration">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
+                            </p>
+                        </div>
+                        <div class="project__name">Система полива на Arduino</div>
                     </a>
                     <div class="project__information">
                         <a href="#" class="project__maker">@MrJohn</a>
+                        <ul class="project__stat">
+                            <li class="project__respect">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="project__btn project__btn_press-respect" viewBox="0 0 24 24">
+                                    <path d="M18 1l-6 4-6-4-6 5v7l12 10 12-10v-7z"/></svg><span class="project__num-stat-respect">130</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project">
+                    <a href="#" class="project__link">
+                        <div class="project__illustration">
+                            <img src="images/project7.jpeg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
+                            <p class="project__about project__illustration">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
+                            </p>
+                        </div>
+                        <div class="project__name">Пульсометр с открытым исходным кодом</div>
+                    </a>
+                    <div class="project__information">
+                        <a href="#" class="project__maker">@openSource</a>
                         <ul class="project__stat">
                             <li class="project__respect">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="project__btn project__btn_press-respect" viewBox="0 0 24 24">

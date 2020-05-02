@@ -7,9 +7,9 @@ a{
     color: inherit;
     text-decoration: none;
 }
-.main{
+.main {
     font-family: 'Noto Sans', sans-serif;
-    background-color: #efefef;
+    background: whitesmoke;
 }
 .title{
     padding: 1em;
@@ -26,7 +26,6 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-shrink: 30%;
 }
 .project{
     background-color: #fbfbfb;
