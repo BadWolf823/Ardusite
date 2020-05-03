@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="styles/project-header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/nav-mobile.css">
+    <link rel="stylesheet" href="styles/project-list-mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <script>
         function openMenu(){
             document.getElementById("menu__box").classList.toggle("menu__box_open");
+        }
+        function enterBtn(){
+
         }
     </script>
 </head>
@@ -45,27 +49,37 @@
                 <button class="menu__toggle" onclick="openMenu()">
                     <div class="menu__btn"></div>
                 </button>
-                <ul class="menu__box" id="menu__box">
-                    <li class="menu__item"><a class="menu__link" href="ya.ru">Программирование</a></li>
-                    <li class="menu__item"><a class="menu__link" href="hardware.html">Контроллеры</a></li>
-                    <li class="menu__item"><a class="menu__link" href="projects.html">Проекты</a></li>
-                </ul>
+                <div class="menu__box" id="menu__box">
+                    <form action="" method="get" class="search ">
+                        <label>
+                            <input name="search-input" class="search__input menu-search__input" placeholder="Поиск проекта" type="search">
+                        </label>
+                        <button type="submit" class="search__btn menu-search__btn"><img src="images/search-icon.png" width="32" alt="Поиск"></button>
+                    </form>
+                    <a class="menu__link" href="ya.ru">Программирование</a>
+                    <a class="menu__link" href="hardware.html">Контроллеры</a>
+                    <a class="menu__link" href="projects.html">Проекты</a>
+
+                </div>
             </div>
         </nav>
     </header>
     <main class="main">
         <div class="title">
             <h1 class="title__main">Проекты</h1>
-            <p class="title__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, ullam?</p>
+            <p class="title__text">Здесь вы можете найти интересный для себя проект, а также добавить свой</p>
+            <div class="add-project">
+                <a href="#" class="add-project__btn_mobile">Добавить проект</a>
+            </div>
         </div>
         <div class="content">
             <div class="list-projects">
                 <div class="project">
                     <a href="#" class="project__link">
                         <div class="project__illustration">
-                            <img src="images/proj1.gif" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
+                            <img src="images/projects/Proj1/proj1.gif" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
                             <div class="project__about project__illustration">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
+
                             </div>
                         </div>
                         <div class="project__name">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut! Lorem ipsum dolor sit.</div>
@@ -83,7 +97,7 @@
                 <div class="project">
                     <a href="#" class="project__link">
                         <div class="project__illustration">
-                            <img src="images/project2.jpeg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
+                            <img src="images/projects/Proj2/project2.jpeg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
                             <p class="project__about project__illustration">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
                             </p>
@@ -103,7 +117,7 @@
                 <div class="project">
                     <a href="#" class="project__link">
                         <div class="project__illustration">
-                            <img src="images/project3.jpeg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
+                            <img src="images/projects/Proj3/project3.jpeg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
                             <p class="project__about project__illustration">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
                             </p>
@@ -123,7 +137,7 @@
                 <div class="project">
                     <a href="#" class="project__link">
                         <div class="project__illustration">
-                            <img src="images/project5.jpg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
+                            <img src="images/projects/Proj5/project5.jpg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
                             <p class="project__about project__illustration">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
                             </p>
@@ -143,7 +157,7 @@
                 <div class="project">
                     <a href="#" class="project__link">
                         <div class="project__illustration">
-                            <img src="images/project6.jpg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
+                            <img src="images/projects/Proj6/project6.jpg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
                             <p class="project__about project__illustration">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
                             </p>
@@ -163,7 +177,7 @@
                 <div class="project">
                     <a href="#" class="project__link">
                         <div class="project__illustration">
-                            <img src="images/project7.jpg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
+                            <img src="images/projects/Proj7/project7.jpg" width="360px" height="270px" alt="Если бы не моя лень, здесь была бы картинка" class="project__img project__illustration">
                             <p class="project__about project__illustration">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, consectetur.
                             </p>

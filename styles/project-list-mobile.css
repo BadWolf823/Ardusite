@@ -1,0 +1,19 @@
+@media screen and (max-width: 1310px){
+    .list-projects{
+        padding: 0;
+    }
+    .add-project__btn_mobile{
+        display: block;
+        background-color: #00979c;
+        padding: 5px 10px;
+        border-radius: 10px;
+        color: white;
+        width: 250px;
+        margin: 20px 0px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .project{
+        margin: 5px 0;
+    }
+}

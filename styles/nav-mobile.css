@@ -1,22 +1,24 @@
-
 @media screen and (max-width: 1310px) {
+    .header{height: 50px}
     .nav{
         display: none;
     }
     .nav-mobile{
+        display: block;
         background-color: rgba(255, 255, 255, 0.99);
         z-index: 1859;
         position: fixed;
-        display: block;
-        height: 90px;
+        height: 60px;
         width: 100%;
-        box-shadow: 2px 0 5px lightgray;
     }
     .logo{
-        display: block;
+        padding: 10px 5px;
+        width: 90px;
+        height: 60px;
     }
     .logo__link{
-        display: block;
+        height: 40px;
+        width: 80px;
     }
     .menu{
         width: 100%;
@@ -25,42 +27,53 @@
         position: absolute;
         right: 0;
         top: 0;
-        padding: 21px;
-        height: 90px;
-        width: 90px;
+        border-style: none;
+        padding: 5px;
+        height: 100%;
         background-color: transparent;
+    }
+    .menu__toggle:focus{
         border-style: none;
     }
     .menu__btn{
         display: block;
-        height: 48px;
-        width: 48px;
+        height: 32px;
+        width: 32px;
         background-image: url("../images/burger-menu-icon.png");
         background-size: 100%;
     }
     .menu__box{
+        padding: 10px;
         transition: 1s;
         display: none;
         visibility: hidden;
         width: 100%;
-        left: 0;
+        background-color: rgba(255, 255, 255, 0.99);
     }
     .menu__box_open{
         display: flex;
         flex-direction: column;
+        align-items: center;
         visibility: visible;
     }
-    .menu__item{
+    .menu__link{
         text-align: center;
+        color: #00979c;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: #00979c;
+        display: block;
         background-color: white;
         font-size: 30px;
         padding: 5px;
-
+        width: 300px;
     }
-    .menu__link{
-        border-bottom-style: solid;
-        border-bottom-width: 2px;
-        border-color: rgba(0, 151, 156, 0.68);
+    .menu__link:hover{
+        background-color: #00979c;
+        color: white;
     }
-
+    .menu__btn_sign-in{
+        background-image: url("../images/default-user-img.png");
+        background-image: 100%;
+    }
 }

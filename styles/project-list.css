@@ -15,6 +15,7 @@ a{
     padding: 1em;
     font-size: 1.6em;
 }
+
 .content{
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +29,7 @@ a{
     justify-content: center;
 }
 .project{
-    box-shadow: 0 0 5px lightgray;
+    box-shadow: 0 0 2px gray;
     background-color: #fbfbfb;
     width: 360px;
     margin: 5px;
@@ -102,4 +103,7 @@ a{
     color: #00979c;
     font-weight: bold;
     padding: 8px;
+}
+.add-project__btn_mobile{
+    display: none;
 }
