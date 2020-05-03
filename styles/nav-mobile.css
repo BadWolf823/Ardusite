@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1310px) {
     .nav{
         display: none;
@@ -9,6 +10,7 @@
         display: block;
         height: 90px;
         width: 100%;
+        box-shadow: 2px 0 5px lightgray;
     }
     .logo{
         display: block;
@@ -37,17 +39,28 @@
         background-size: 100%;
     }
     .menu__box{
+        transition: 1s;
         display: none;
+        visibility: hidden;
         width: 100%;
         left: 0;
     }
     .menu__box_open{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
     }
     .menu__item{
+        text-align: center;
         background-color: white;
         font-size: 30px;
-        width: 1vw;
-        padding: 10px 5px;
+        padding: 5px;
+
     }
+    .menu__link{
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-color: rgba(0, 151, 156, 0.68);
+    }
+
 }
