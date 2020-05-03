@@ -1,0 +1,53 @@
+@media screen and (max-width: 1310px) {
+    .nav{
+        display: none;
+    }
+    .nav-mobile{
+        background-color: rgba(255, 255, 255, 0.99);
+        z-index: 1859;
+        position: fixed;
+        display: block;
+        height: 90px;
+        width: 100%;
+    }
+    .logo{
+        display: block;
+    }
+    .logo__link{
+        display: block;
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu__toggle{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 21px;
+        height: 90px;
+        width: 90px;
+        background-color: transparent;
+        border-style: none;
+    }
+    .menu__btn{
+        display: block;
+        height: 48px;
+        width: 48px;
+        background-image: url("../images/burger-menu-icon.png");
+        background-size: 100%;
+    }
+    .menu__box{
+        display: none;
+        width: 100%;
+        left: 0;
+    }
+    .menu__box_open{
+        display: block;
+    }
+    .menu__item{
+        background-color: white;
+        font-size: 30px;
+        width: 1vw;
+        padding: 10px 5px;
+    }
+}
