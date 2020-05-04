@@ -9,12 +9,58 @@
     <link rel="stylesheet" href="styles/nav-mobile.css">
     <link rel="stylesheet" href="styles/project-mobile.css">
     <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/add-project.css">
+    <script src="scripts/adaptive.js"></script>
 </head>
 <body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="project-list.html" class="logo__link"></a>
+            </div>
+            <div class="nav-panel">
+                <a class="nav-panel__item" href="projects.html">Главная</a>
+                <a class="nav-panel__item" href="software.html">Программирование </a>
+                <a class="nav-panel__item" href="hardware.html">Контроллеры</a>
+            </div>
+            <form action="" method="get" class="search">
+                <label>
+                    <input name="search-input" class="search__input" placeholder="Поиск проекта" type="search">
+                </label>
+                <button type="submit" class="search__btn"><img src="images/search-icon.png" width="32" alt="Поиск"></button>
+            </form>
+            <div class="nav__user">
+                <a class="nav__add-project" href="">Добавить проект</a>
+                <a href="#" class="nav__sign-in">Вход</a>
+            </div>
+        </nav>
+        <nav class="nav-mobile">
+            <div class="logo">
+                <a href="project-list.html" class="logo__link"></a>
+            </div>
+            <div class="menu">
+                <button class="menu__toggle" onclick="openMenu()">
+                    <div class="menu__btn"></div>
+                </button>
+                <div class="menu__box" id="menu__box">
+                    <form action="" method="get" class="search ">
+                        <label>
+                            <input name="search-input" class="search__input menu-search__input" placeholder="Поиск проекта" type="search">
+                        </label>
+                        <button type="submit" class="search__btn menu-search__btn"><img src="images/search-icon.png" width="32" alt="Поиск"></button>
+                    </form>
+                    <a class="menu__link" href="ya.ru">Программирование</a>
+                    <a class="menu__link" href="hardware.html">Контроллеры</a>
+                    <a class="menu__link" href="projects.html">Проекты</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
     <main class="main">
-        <main class="main">
-            <h1 class="title">Создайте свой собсвтенный проект</h1>
-            <form action="form.php">
+        <main class="main" onblur="alert='Вы уже уходите?'">
+            <h1 class="title">Создай свой собсвтенный проект</h1>
+            <form action="form.php" class="construct">
                 <div class="about-project">
                     <div class="about-project__main-image">
                         <input type="file" id="main-image" class="about-project__input-main-image" accept="image/*" required>
@@ -31,7 +77,7 @@
                                 <input type="text" placeholder="Автор"
                             </div>-->
                             <div class="about-project__text">
-                                <textarea id="about-project" placeholder="Подробная информация о проекте" class="about-project__input-text"></textarea>
+                                <textarea id="about-project" placeholder="Подробная информация о проекте" class="about-project__input-text" wrap="soft" rows="10"></textarea>
                             </div>
                             
                         </div>
@@ -42,16 +88,18 @@
                     <div class="parts__list">
                         <div class="parts__item">
                             <div class="parts__item-image">
-                                <input type="file" id="part1-image" class="about-project__input-part-image" accept="image/*">
+                                <input type="file" id="part1-image" class="parts__input-part-image" accept="image/*">
                                 <label for="part1-image" class="parts__label">Загрузите изображение компонента</label>
                             </div>
                             <div class="parts__item-title">
-                                <input type="text" id="part1-title" class="about-project__input-part-title" placeholder="Название компанента">
+                                <input type="text" id="part1-title" class="parts__input-part-title" placeholder="Название компанента">
                             </div>
-                            <p class="parts__item-number">x 1</p>
+                            <div class="parts__item-number">
+                                x <input type="number" id="part1-num" class="parts__input-number" placeholder="0">
+                            </div>
                         </div>
                         <div class="parts__item parts__item--add">
-                            <button>
+                            <button class="parts__item-btn" onclick="">
                                 +
                             </button>
                         </div>
@@ -61,14 +109,14 @@
                     <h2 class="connect__title subtitle">Схема</h2>
                     <div class="connect__image">
                         <input type="file" id="scheme-image" class="connect__input-scheme" accept="image/*">
-                        <label for="scheme-image" class="parts__label">Загрузите схему подключения</label>
+                        <label for="scheme-image" class="connect__label">Загрузите схему подключения</label>
                     </div>
                     
                 </div>
                 <div class="sketch">
                     <h2 class="sketch__title subtitle">Код</h2>
                     <div class="sketch__around-code">
-                        <textarea class="sketch__code"></textarea>
+                        <textarea class="sketch__code" rows="20"></textarea>
                     </div>
                 </div>
             </form>
