@@ -23,8 +23,7 @@ body{
     box-shadow: 0 0 2px gray;
 }
 .about-project__main-image{
-
-    width: 100%;
+    height: auto;
 }
 .about-project__information{
     flex-grow: 2;

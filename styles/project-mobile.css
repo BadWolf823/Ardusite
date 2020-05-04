@@ -1,7 +1,4 @@
 @media screen  and (max-width: 1310px){
-    .about-project{
-        flex-wrap: wrap;
-    }
     .about-project__information{
         max-width: 100%;
     }
@@ -21,5 +18,10 @@
     }
     .sketch__around-code{
         align-items: center;
+    }
+}
+@media screen and (max-width: 768px){
+    .about-project{
+        flex-wrap: wrap;
     }
 }
