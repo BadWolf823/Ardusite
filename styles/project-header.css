@@ -12,6 +12,7 @@ li{list-style: none}
     position: fixed;
     z-index: 1859;
     background-color: rgba(255, 255, 255, 0.99);
+    box-shadow: 0 0 2px gray;
     height: 90px;
     width: 100%;
     display: flex;

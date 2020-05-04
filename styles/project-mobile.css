@@ -1,0 +1,25 @@
+@media screen  and (max-width: 1310px){
+    .about-project{
+        flex-wrap: wrap;
+    }
+    .about-project__information{
+        max-width: 100%;
+    }
+    .about-project__main-image{width: 100%}
+
+    .about-project__title{
+        font-size: 1em;
+    }
+    .about-project__master{
+        font-size: 1em;
+    }
+    .about-project__text{
+        font-size: 1em;
+    }
+    .connect__img{
+        width: 100%;
+    }
+    .sketch__around-code{
+        align-items: center;
+    }
+}

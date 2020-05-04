@@ -2,26 +2,127 @@
     margin: 0;
     padding: 0;
 }
-.main{
-    font-family: 'Noto Sans', sans-serif;
+li{
+    list-style: none;
 }
-.project{
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color: whitesmoke;
+}
+.main{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about-project{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 2px gray;
+}
+.about-project__main-image{
+
+    width: 100%;
+}
+.about-project__information{
+    flex-grow: 2;
+    max-width: 65%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.project__about{
-    background-color: lightcyan;
-    min-height: 200px;
-    width: 100%;
-
-}
-
-.project__scketch{
-    background-color: #2d2d2d;
+    justify-content: space-between;
+    padding: 0.5em;
+    background: #00979c;
     color: white;
-    padding: 0.8em;
-    font-size: 1em;
+}
+.about-project__title{
+    font-size: 3em;
+}
+.about-project__master{
+    font-size: 1.2em;
+}
+.about-project__text{
+    padding: 20px 0;
+    font-size: 1.5em;
+}
+.stat{
+    position: relative;
+}
+.stat-respect{
+    float: left;
+}
+.stat-respect__btn{
+    display: block;
+    width: 32px;
+    height: 32px;
+    fill: white;
+    float: left;
+}
+.stat-respect__num{
+    font-size: 1.5em;
+    padding: 0 0.5em;
+}
+.parts{
+    padding:0 5px;
+    width: 100%;
+}
+.subtitle{
+    margin: 5px 20px 20px 20px;
+    font-size: 2em;
+}
+.parts__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.parts__item{
+    text-align: center;
+    margin: 5px;
+    box-shadow: 0 0 5px gray;
+}
+.parts__item:hover{
+    box-shadow: 0 0 10px gray;
+}
+.parts__item-title{
+    background-color: #00979c;
+    color: white;
+    padding: 0.1em;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+.connect{
+    margin: 10px 20px;
+}
+.sketch{
+    background: white;
+    box-shadow: 0 0 2px gray;
+    margin: 10px 20px;
+}
+.sketch__around-code{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.sketch__code{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: visible;
+}
+.sketch__download{
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    width: 10em;
+    background-color: #00979c;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.6em;
+    margin: 10px;
+}
+.sketch__download:hover{
+    background: #005c5f;
 }
 
 
