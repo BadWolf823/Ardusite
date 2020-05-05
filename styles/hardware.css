@@ -1,0 +1,20 @@
+.group__controller{
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+.group__controller-image{
+}
+.group__controller-name{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: max-content;
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+
+}
+.group__controller-about{
+    display: none;
+}
