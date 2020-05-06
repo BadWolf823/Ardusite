@@ -4,59 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/footer.css" rel="stylesheet">
-    <link href="styles/common.css" rel="stylesheet">
+    <link href="styles/Common.css" rel="stylesheet">
+    <link href="styles/commonmedia.css" rel="stylesheet">
     <link href="styles/hardware.css" rel="stylesheet">
     <title>Железки Arduino</title>
 </head>
 <body>
+<header>
+    <nav class="nav">
+        <div class="logo">
+            <a href="index.html"> <img class="logo__ref" src="images/arduino-white.svg" alt="logo"> </a>
+        </div>
+        <div class="navpanel">
+            <a class="navpanel__item" href="software.html"> Программирование </a>
+            <a class="navpanel__item" href="hardware.html"> Контроллеры</a>
+            <a class="navpanel__item" href="project-list.html"> Проекты </a>
+        </div>
+        <a href="singin.html" class="nav__singin">Вход</a>
+        <div class="menu">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="software.html">Программирование</a></li>
+                <li><a class="menu__item" href="hardware.html">Контроллеры</a></li>
+                <li><a class="menu__item" href="project-list.html">Проекты</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
    <main class="main">
        <div class="about">
            <h1 class="about__title">Железки Arduino</h1>
            <p class="about__text">
-            Arduino — это электронный конструктор и удобная платформа быстрой разработки электронных устройств для новичков и профессионалов. 
-            Платформа пользуется огромной популярностью во всем мире благодаря удобству и простоте языка программирования, а также открытой архитектуре и программному коду. 
-            Устройство программируется через USB без использования программаторов.
-            Arduino позволяет компьютеру выйти за рамки виртуального мира в физический и взаимодействовать с ним. Устройства на базе  Arduino могут получать информацию об окружающей среде посредством различных датчиков, а также могут управлять различными исполнительными устройствами.
+               Arduino — это электронный конструктор и удобная платформа быстрой разработки электронных устройств для новичков и профессионалов.
+               Платформа пользуется огромной популярностью во всем мире благодаря удобству и простоте языка программирования, а также открытой архитектуре и программному коду.
+               Устройство программируется через USB без использования программаторов.
+               Arduino позволяет компьютеру выйти за рамки виртуального мира в физический и взаимодействовать с ним. Устройства на базе  Arduino могут получать информацию об окружающей среде посредством различных датчиков, а также могут управлять различными исполнительными устройствами.
            </p>
        </div>
-       <div class="content">
-           <div class="group">
-               <h2 class="group__title">Начальный уровень</h2>
-               <p class="group__text">
-                   Начните работать с Arduino, используя продукты начального уровня: простой в использовании и готовый для реализации ваших первых творческих проектов. 
-                   Эти платы и модули являются лучшими, чтобы начать изучать и работать с электроникой и кодированием.
-                </p>
-                <div class="group__controllers">
-                    <div class="group__controller" id="arduino-uno">
-                        <a href="" class="group__controller-link">
-                            <img src="images/controllers/Uno.jpg" alt="Uno" class="group__controller-image">
-                        </a>
-                        <h3 class="group__controller-name">ARDUINO UNO</h3>
-                        <div class="group__controller-about">
-                            Arduino Uno контроллер построен на ATmega328.
-                             Платформа имеет 14 цифровых вход/выходов (6 из которых могут использоваться как выходы ШИМ), 6 аналоговых входов, кварцевый генератор 16 МГц, разъем USB, силовой разъем, разъем ICSP и кнопку перезагрузки.
-                             Для работы необходимо подключить платформу к компьютеру посредством кабеля USB, либо подать питание при помощи адаптера AC/DC или батареи.
-                        </div>
-                    </div>
-                </div>
-           </div>
-           <!--<div class="group">
-               <h2 class="group__title">Расширенные возможности</h2>
-               <p class="group__text">
-                   Испытайте волнение в более сложных проектах, выбрав одну из плат с расширенным функционалом или с увеличиным быстродействием.
-               </p>
-               <div class="group__contollers">
-                   <div class="group__controller">
-                       <img src="images/controllers/Mega.jpg" alt="Mega" class="group__controller-image">
-                       <h3 class="group__controller-name">ARDUINO MEGA</h3>
-                       <div class="group__controller-about">
-                           Arduino Mega построена на микроконтроллере ATmega2560. 
-                           Плата имеет 54 цифровых входа/выходов (14 из которых могут использоваться как выходы ШИМ), 16 аналоговых входов,4 последовательных порта UART, кварцевый генератор 16 МГц, USB коннектор, разъем питания, разъем ICSP и кнопка перезагрузки. 
-                           Для работы необходимо подключить платформу к компьютеру посредством кабеля USB или подать питание при помощи адаптера AC/DC, или аккумуляторной батареей.
-                       </div>
+       <div class="group">
+           <h2 class="group__title">Начальный уровень</h2>
+           <p class="group__text">
+               Начните работать с Arduino, используя продукты начального уровня: простой в использовании и готовый для реализации ваших первых творческих проектов.
+               Эти платы и модули являются лучшими, чтобы начать изучать и работать с электроникой и кодированием.
+           </p>
+           <div class="group__controllers">
+               <div class="group__controller" id="arduino-uno">
+                   <div class="group__controller-illustration">
+                       <div class="group__controller-hover"></div>
+                       <a href="" class="group__controller-link">
+                           <img src="images/controllers/Uno.jpg" alt="Uno" class="group__controller-image">
+                       </a>
+                       <h3 class="group__controller-name">ARDUINO UNO</h3>
+                   </div>
+                   <div class="group__controller-about">
+                       Arduino Uno контроллер построен на ATmega328.
+                       Платформа имеет 14 цифровых вход/выходов (6 из которых могут использоваться как выходы ШИМ), 6 аналоговых входов, кварцевый генератор 16 МГц, разъем USB, силовой разъем, разъем ICSP и кнопку перезагрузки.
+                       Для работы необходимо подключить платформу к компьютеру посредством кабеля USB, либо подать питание при помощи адаптера AC/DC или батареи.
                    </div>
                </div>
-           </div>-->
+               <div class="group__controller" id="arduino-nano">
+                   <div class="group__controller-illustration">
+                       <div class="group__controller-hover"></div>
+                       <a href="" class="group__controller-link">
+                           <img src="images/controllers/nano.jpg" alt="Nano" class="group__controller-image">
+                       </a>
+                       <h3 class="group__controller-name">ARDUINO Nano</h3>
+                   </div>
+                   <div class="group__controller-about">
+                       Arduino Uno контроллер построен на ATmega328.
+                       Платформа имеет 14 цифровых вход/выходов (6 из которых могут использоваться как выходы ШИМ), 6 аналоговых входов, кварцевый генератор 16 МГц, разъем USB, силовой разъем, разъем ICSP и кнопку перезагрузки.
+                       Для работы необходимо подключить платформу к компьютеру посредством кабеля USB, либо подать питание при помощи адаптера AC/DC или батареи.
+                   </div>
+               </div>
+               <div class="group__controller" id="arduino-leonardo">
+                   <div class="group__controller-illustration">
+                       <div class="group__controller-hover"></div>
+                       <a href="" class="group__controller-link">
+                           <img src="images/controllers/LeonardoETH.jpg" alt="Leonardo" class="group__controller-image">
+                       </a>
+                       <h3 class="group__controller-name">ARDUINO Nano</h3>
+                   </div>
+                   <div class="group__controller-about">
+                       Arduino Uno контроллер построен на ATmega328.
+                       Платформа имеет 14 цифровых вход/выходов (6 из которых могут использоваться как выходы ШИМ), 6 аналоговых входов, кварцевый генератор 16 МГц, разъем USB, силовой разъем, разъем ICSP и кнопку перезагрузки.
+                       Для работы необходимо подключить платформу к компьютеру посредством кабеля USB, либо подать питание при помощи адаптера AC/DC или батареи.
+                   </div>
+               </div>
+           </div>
        </div>
    </main>
 </body>

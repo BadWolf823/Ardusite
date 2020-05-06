@@ -1,0 +1,224 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img{
+    border: none;
+}
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height:120px;
+    background-color: #00979d;
+}
+main {
+    background-color: rgb(235, 235, 235);
+    margin-top: 120px;
+    min-height: 100vh;
+}
+
+footer {
+    z-index: 998;
+    color: white;
+    text-decoration: none;
+    min-height: 208px;
+    background-color: #00979d;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: yellow;
+}
+.logo{
+    width: 180px;
+    height: 120px;
+    float: left;
+}
+.logo__ref{
+    border: none;
+    zoom: 0.5;
+    float: left;
+}
+.navpanel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 450px;
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    margin-left: -225px;
+}
+.navpanel__item{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 100%;
+    max-width: 160px;
+    float: left;
+    padding: 10px;
+}
+.nav__singin{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin: 75px 20px 0px 0px;
+    padding: 10px;
+}
+.nav__singin:hover{
+    background-color: teal;
+}
+.logo:hover{
+    background-color: teal;
+}
+.navpanel__item:hover{
+    background-color: teal;
+}
+.singin:hover{
+    background-color: teal;
+}
+.menu{
+    z-index: 1000;
+    display: none;
+}
+.go2vk{
+    border: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -20px;
+    margin-right: 20px;
+    background-color: #005c5f;
+    float: right;
+    border-radius: 50px;
+}
+.go2vk:hover{
+    background-color: #4a76a8;
+}
+.go2fb{
+    border: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -20px;
+    background-color: #005c5f;
+    float: right;
+    border-radius: 50px;
+}
+.centervk{
+    margin: 15px 10px 10px 8px;
+}
+.centerfb{
+    height: 50px;
+    margin: 0px 10px 10px 0px;
+}
+.go2fb:hover{
+    background-color: #3578E5;
+}
+.goup{
+    position: relative;
+    top: -110px;
+    right: 30px;
+    fill: white;
+    float: right;
+}
+.goup:hover{
+    fill: yellow;
+}
+.footer__info{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.footer__copyright{
+    margin-top: 2%;
+    padding-left: 20px; 
+}
+footer div a svg{
+    fill: white;
+}
+footer div a svg:hover{
+    fill: yellow;
+}
+.block{
+    display: block;
+}
+footer div ul{
+    list-style-type: none;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 26px;
+    height: 26px;
+    margin-left: -50px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  /* контейнер меню */
+.menu__box {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    top: -200px;
+    width: 100%;
+    height: 200px;
+    list-style: none;
+    text-align: center;
+    z-index: 100;
+  }
+  .menu__btn:hover{
+    background-color: teal;
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #005c5f;
+    background-color: #7fcbcd;
+    border-bottom: 1px solid #a5f2ee;
+    font-family: "Typonine Sans Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+ 
+
