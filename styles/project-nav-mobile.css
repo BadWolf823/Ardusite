@@ -73,4 +73,14 @@
         background-color: #00979c;
         color: white;
     }
+    .menu__link_sign-in{
+        background-color: #00979d;
+        color: white;
+        border-radius: 5px;
+        border-style: none;
+        margin: 5px 0;
+    }
+    .menu__link_sign-in:hover{
+        background-color: #005c5f;
+    }
 }

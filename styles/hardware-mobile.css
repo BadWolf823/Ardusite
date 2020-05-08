@@ -1,0 +1,9 @@
+@media screen and (max-width: 1200px){
+    .group__title, .about__title, .about__text, .group__text{
+        width: 100%;
+    }
+    .group__controller{
+        margin: 10px 0;
+        width: max-content;
+    }
+}

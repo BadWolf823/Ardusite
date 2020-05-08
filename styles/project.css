@@ -16,22 +16,19 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .about-project{
+    display: flex;
     background-color: white;
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: space-between;
     box-shadow: 0 0 2px gray;
 }
 .about-project__main-image{
+    min-width: 400px;
+    max-width: 600px;
     height: auto;
 }
 .about-project__information{
     flex-grow: 2;
-    max-width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 0.5em;
     background: #00979c;
     color: white;
@@ -46,23 +43,6 @@ body{
     padding: 20px 0;
     font-size: 1.5em;
 }
-.stat{
-    position: relative;
-}
-.stat-respect{
-    float: left;
-}
-.stat-respect__btn{
-    display: block;
-    width: 32px;
-    height: 32px;
-    fill: white;
-    float: left;
-}
-.stat-respect__num{
-    font-size: 1.5em;
-    padding: 0 0.5em;
-}
 .parts{
     padding:0 5px;
     width: 100%;
@@ -75,6 +55,16 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.parts__illustration{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+.parts__item-image{
+    width: 250px;
 }
 .parts__item{
     text-align: center;
@@ -90,9 +80,15 @@ body{
     padding: 0.1em;
     font-size: 1.6em;
     font-weight: bolder;
+    width: 250px;
+    min-height: 3.2em;
 }
 .connect{
     margin: 10px 20px;
+}
+.connect__img{
+    max-height: 768px;
+    max-width: 100%;
 }
 .sketch{
     background: white;

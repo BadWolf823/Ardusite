@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Программирование</title>
+    <link href="styles/Common.css" rel="stylesheet">
+    <link href="styles/commonmedia.css" rel="stylesheet">
+    <link href="styles/software.css" rel="stylesheet">
+    <link href="styles/software-mobile.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html"> <img class="logo__ref" src="images/arduino-white.svg" alt="logo"> </a>
+            </div>
+            <div class="navpanel">
+                <a class="navpanel__item" href="software.html"> Программирование </a>
+                <a class="navpanel__item" href="hardware.html"> Контроллеры</a>
+                <a class="navpanel__item" href="project-list.html"> Проекты </a>
+            </div>
+            <a href="singin.html" class="nav__singin">Вход</a>
+            <div class="menu">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="software.html">Программирование</a></li>
+                    <li><a class="menu__item" href="hardware.html">Контроллеры</a></li>
+                    <li><a class="menu__item" href="project-list.html">Проекты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <ul class="side-nav">
+            <li>
+                <a href="#function" class="side-nav__link">Функции</a>
+                <ul class="side-nav__in">
+                    <li><a href="#function-digital-io" class="side-nav__link">Цифровой ввод/вывод</a></li>
+                    <li><a href="#function-analog-io" class="side-nav__link">Аналоговый ввод/вывод</a></li>
+                    <li><a href="#function-advanced-io" class="side-nav__link">Дополнительные фукции ввода/вывода</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="content">
+                <h2 class="content__title">Программирование ARDUINO</h2>
+                <p class="content__text">
+                    Язык программирования устройств Ардуино основан на C/C++. 
+                    Он прост в освоении, и на данный момент Arduino — это, пожалуй, самый удобный способ программирования устройств на микроконтроллерах.
+                </p>
+                <div class="group">
+                    <h3 class="group__title" id="function">Функции</h3>
+                    <div class="items" id="function-digital-io">
+                        <h3 class="items__name">Цифровой ввод/вывод</h3>
+                        <p class="items__item" aria-label="Устанавливает режим работы пина: pin - номер пина, mode - режим работы пина (INPUT или OUTPUT)">
+                            pinMode(pin, mode)
+                        </p>
+                        <p class="items__item" aria-label="Считывает значение с заданного входа: (HIGH/LOW)
+                                pin - номер пина">
+                                digitalRead(pin)
+                        </p>
+                        <p class="items__item" aria-label="
+                                Передает значение value на выход pin:
+                                pin - номер пина,
+                                value - значение HIGH/LOW">
+                                digitalWrite(pin, value)
+                        </p>
+                    </div>
+                    <div class="items" id="function-analog-io">
+                        <h3 class="items__name">Аналоговый ввод/выввод</h3>
+                        <p class="items__item" aria-label="
+                            Считывает аналоговый сигнал с заданного входа
+                            pin - номер пина">
+                            analogRead(pin)
+                        </p>
+                        <p class="items__item" aria-label="Передает значение value на выход pin:
+                                pin - номер пина
+                                value - значение (0..255)">analogWrite(pin, value)
+                        </p>
+                        <p class="items__item" aria-label="Определяет опорное напряжение:
+                                type - DEFAULT/INTERNAL/EXTERNAL">
+                                analogReference(type)
+                        </p>
+                    </div>
+                    <div class="items" id="function-advanced-io">
+                        <h3 class="items__name">Дополнительные функции ввода/вывода</h3>
+                        <p class="items__item" aria-label="
+                            Генерирует на порту вход/выхода сигнал — прямоугольную 'волну':
+                            pin - номер пина
+                            frequency - частота в Герцах
+                            duration - длительность сигнала в мс">
+                            tone(pin, frequency, duration)
+                        </p>
+                        <p class="items__item" aria-label="Останавливает сигнал, генерируемый на порту вход/выхода: pin - номер пина">
+                            noTone(pin)
+                        </p>
+                        <p class="items__item" aria-label="Засекает время появления сигнала на входе: pin - номер пина value - тип ожидаемого значения (HIGH/LOW)">
+                            purseIn(pin, value)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -40,6 +40,8 @@ body{
     justify-content: space-between;
 }
 .project__illustration{
+    position: relative;
+    overflow: hidden;
     width: 360px;
     height: 270px;
 }
@@ -52,6 +54,7 @@ body{
     align-items: center;
     text-align: center;
     font-size: 1.3em;
+    padding: 5px;
     font-weight: bolder;
     visibility: hidden;
     color: rgba(255, 255, 255, 0);
