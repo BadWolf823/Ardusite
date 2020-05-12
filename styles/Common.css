@@ -57,12 +57,13 @@ footer a:hover{
     margin-left: -225px;
 }
 .navpanel__item{
+    display: block;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
     color: white;
-    max-width: 160px;
+    width: max-content;
     float: left;
     padding: 10px;
 }

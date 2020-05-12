@@ -23,6 +23,7 @@
     color: #00979d;
 }
 .group__controller{
+    cursor: pointer;
     margin: 10px;
     width: max-content;
 }

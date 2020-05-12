@@ -1,6 +1,5 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 .main{
     font-size: 1.2em;
@@ -42,24 +41,24 @@ body{
     position: relative;
     cursor: pointer;
 }
+.items__item:hover{
+    color: #db9700;
+}
 .items__item::after{
-    width: max-content;
-    transition: 0.6s;
+    max-width: 500px;
+    display: none;
     padding: 0.5em;
     font-size: 0.8em;
     font-weight: 500;
     position: absolute;
     z-index: 2;
-    max-width: 700px;
     background-color: rgba(255, 255, 255, 0.95);
     color: #00979d;
     border: 2px solid #00979d;
     border-radius: 1em;
-    content: attr(aria-label);
-    opacity: 0;
-    top: 0;
-    left: 110%;
+    top: 100%;
 }
 .items__item:hover::after{
-    opacity: 1;
+    content: attr(aria-label);
+    display: block;
 }
