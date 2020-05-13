@@ -12,6 +12,7 @@ body{
     list-style-type: none;
 }
 .side-nav__link{
+    cursor: pointer;
     width: 200px;
     text-align: center;
     display: block;
@@ -20,11 +21,15 @@ body{
     border-bottom: 2px solid #00979d;
 }
 .side-nav__link:hover{
-    color: #007074;
+    color: #004a4c;
 }
 .side-nav__in{
     list-style-type: none;
     background-color: whitesmoke;
+    display: none;
+}
+.side-nav__in_open{
+    display: block;
 }
 .side-nav__in .side-nav__link{
     border: none;

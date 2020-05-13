@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Программирование</title>
-    <link href="../styles/Common.css" rel="stylesheet">
-    <link href="../styles/commonmedia.css" rel="stylesheet">
-    <link href="../styles/software.css" rel="stylesheet">
-    <link href="../styles/software-mobile.css" rel="stylesheet">
+    <link href="../styles/common.css" rel="stylesheet">
+    <link href="../styles/nav-default.css" rel="stylesheet">
+    <link href="../styles/nav-default-mobile.css" rel="stylesheet">
+    <link href="../styles/software/software.css" rel="stylesheet">
+    <link href="../styles/software/software-mobile.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -37,16 +38,16 @@
     <main class="main">
         <ul class="side-nav">
             <li>
-                <a href="#function" class="side-nav__link">Функции</a>
-                <ul class="side-nav__in">
+                <p class="side-nav__link" onclick="openMenuByClass('function-menu','side-nav__in')">Функции</p>
+                <ul id="function-menu" class="side-nav__in">
                     <li><a href="#function-digital-io" class="side-nav__link">Цифровой ввод/вывод</a></li>
                     <li><a href="#function-analog-io" class="side-nav__link">Аналоговый ввод/вывод</a></li>
                     <li><a href="#function-advanced-io" class="side-nav__link">Дополнительные фукции ввода/вывода</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#operation" class="side-nav__link">Операторы</a>
-                <ul class="side-nav__in">
+                <p class="side-nav__link" onclick="openMenuByClass('operation-menu','side-nav__in')">Операторы</p>
+                <ul id="operation-menu" class="side-nav__in">
                     <li><a href="#operation-control" class="side-nav__link">Управляющие операторы</a></li>
                     <li><a href="#operation-control" class="side-nav__link">Арифметические операторы</a></li>
                     <li><a href="#operation-control" class="side-nav__link">Операторы сравнения</a></li>
@@ -55,8 +56,8 @@
                 </ul>
             </li>
             <li>
-                <a href="#data" class="side-nav__link">Данные</a>
-                <ul class="side-nav__in">
+                <p class="side-nav__link" onclick="openMenuByClass('data-menu','side-nav__in')">Данные</p>
+                <ul id="data-menu" class="side-nav__in">
                     <li><a href="#data-const" class="side-nav__link">Константы</a></li>
                     <li><a href="#data-type" class="side-nav__link">Типы данных</a></li>
                     <li><a href="#data-transform-type" class="side-nav__link">Преобразование типов</a></li>

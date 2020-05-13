@@ -40,7 +40,7 @@
         display: block;
         height: 32px;
         width: 32px;
-        background-image: url("../images/burger-menu-icon.png");
+        background-image: url("../../images/burger-menu-icon.png");
         background-size: 100%;
     }
     .menu__box{

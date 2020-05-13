@@ -29,4 +29,7 @@
     .about-project__information{
         max-width: 100%;
     }
+    .sketch__download{
+        opacity: 0.5;
+    }
 }

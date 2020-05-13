@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../styles/project.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/project-nav.css">
-    <link rel="stylesheet" href="../styles/project-nav-mobile.css">
-    <link rel="stylesheet" href="../styles/project-mobile.css">
-    <script src="../scripts/adaptive.js"></script>
+    <link rel="stylesheet" href="../../styles/common.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/project/project.css">
+    <link rel="stylesheet" href="../../styles/project/project-mobile.css">
+    <link rel="stylesheet" href="../../styles/project-nav/project-nav.css">
+    <link rel="stylesheet" href="../../styles/project-nav/project-nav-mobile.css">
+    <script src="../../scripts/adaptive.js"></script>
     <title>Работа с ультрозвуковым датчиком HC-SR04</title>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <a href="project-list.html" class="logo__link"></a>
+                <a href="../project-list.html" class="logo__link"></a>
             </div>
             <div class="nav-panel">
                 <a class="nav-panel__item" href="projects.html">Главная</a>
-                <a class="nav-panel__item" href="software.html">Программирование </a>
-                <a class="nav-panel__item" href="hardware.html">Контроллеры</a>
+                <a class="nav-panel__item" href="../software.html">Программирование </a>
+                <a class="nav-panel__item" href="../hardware.html">Контроллеры</a>
             </div>
             <form action="" method="get" class="search">
                 <label>
                     <input name="search-input" class="search__input" placeholder="Поиск проекта" type="search">
                 </label>
-                <button type="submit" class="search__btn"><img src="../images/search-icon.png" width="32" alt="Поиск"></button>
+                <button type="submit" class="search__btn"><img src="../../images/search-icon.png" width="32" alt="Поиск"></button>
             </form>
             <div class="nav__user">
                 <a class="nav__add-project" href="">Добавить проект</a>
@@ -34,7 +36,7 @@
         </nav>
         <nav class="nav-mobile">
             <div class="logo">
-                <a href="project-list.html" class="logo__link"></a>
+                <a href="../project-list.html" class="logo__link"></a>
             </div>
             <div class="menu">
                 <button class="menu__toggle" onclick="openMenu('menu__box')">
@@ -45,11 +47,11 @@
                         <label>
                             <input name="search-input" class="search__input menu-search__input" placeholder="Поиск проекта" type="search">
                         </label>
-                        <button type="submit" class="search__btn menu-search__btn"><img src="../images/search-icon.png" width="32" alt="Поиск"></button>
+                        <button type="submit" class="search__btn menu-search__btn"><img src="../../images/search-icon.png" width="32" alt="Поиск"></button>
                     </form>
                     <a class="menu__link" href="index.html">Главная</a>
                     <a class="menu__link" href="https://ya.ru">Программирование</a>
-                    <a class="menu__link" href="hardware.html">Контроллеры</a>
+                    <a class="menu__link" href="../hardware.html">Контроллеры</a>
                     <a class="menu__link menu__link_sign-in" href="sign-in.html">Войти</a>
                 </div>
             </div>
@@ -57,7 +59,7 @@
     </header>
     <main class="main">
         <div class="about-project">
-            <img class="about-project__main-image" src="../images/projects/Proj1/proj1.jpg" width="300" height="200">
+            <img class="about-project__main-image" src="../../images/projects/Proj1/proj1.jpg" width="300" height="200">
             <div class="about-project__information">
                 <div class="about-project__only-text">
                     <h1 class="about-project__title">Работа с ультрозвуковым датчиком HC-SR04</h1>
@@ -75,7 +77,7 @@
                 <div class="parts__item">
                     <a href="#" class="parts__item-link"></a>
                     <div class="parts__illustration">
-                        <img class="parts__item-image" src="../images/controllers/Uno.jpg" alt="Компонент">
+                        <img class="parts__item-image" src="../../images/controllers/Uno.jpg" alt="Компонент">
                     </div>
                     <p class="parts__item-title">Arduino Uno</p>
                     <p class="parts__item-number">x 1</p>
@@ -83,7 +85,7 @@
                 <div class="parts__item">
                     <a href="#" class="parts__item-link"></a>
                     <div class="parts__illustration">
-                        <img class="parts__item-image" src="../images/projects/Proj1/proj1.jpg" alt="Компонент">
+                        <img class="parts__item-image" src="../../images/projects/Proj1/proj1.jpg" alt="Компонент">
                     </div>
                     <p class="parts__item-title">HC-SR04</p>
                     <p class="parts__item-number">x 1</p>
@@ -91,7 +93,7 @@
                 <div class="parts__item">
                     <a href="#" class="parts__item-link"></a>
                     <div class="parts__illustration">
-                        <img class="parts__item-image" src="../images/projects/Proj1/wires.jpg" alt="Компонент">
+                        <img class="parts__item-image" src="../../images/projects/Proj1/wires.jpg" alt="Компонент">
                     </div>
                     <p class="parts__item-title">Провода</p>
                     <p class="parts__item-number">∞</p>
@@ -99,7 +101,7 @@
                 <div class="parts__item">
                     <a href="#" class="parts__item-link"></a>
                     <div class="parts__illustration">
-                        <img class="parts__item-image" src="../images/projects/Proj1/breadboard.jpeg" alt="Компонент">
+                        <img class="parts__item-image" src="../../images/projects/Proj1/breadboard.jpeg" alt="Компонент">
                     </div>
                     <p class="parts__item-title">Макетная плата</p>
                     <p class="parts__item-number">x 1</p>
@@ -108,12 +110,13 @@
         </div>
         <div class="connect">
             <h2 class="connect__title subtitle">Схема</h2>
-            <img src="../images/projects/Proj1/scheme-proj1.jpg" class="connect__img">
+            <div class="connect__image-container"><img src="../../images/projects/Proj1/scheme-proj1.jpg" class="connect__img"></div>
+            
         </div>
         <div class="sketch">
             <h2 class="sketch__title subtitle">Код</h2>
-            <div class="sketch__around-code">
-                <pre class="sketch__code" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(255, 255, 255); color: rgb(67, 79, 84);">
+            <div class="sketch-around-code">
+                <pre class="sketch-code" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(255, 255, 255); color: rgb(67, 79, 84);">
 <span class="sketch-comment" style="color: rgba(149, 165, 166, 0.8);">/*
  * HC-SR04 example sketch
  *
@@ -122,32 +125,32 @@
  * by Isaac100
  */</span>
 
-<span class="sketch__keyword" style="color: rgb(0, 151, 157);">const</span> <span class="sketch__keyword" style="color: rgb(0, 151, 157);">int</span> trigPin = <span class="sketch__number" style="color: rgb(138, 123, 82);">9</span>;
-<span class="sketch__keyword" style="color: rgb(0, 151, 157);">const</span> <span class="sketch__keyword" style="color: rgb(0, 151, 157);">int</span> echoPin = <span class="sketch__number" style="color: rgb(138, 123, 82);">10</span>;
+<span class="sketch-keyword" style="color: rgb(0, 151, 157);">const</span> <span class="sketch-keyword" style="color: rgb(0, 151, 157);">int</span> trigPin = <span class="sketch-number" style="color: rgb(138, 123, 82);">9</span>;
+<span class="sketch-keyword" style="color: rgb(0, 151, 157);">const</span> <span class="sketch-keyword" style="color: rgb(0, 151, 157);">int</span> echoPin = <span class="sketch-number" style="color: rgb(138, 123, 82);">10</span>;
 
-<span class="sketch__keyword" style="color: rgb(0, 151, 157);">float</span> duration, distance;
+<span class="sketch-keyword" style="color: rgb(0, 151, 157);">float</span> duration, distance;
 
-<span class="sketch__keyword" style="color: rgb(0, 151, 157);">void</span> <span class="sketch__built-in" style="color: rgb(211, 84, 0);">setup</span>() {
-  <span class="sketch__built-in" style="color: rgb(211, 84, 0);">pinMode</span>(trigPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">OUTPUT</span>);
-  <span class="sketch__built-in" style="color: rgb(211, 84, 0);">pinMode</span>(echoPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">INPUT</span>);
-  <span class="sketch__built-in" style="color: rgb(211, 84, 0);">Serial</span>.<span class="sketch__built-in" style="color: rgb(211, 84, 0);">begin</span>(<span class="sketch__number" style="color: rgb(138, 123, 82);">9600</span>);
+<span class="sketch-keyword" style="color: rgb(0, 151, 157);">void</span> <span class="sketch-built-in" style="color: rgb(211, 84, 0);">setup</span>() {
+  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">pinMode</span>(trigPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">OUTPUT</span>);
+  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">pinMode</span>(echoPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">INPUT</span>);
+  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">Serial</span>.<span class="sketch-built-in" style="color: rgb(211, 84, 0);">begin</span>(<span class="sketch-number" style="color: rgb(138, 123, 82);">9600</span>);
 }
 
-<span class="sketch__keyword" style="color: rgb(0, 151, 157);">void</span> <span class="sketch__built-in" style="color: rgb(211, 84, 0);">loop</span>() {
-  <span class="sketch__built-in" style="color: rgb(211, 84, 0);">digitalWrite</span>(trigPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">LOW</span>);
-  <span class="sketch__built-in" style="color: rgb(211, 84, 0);">delayMicroseconds</span>(<span class="sketch__number" style="color: rgb(138, 123, 82);">2</span>);
-  <span class="sketch__built-in" style="color: rgb(211, 84, 0);">digitalWrite</span>(trigPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">HIGH</span>);
-  <span class="sketch__built-in" style="color: rgb(211, 84, 0);">delayMicroseconds</span>(<span class="sketch__number" style="color: rgb(138, 123, 82);">10</span>);
-  <span class="sketch__built-in" style="color: rgb(211, 84, 0);">digitalWrite</span>(trigPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">LOW</span>);
+<span class="sketch-keyword" style="color: rgb(0, 151, 157);">void</span> <span class="sketch-built-in" style="color: rgb(211, 84, 0);">loop</span>() {
+  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">digitalWrite</span>(trigPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">LOW</span>);
+  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">delayMicroseconds</span>(<span class="sketch-number" style="color: rgb(138, 123, 82);">2</span>);
+  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">digitalWrite</span>(trigPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">HIGH</span>);
+  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">delayMicroseconds</span>(<span class="sketch-number" style="color: rgb(138, 123, 82);">10</span>);
+  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">digitalWrite</span>(trigPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">LOW</span>);
 
-  duration = <span class="sketch__built-in" style="color: rgb(211, 84, 0);">pulseIn</span>(echoPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">HIGH</span>);
-  distance = (duration*<span class="sketch__number" style="color: rgb(138, 123, 82);">.0343</span>)/<span class="sketch__number" style="color: rgb(138, 123, 82);">2</span>;
-  <span class="sketch__built-in" style="color: rgb(211, 84, 0);">Serial</span>.<span class="sketch__built-in" style="color: rgb(211, 84, 0);">print</span>(<span class="sketch-string" style="color: rgb(0, 92, 95);">"Distance: "</span>);
-  <span class="sketch__built-in" style="color: rgb(211, 84, 0);">Serial</span>.<span class="sketch__built-in" style="color: rgb(211, 84, 0);">println</span>(distance);
-  <span class="sketch__built-in" style="color: rgb(211, 84, 0);">delay</span>(<span class="sketch__number" style="color: rgb(138, 123, 82);">100</span>);
+  duration = <span class="sketch-built-in" style="color: rgb(211, 84, 0);">pulseIn</span>(echoPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">HIGH</span>);
+  distance = (duration*<span class="sketch-number" style="color: rgb(138, 123, 82);">.0343</span>)/<span class="sketch-number" style="color: rgb(138, 123, 82);">2</span>;
+  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">Serial</span>.<span class="sketch-built-in" style="color: rgb(211, 84, 0);">print</span>(<span class="sketch-string" style="color: rgb(0, 92, 95);">"Distance: "</span>);
+  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">Serial</span>.<span class="sketch-built-in" style="color: rgb(211, 84, 0);">println</span>(distance);
+  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">delay</span>(<span class="sketch-number" style="color: rgb(138, 123, 82);">100</span>);
 }
                 </pre>
-                <a href="../Files/proj1/HC_SR04.zip" class="sketch__download"><img src="../images/download-icon.png" alt="Загрузки"></a>
+                <a href="../../Files/proj1/HC_SR04.zip" class="sketch-download"><img src="../../images/download-icon.png" alt="Загрузки"></a>
             </div>
         </div>
     </main>

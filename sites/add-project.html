@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/project-nav/project-nav.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/project-nav/project-nav-mobile.css">
+    <link rel="stylesheet" href="../styles/add-project/add-project.css">
+    <script src="../scripts/adaptive.js"></script>
+    <title>Добавь свой проект</title>
+</head>
+<body>
+    <main class="main">
+        <h1 class="title">Покажи всем свой проект</h1>
+        <form class="form">
+            <fieldset class="fieldset fieldset-name-project">
+                <label class="fieldset__label " for="name-project">Название проекта</label>
+                <input class="fieldset__input-text" type="text" id="name-project" placeholder="Название проекта">
+            </fieldset>
+            <div class="input-image">
+                <fieldset class="fieldset">
+                    <label class="fieldset__label" for="main-image-project"><img src="../images/upload-icon.png" class="fieldset__label-icon">Добавьте обложку проекта</label>
+                    <input class="fieldset__input-image" type="file" id="main-image-project">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label class="fieldset__label" for="scheme-project"><img src="../images/upload-icon.png" class="fieldset__label-icon">Добавить схему подключения</label>
+                    <input class="fieldset__input-image" type="file" id="scheme-project">
+                </fieldset>
+            </div>
+            <fieldset class="fieldset">
+                <label class="fieldset__label" for="about-project">О проекте</label>
+                <textarea class="fieldset__textarea-short-text" id="about-project" placeholder="О проекте"></textarea>
+            </fieldset>
+            <fieldset class="fieldset">
+                <label class="fieldset__label" for="sketch">Скетч</label>
+                <div class="sketch" id="sketch">
+                    <input class="sketch__link" type="url" placeholder="Ссылка на проект в GitHub">
+                    <textarea class="sketch__code" placeholder="Здесь вы можете добавать свой код"></textarea>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

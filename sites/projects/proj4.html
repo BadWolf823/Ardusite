@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/common.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/project/project.css">
+    <link rel="stylesheet" href="../../styles/project/project-mobile.css">
+    <link rel="stylesheet" href="../../styles/project-nav/project-nav.css">
+    <link rel="stylesheet" href="../../styles/project-nav/project-nav-mobile.css">
+    <script src="../../scripts/adaptive.js"></script>
+    <title>Дешёвая STM32 плата + Arduino IDE</title>
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../project-list.html" class="logo__link"></a>
+        </div>
+        <div class="nav-panel">
+            <a class="nav-panel__item" href="projects.html">Главная</a>
+            <a class="nav-panel__item" href="../software.html">Программирование </a>
+            <a class="nav-panel__item" href="../hardware.html">Контроллеры</a>
+        </div>
+        <form action="" method="get" class="search">
+            <label>
+                <input name="search-input" class="search__input" placeholder="Поиск проекта" type="search">
+            </label>
+            <button type="submit" class="search__btn"><img src="../../images/search-icon.png" width="32" alt="Поиск"></button>
+        </form>
+        <div class="nav__user">
+            <a class="nav__add-project" href="">Добавить проект</a>
+            <a href="#" class="nav__sign-in">Вход</a>
+        </div>
+    </nav>
+    <nav class="nav-mobile">
+        <div class="logo">
+            <a href="../project-list.html" class="logo__link"></a>
+        </div>
+        <div class="menu">
+            <button class="menu__toggle" onclick="openMenu('menu__box')">
+                <div class="menu__btn"></div>
+            </button>
+            <div class="menu__box" id="menu__box">
+                <form action="" method="get" class="search ">
+                    <label>
+                        <input name="search-input" class="search__input menu-search__input" placeholder="Поиск проекта" type="search">
+                    </label>
+                    <button type="submit" class="search__btn menu-search__btn"><img src="../../images/search-icon.png" width="32" alt="Поиск"></button>
+                </form>
+                <a class="menu__link" href="index.html">Главная</a>
+                <a class="menu__link" href="https://ya.ru">Программирование</a>
+                <a class="menu__link" href="../hardware.html">Контроллеры</a>
+                <a class="menu__link menu__link_sign-in" href="sign-in.html">Войти</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="main">
+    <div class="about-project">
+        <img class="about-project__main-image" src="../../images/projects/Proj4/proj4.jpg">
+        <div class="about-project__information">
+            <div class="about-project__only-text">
+                <h1 class="about-project__title">Дешёвая STM32 плата + Arduino IDE</h1>
+                <a href="#" class="about-project__master">@HWman</a>
+                <p class="about-project__text">
+                    Обозреваемая отладочная плата основана на базе микроконтроллера STM32F103C8T6. А прошивать и программировать я её буду в среде разработки Arduino IDE.
+                    Очевидно, что отладочная плата на базе STM32 выигрывает по всём параметрам у Arduino Nano, исключением является разве что стоимость, но согласитесь
+                    10 центов — хорошая цена за большую производительность, а про периферию, которой нафарширован STM32, так я вообще молчу, чего только стоят DMA или
+                    интегрированные в микроконтроллер часы реального времени.</p>
+            </div>
+        </div>
+    </div>
+    <div class="parts">
+        <h2 class="parts__title subtitle">Компоненты и расходные материалы</h2>
+        <div class="parts__list">
+            <div class="parts__item">
+                <a href="#" class="parts__item-link"></a>
+                <div class="parts__illustration">
+                    <img class="parts__item-image" src="../../images/projects/Proj4/stm32.jpg" alt="Компонент">
+                </div>
+                <p class="parts__item-title">STM32F103C8T6</p>
+                <p class="parts__item-number">x 1</p>
+            </div>
+        </div>
+    </div>
+    <div class="connect">
+        <h2 class="connect__title subtitle">Схема</h2>
+        <div class="connect__image-container">
+            <img src="../../images/projects/Proj4/scheme-proj4.jpg" class="connect__img">
+        </div>
+    </div>
+    <div class="sketch">
+        <h2 class="sketch__title subtitle">Код</h2>
+        <div class="sketch-around-code">
+            <!-- Кастыльный вывод кода на странице, со всякими украшательствами, типа подстветки синтаксиса -->
+                <pre class="sketch-code" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(255, 255, 255); color: rgb(67, 79, 84);"><span class="sketch-comment" style="color: rgba(149, 165, 166, 0.8);">/*
+ circuitdigest.com
+ Sample STM32 Blink Program for Blue Pill board
+ */</span>
+
+<span class="sketch-comment" style="color: rgba(149, 165, 166, 0.8);">// the setup function runs once when you press reset or power the board</span>
+<span class="sketch-keyword" style="color: rgb(0, 151, 157);">void</span> <span class="sketch-built_in" style="color: rgb(211, 84, 0);">setup</span>() {
+  <span class="sketch-comment" style="color: rgba(149, 165, 166, 0.8);">// initialize digital pin PC13 as an output.</span>
+  <span class="sketch-built_in" style="color: rgb(211, 84, 0);">pinMode</span>(PC13, <span class="sketch-literal" style="color: rgb(211, 84, 0);">OUTPUT</span>);
+}
+
+<span class="sketch-comment" style="color: rgba(149, 165, 166, 0.8);">// the loop function runs over and over again forever</span>
+<span class="sketch-keyword" style="color: rgb(0, 151, 157);">void</span> <span class="sketch-built_in" style="color: rgb(211, 84, 0);">loop</span>() {
+  <span class="sketch-built_in" style="color: rgb(211, 84, 0);">digitalWrite</span>(PC13, <span class="sketch-literal" style="color: rgb(211, 84, 0);">HIGH</span>);   <span class="sketch-comment" style="color: rgba(149, 165, 166, 0.8);">// turn the LED on (HIGH is the voltage level)</span>
+  <span class="sketch-built_in" style="color: rgb(211, 84, 0);">delay</span>(<span class="sketch-number" style="color: rgb(138, 123, 82);">1000</span>);              <span class="sketch-comment" style="color: rgba(149, 165, 166, 0.8);">// wait for a second</span>
+  <span class="sketch-built_in" style="color: rgb(211, 84, 0);">digitalWrite</span>(PC13, <span class="sketch-literal" style="color: rgb(211, 84, 0);">LOW</span>);    <span class="sketch-comment" style="color: rgba(149, 165, 166, 0.8);">// turn the LED off by making the voltage LOW</span>
+  <span class="sketch-built_in" style="color: rgb(211, 84, 0);">delay</span>(<span class="sketch-number" style="color: rgb(138, 123, 82);">1000</span>);              <span class="sketch-comment" style="color: rgba(149, 165, 166, 0.8);">// wait for a second</span>
+}
+                </pre>
+            <a href="../../Files/proj4/blink-STM32.ino" class="sketch__download"><img src="../../images/download-icon.png" alt="Загрузки"></a>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__info">
+        <ul>
+            <li>
+                <a href="ptivacy_policy.html">
+                    Политика конфиденциальности
+                </a>
+            </li>
+            <li>
+                <a href="terms_of_service.html">
+                    Условия использования
+                </a>
+            </li>
+            <li>
+                <a href="about_us.html">
+                    О нас
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__copyright">
+        <a href="copyright.html" >
+            © 2020 МоклякМуравьёв
+        </a>
+    </div>
+    <div class="goup">
+        <a href="#">
+            <svg class="block center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg>
+        </a>
+    </div>
+    <div class="go2fb">
+        <a href="https://www.facebook.com/profile.php?id=100022277227464&__tn__=%2CdC-R-R&eid=ARDY8PjTlcacGCRqtpFWjoeDJTHaPeMY0nHfb8aKwQcPcWy-dfDBSYdkxDy1vfmHgg9joUT_39IhwgTc&hc_ref=ARTw8vcZvS-fHRJPj5hxRt4U_5IiAiX06ofk5h4JjL0RrdMMAKWbxpLCIFJaiqRrcNE&fref=nf"  target="_blank">
+            <img class="block centerfb" src="https://content.arduino.cc/website/social_icons/icon-facebook.svg" alt="facebook">
+        </a>
+    </div>
+    <div class="go2vk">
+        <a href="https://vk.com/press______f"  target="_blank">
+            <img class="block centervk" src="http://vk.com/images/svg_icons/ic_head_logo.svg" alt="vkontakte">
+        </a>
+    </div>
+</footer>
+</body>
+</html>
