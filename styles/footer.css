@@ -7,6 +7,9 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
+footer a:hover{
+    color: yellow;
+}
 .go2vk{
     border: none;
     position: relative;
@@ -40,16 +43,6 @@ footer {
 }
 .go2fb:hover{
     background-color: #3578E5;
-}
-.goup{
-    position: relative;
-    top: -110px;
-    right: 30px;
-    fill: white;
-    float: right;
-}
-.goup:hover{
-    fill: yellow;
 }
 .footer__info{
     padding-top: 30px;

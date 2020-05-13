@@ -81,26 +81,6 @@ body{
 
 }
 .project__maker{font-weight: lighter}
-.project__respect{
-    display: flex;
-    align-items: center;
-    padding: 0 5px;
-}
-.project__btn{
-    padding: 0 5px;
-    fill: white;
-    width: 32px;
-    height: 32px;
-}
-.project__btn_press-respect{
-    fill: red;
-}
-.project__num-stat-respect{
-    font-weight: bold;
-}
-.no-press{
-    fill: white;
-}
 .project:hover{background-color: #00979c;}
 .project:hover .project__name{color: white}
 .project:hover .project__information{background-color: #007074;}

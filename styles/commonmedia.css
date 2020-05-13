@@ -28,7 +28,7 @@
 
     }
     main{
-        margin-top: 50px;
+        padding-top: 50px;
     }
     .menu__box{
         display: block;
@@ -71,7 +71,6 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     #news{
       position: relative;
-        padding-top: 140px;
     }
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 768px) {

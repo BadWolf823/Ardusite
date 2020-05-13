@@ -1,3 +1,3 @@
-function openMenu(){
-    document.getElementById("menu__box").classList.toggle("menu__box_open");
+function openMenu(element){
+    document.getElementById(element).classList.toggle(element+"_open");
 }

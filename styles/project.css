@@ -24,11 +24,11 @@ body{
     box-shadow: 0 0 2px gray;
 }
 .about-project__main-image{
-    min-width: 400px;
-    max-width: 600px;
+    min-width: 40%;
     height: auto;
 }
 .about-project__information{
+    max-width: 60%;
     flex-grow: 2;
     padding: 0.5em;
     background: #00979c;
@@ -109,14 +109,12 @@ body{
 }
 .sketch__download{
     display: block;
-    padding: 5px 0;
-    text-align: center;
-    width: 10em;
+    width: 32px;
+    padding: 5px;
+    height: 32px;
+    background-size: 100%;
     background-color: #00979c;
-    color: white;
-    border-radius: 10px;
-    font-size: 1.6em;
-    margin: 10px;
+
 }
 .sketch__download:hover{
     background: #005c5f;
