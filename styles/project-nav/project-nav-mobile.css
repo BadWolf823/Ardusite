@@ -44,18 +44,19 @@
         background-size: 100%;
     }
     .menu__box{
-        padding: 10px;
         transition: 1s;
-        display: none;
-        visibility: hidden;
+        position: absolute;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.99);
-    }
-    .menu__box_open{
+        overflow: hidden;
+        max-height: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        visibility: visible;
+        background-color: rgba(255, 255, 255, 0.99);
+    }
+    .menu__box_open{
+        padding: 10px 0;
+        max-height: 100vh;
     }
     .menu__link{
         text-align: center;
@@ -64,7 +65,7 @@
         border-bottom-width: 2px;
         border-bottom-color: #00979c;
         display: block;
-        background-color: white;
+        background-color: transparent;
         font-size: 30px;
         padding: 5px;
         width: 300px;

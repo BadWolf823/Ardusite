@@ -24,12 +24,14 @@ body{
     color: #004a4c;
 }
 .side-nav__in{
+    overflow: hidden;
     list-style-type: none;
     background-color: whitesmoke;
-    display: none;
+    max-height: 0;
+    transition: 1s;
 }
 .side-nav__in_open{
-    display: block;
+    max-height: 500px;
 }
 .side-nav__in .side-nav__link{
     border: none;
