@@ -1,3 +1,4 @@
+/*При скролле уменьшает зафиксированную шапку*/
 window.addEventListener("scroll",function () {
     if (document.documentElement.clientWidth > 768){
         let header = document.querySelector(".header");

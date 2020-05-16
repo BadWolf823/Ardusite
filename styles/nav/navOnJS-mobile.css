@@ -1,5 +1,6 @@
 @media screen and (max-width: 768px){
     .header{
+        position: relative;
         height: 45px;
     }
     .nav{
@@ -17,7 +18,8 @@
         display: none;
     }
     .menu{
-        display: block;
+        display: flex;
+        align-items: center;
     }
     .menu__box{
         transition: 1s;
@@ -27,6 +29,7 @@
         position: absolute;
         width: 100%;
         left: 0;
+        top: 45px
     }
     .menu__item{
         display: block;
@@ -38,8 +41,11 @@
         
     }
     .menu__sign-in{
+        display: block;
+        font-weight: 600;
+        color: white;
         font-size: 18px;
-        padding: 5px 10px 13px;
+        padding: 5px 10px;
     }
     .menu__btn-icon{
         margin: 5px;
