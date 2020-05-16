@@ -2,7 +2,6 @@ footer a:hover{
     color: yellow;
 }
 footer {
-    z-index: 998;
     color: white;
     text-decoration: none;
     min-height: 208px;
