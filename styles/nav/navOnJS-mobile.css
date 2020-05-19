@@ -1,6 +1,5 @@
 @media screen and (max-width: 768px){
     .header{
-        position: relative;
         height: 45px;
     }
     .nav{

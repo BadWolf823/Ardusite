@@ -10,12 +10,15 @@
     <link href="../styles/nav/navOnJS-mobile.css" rel="stylesheet">
     <link href="../styles/software/software.css" rel="stylesheet">
     <link href="../styles/software/software-mobile.css" rel="stylesheet">
-    <script src="../scripts/newNavAdaptive.js"></script>
-    <script src="../scripts/adaptive.js"></script>
+    <script src="../scripts/openElement.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script>
+
+    </script>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav" style="position: static;">
+    <header class="header" id="header">
+        <nav class="nav">
             <div class="logo">
                 <a href="../index.html" class="logo__link"></a>
             </div>
@@ -30,7 +33,7 @@
                 <button class="menu__btn" id="menu-btn">
                     <div class="menu__btn-icon"></div>
                 </button>
-                <ul class="menu__box">
+                <ul class="menu__box" id="menu-box">
                     <li><a class="menu__item" href="software.html">Программирование</a></li>
                     <li><a class="menu__item" href="hardware.html">Контроллеры</a></li>
                     <li><a class="menu__item" href="project-list.html">Проекты</a></li>
@@ -40,32 +43,32 @@
     </header>
     <main class="main">
         <div class="main-nav">
-            <ul class="side-nav">
-                <li>
-                    <p class="side-nav__link" onclick="openMenuByClass('function-menu','side-nav__in')">Функции</p>
-                    <ul id="function-menu" class="side-nav__in">
-                        <li><a href="#main-function" class="side-nav__link">Главные функции</a></li>
-                        <li><a href="#function-digital-io" class="side-nav__link">Цифровой ввод/вывод</a></li>
-                        <li><a href="#function-analog-io" class="side-nav__link">Аналоговый ввод/вывод</a></li>
-                        <li><a href="#function-advanced-io" class="side-nav__link">Дополнительные фукции ввода/вывода</a></li>
+            <ul class="side-nav" id="side-nav">
+                <li class="side-nav-item">
+                    <p class="side-nav-item__link side-nav-item__link_main">Функции</p>
+                    <ul id="function-menu" class="side-nav-item__in">
+                        <li><a href="#main-function" class="side-nav-item__link">Главные функции</a></li>
+                        <li><a href="#function-digital-io" class="side-nav-item__link">Цифровой ввод/вывод</a></li>
+                        <li><a href="#function-analog-io" class="side-nav-item__link">Аналоговый ввод/вывод</a></li>
+                        <li><a href="#function-advanced-io" class="side-nav-item__link">Дополнительные фукции ввода/вывода</a></li>
                     </ul>
                 </li>
-                <li>
-                    <p class="side-nav__link" onclick="openMenuByClass('operation-menu','side-nav__in')">Операторы</p>
-                    <ul id="operation-menu" class="side-nav__in">
-                        <li><a href="#manajer-operator" class="side-nav__link">Управляющие операторы</a></li>
-                        <li><a href="#arifmetic-operator" class="side-nav__link">Арифметические операторы</a></li>
-                        <li><a href="#compare-operator" class="side-nav__link">Операторы сравнения</a></li>
-                        <li><a href="#logic-operator" class="side-nav__link">Логические операторы</a></li>
-                        <li><a href="#unary-operator" class="side-nav__link">Унарные операторы</a></li>
+                <li class="side-nav-item">
+                    <p class="side-nav-item__link side-nav-item__link_main">Операторы</p>
+                    <ul id="operation-menu" class="side-nav-item__in">
+                        <li><a href="#manajer-operator" class="side-nav-item__link">Управляющие операторы</a></li>
+                        <li><a href="#arifmetic-operator" class="side-nav-item__link">Арифметические операторы</a></li>
+                        <li><a href="#compare-operator" class="side-nav-item__link">Операторы сравнения</a></li>
+                        <li><a href="#logic-operator" class="side-nav-item__link">Логические операторы</a></li>
+                        <li><a href="#unary-operator" class="side-nav-item__link">Унарные операторы</a></li>
                     </ul>
                 </li>
-                <li>
-                    <p class="side-nav__link" onclick="openMenuByClass('data-menu','side-nav__in')">Данные</p>
-                    <ul id="data-menu" class="side-nav__in">
-                        <li><a href="#const-data" class="side-nav__link">Константы</a></li>
-                        <li><a href="#type-data" class="side-nav__link">Типы данных</a></li>
-                        <li><a href="#re-type-data" class="side-nav__link">Преобразование типов</a></li>
+                <li class="side-nav-item">
+                    <p class="side-nav-item__link side-nav-item__link_main">Данные</p>
+                    <ul id="data-menu" class="side-nav-item__in">
+                        <li><a href="#const-data" class="side-nav-item__link">Константы</a></li>
+                        <li><a href="#type-data" class="side-nav-item__link">Типы данных</a></li>
+                        <li><a href="#re-type-data" class="side-nav-item__link">Преобразование типов</a></li>
                     </ul>
                 </li>
             </ul>
@@ -81,7 +84,7 @@
                         <h3 class="group__title" id="function">Функции</h3>
                         <div class="items" id="main-function">
                             <h3 class="items__name">Главные функции</h3>
-                            <div class="command" id="setup" onclick="openMenuByClass('setup','command')">
+                            <div class="command" id="setup">
                                 <p class="command__name">setup()</p>
                                 <div class="command__prompt" >
                                     <p class="command__about">
@@ -99,7 +102,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="loop" onclick="openMenuByClass('loop','command')">
+                            <div class="command" id="loop">
                                 <p class="command__name">loop()</p>
                                 <div class="command__prompt" >
                                     <p class="command__about">   
@@ -121,7 +124,7 @@
                         </div>
                         <div class="items" id="function-digital-io">
                             <h3 class="items__name">Цифровой ввод/вывод</h3>
-                            <div class="command" id="pinmode" onclick="openMenuByClass('pinmode','command')">
+                            <div class="command" id="pinmode">
                                 <p class="command__name">pinMode(pin, mode)</p>
                                 <div class="command__prompt" >
                                     <p class="command__about">
@@ -138,7 +141,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="digitalwrite" onclick="openMenuByClass('digitalwrite','command')">
+                            <div class="command" id="digitalwrite">
                                 <p class="command__name">digitalWrite(pin, value)</p>
                                 <div class="command__prompt" >
                                     <p class="command__about">
@@ -155,7 +158,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="digitalread" onclick="openMenuByClass('digitalread','command')">
+                            <div class="command" id="digitalread">
                                 <p class="command__name">digitalRead(pin)</p>
                                 <div class="command__prompt" >
                                     <p class="command__about">
@@ -174,7 +177,7 @@
                         </div>
                         <div class="items" id="function-analog-io">
                             <h3 class="items__name">Аналоговый ввод/выввод</h3>
-                            <div class="command" id="analogread" onclick="openMenuByClass('analogread','command')">
+                            <div class="command" id="analogread">
                                 <p class="command__name">analogRead(pin)</p>
                                 <div class="command__prompt" >
                                     <p class="command__about">
@@ -190,7 +193,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="analogreference" onclick="openMenuByClass('analogreference','command')">
+                            <div class="command" id="analogreference">
                                 <p class="command__name">analogReference(type)</p>
                                 <div class="command__prompt" >
                                     <p class="command__about">
@@ -206,7 +209,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="analogwrite" onclick="openMenuByClass('analogwrite','command')">
+                            <div class="command" id="analogwrite">
                                 <p class="command__name">analogWrite(pin, value)</p>
                                 <div class="command__prompt" >
                                     <p class="command__about">
@@ -226,7 +229,7 @@
                         </div>
                         <div class="items" id="function-advanced-io">
                             <h3 class="items__name">Дополнительные функции ввода/вывода</h3>
-                            <div class="command" id="tone" onclick="openMenuByClass('tone','command')">
+                            <div class="command" id="tone">
                                 <p class="command__name">tone(pin,frequency,duration)</p>
                                 <div class="command__prompt" >
                                     <p class="command__about">
@@ -245,7 +248,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="notone" onclick="openMenuByClass('notone','command')">
+                            <div class="command" id="notone">
                                 <p class="command__name">noTone(pin)</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -261,7 +264,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="shiftout" onclick="openMenuByClass('shiftout','command')">
+                            <div class="command" id="shiftout">
                                 <p class="command__name">shiftOut(dataPin, clockPin, bitOrder, value)</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -281,7 +284,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="pulsein" onclick="openMenuByClass('pulsein','command')">
+                            <div class="command" id="pulsein">
                                 <p class="command__name">pulseIn(pin, value, timeout)</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -306,7 +309,7 @@
                         <h3 class="group__title" id="operator">Операторы</h3>
                         <div class="items" id="manajer-operator">
                             <h3 class="items__name">Управляющие операторы</h3>
-                            <div class="command" id="if-else" onclick="openMenuByClass('if-else','command')">
+                            <div class="command" id="if-else">
                                 <p class="command__name">if..else</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -315,7 +318,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="for" onclick="openMenuByClass('for','command')">
+                            <div class="command" id="for">
                                 <p class="command__name">for</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -327,7 +330,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="switch-case" onclick="openMenuByClass('switch-case','command')">
+                            <div class="command" id="switch-case">
                                 <p class="command__name">switch..case</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -338,7 +341,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="return" onclick="openMenuByClass('return','command')">
+                            <div class="command" id="return">
                                 <p class="command__name">return</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -346,7 +349,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="break" onclick="openMenuByClass('break','command')">
+                            <div class="command" id="break">
                                 <p class="command__name">break</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -355,7 +358,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="continue" onclick="openMenuByClass('continue','command')">
+                            <div class="command" id="continue">
                                 <p class="command__name">continue</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -363,7 +366,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="while" onclick="openMenuByClass('while','command')">
+                            <div class="command" id="while">
                                 <p class="command__name">while</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -372,7 +375,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="do-while" onclick="openMenuByClass('do-while','command')">
+                            <div class="command" id="do-while">
                                 <p class="command__name">do..while</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -384,7 +387,7 @@
                         </div>
                         <div class="items" id="arifmetic-operator">
                             <h3 class="items__name">Арифметические операторы</h3>
-                            <div class="command" id="add" onclick="openMenuByClass('add','command')">
+                            <div class="command" id="add">
                                 <p class="command__name">+</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -392,7 +395,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="sub" onclick="openMenuByClass('sub','command')">
+                            <div class="command" id="sub">
                                 <p class="command__name">-</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -400,7 +403,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="multi" onclick="openMenuByClass('multi','command')">
+                            <div class="command" id="multi">
                                 <p class="command__name">*</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -408,7 +411,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="div" onclick="openMenuByClass('div','command')">
+                            <div class="command" id="div">
                                 <p class="command__name">/</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -416,7 +419,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="mod" onclick="openMenuByClass('mod','command')">
+                            <div class="command" id="mod">
                                 <p class="command__name">%</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -424,7 +427,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="assignment" onclick="openMenuByClass('assignment','command')">
+                            <div class="command" id="assignment">
                                 <p class="command__name">=</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -435,7 +438,7 @@
                         </div>
                         <div class="items" id="compare-operator">
                             <h3 class="items__name">Операторы сравнения</h3>
-                            <div class="command" id="equal" onclick="openMenuByClass('equal','command')">
+                            <div class="command" id="equal">
                                 <p class="command__name">==</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -443,7 +446,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="greater" onclick="openMenuByClass('greater','command')">
+                            <div class="command" id="greater">
                                 <p class="command__name">> (>=)</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -451,7 +454,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="less" onclick="openMenuByClass('less','command')">
+                            <div class="command" id="less">
                                 <p class="command__name">< (<=)</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -459,7 +462,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="not-equal" onclick="openMenuByClass('not-equal','command')">
+                            <div class="command" id="not-equal">
                                 <p class="command__name">!=</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -470,7 +473,7 @@
                         </div>
                         <div class="items" id="logic-operator">
                             <h3 class="items__name">Логические операторы</h3>
-                            <div class="command" id="and" onclick="openMenuByClass('and','command')">
+                            <div class="command" id="and">
                                 <p class="command__name">&&</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -478,7 +481,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="or" onclick="openMenuByClass('or','command')">
+                            <div class="command" id="or">
                                 <p class="command__name">||</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -486,7 +489,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="not" onclick="openMenuByClass('not','command')">
+                            <div class="command" id="not">
                                 <p class="command__name">!</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -497,7 +500,7 @@
                         </div>
                         <div class="items" id="unary-operator">
                             <h3 class="items__name">Унарные операторы</h3>
-                            <div class="command" id="increment" onclick="openMenuByClass('increment','command')">
+                            <div class="command" id="increment">
                                 <p class="command__name">++</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -505,7 +508,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="decrement" onclick="openMenuByClass('decrement','command')">
+                            <div class="command" id="decrement">
                                 <p class="command__name">--</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -519,7 +522,7 @@
                         <h3 class="group__title" id="data">Данные</h3>
                         <div class="items" id="const-data">
                             <h3 class="items__name">Константы</h3>
-                            <div class="command" id="high-low" onclick="openMenuByClass('high-low','command')">
+                            <div class="command" id="high-low">
                                 <p class="command__name">HIGH | LOW</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -527,7 +530,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="input-output" onclick="openMenuByClass('input-output','command')">
+                            <div class="command" id="input-output">
                                 <p class="command__name">INPUT | OUTPUT</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -536,7 +539,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="logic-const" onclick="openMenuByClass('logic-const','command')">
+                            <div class="command" id="logic-const">
                                 <p class="command__name">true | false</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -544,7 +547,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="user-const" onclick="openMenuByClass('user-const','command')">
+                            <div class="command" id="user-const">
                                 <p class="command__name">Пользовательские константы</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -559,7 +562,7 @@
                         </div>
                         <div class="items" id="type-data">
                             <h3 class="items__name">Типы данных</h3>
-                            <div class="command" id="int" onclick="openMenuByClass('int','command')">
+                            <div class="command" id="int">
                                 <p class="command__name">Целочисленный тип</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -568,11 +571,11 @@
                                         int: 4 байта    [-2 147 483 648 ; 2 147 483 647]<br>
                                         unsigned int: 4 байта    [0 ; 4 294 967 295]<br>
                                         long int: 4 байта    [-2 147 483 648 ; 2 147 483 647]<br>
-                                        unsigned long int: 4 байта	[0 ; 4 294 967 295]                                   
+                                        unsigned long int: 4 байта	[0 ; 4 294 967 295]
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="bool" onclick="openMenuByClass('bool','command')">
+                            <div class="command" id="bool">
                                 <p class="command__name">Логичееский тип</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -580,7 +583,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="char" onclick="openMenuByClass('char','command')">
+                            <div class="command" id="char">
                                 <p class="command__name">Символьный тип</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -588,7 +591,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="float" onclick="openMenuByClass('float','command')">
+                            <div class="command" id="float">
                                 <p class="command__name">Типы данных с плавающей точкой</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -600,7 +603,7 @@
                         </div>
                         <div class="items" id="re-type-data">
                             <h3 class="items__name">Преобразование типов</h3>
-                            <div class="command" id="re-char" onclick="openMenuByClass('re-char','command')">
+                            <div class="command" id="re-char">
                                 <p class="command__name">char(x)</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -608,7 +611,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="re-int" onclick="openMenuByClass('re-int','command')">
+                            <div class="command" id="re-int">
                                 <p class="command__name">int(x)</p>
                                 <div class="command__prompt">
                                     <p class="command__about">
@@ -616,7 +619,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="command" id="re-float" onclick="openMenuByClass('re-float','command')">
+                            <div class="command" id="re-float">
                                 <p class="command__name">float(x)</p>
                                 <div class="command__prompt">
                                     <p class="command__about">

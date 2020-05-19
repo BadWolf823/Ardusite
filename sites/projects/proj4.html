@@ -7,53 +7,34 @@
     <link rel="stylesheet" href="../../styles/footer.css">
     <link rel="stylesheet" href="../../styles/project/project.css">
     <link rel="stylesheet" href="../../styles/project/project-mobile.css">
-    <link rel="stylesheet" href="../../styles/project-nav/project-nav.css">
-    <link rel="stylesheet" href="../../styles/project-nav/project-nav-mobile.css">
-    <script src="../../scripts/adaptive.js"></script>
+    <link rel="stylesheet" href="../../styles/nav/navOnJS.css">
+    <link rel="stylesheet" href="../../styles/nav/navOnJS-mobile.css">
+    <script src="../../scripts/main.js"></script>
+    <script src="../../scripts/smallMenu.js"></script>
     <title>Дешёвая STM32 плата + Arduino IDE</title>
 </head>
 <body>
-<header class="header">
+<header class="header" id="header">
     <nav class="nav">
         <div class="logo">
-            <a href="../project-list.html" class="logo__link"></a>
+            <a href="../index.html" class="logo__link"></a>
         </div>
-        <div class="nav-panel">
-            <a class="nav-panel__item" href="#">Главная</a>
-            <a class="nav-panel__item" href="../software.html">Программирование </a>
-            <a class="nav-panel__item" href="#">Контроллеры</a>
+        <div class="navpanel">
+            <a class="navpanel__item" href="../software.html">Программирование</a>
+            <a class="navpanel__item" href="../hardware.html">Контроллеры</a>
+            <a class="navpanel__item" href="../project-list.html">Проекты</a>
         </div>
-        <form action="" method="get" class="search">
-            <label>
-                <input name="search-input" class="search__input" placeholder="Поиск проекта" type="search">
-            </label>
-            <button type="submit" class="search__btn"><img src="../../images/search-icon.png" width="32" alt="Поиск"></button>
-        </form>
-        <div class="nav__user">
-            <a class="nav__add-project" href="">Добавить проект</a>
-            <a href="#" class="nav__sign-in">Вход</a>
-        </div>
-    </nav>
-    <nav class="nav-mobile">
-        <div class="logo">
-            <a href="../project-list.html" class="logo__link"></a>
-        </div>
+        <a href="signin.html" class="nav__sign-in">Вход</a>
         <div class="menu">
-            <button class="menu__toggle" onclick="openMenu('menu__box')">
-                <div class="menu__btn"></div>
+            <a href="signin.html" class="menu__sign-in">Войти</a>
+            <button class="menu__btn" id="menu-btn">
+                <div class="menu__btn-icon"></div>
             </button>
-            <div class="menu__box" id="menu__box">
-                <form action="" method="get" class="search ">
-                    <label>
-                        <input name="search-input" class="search__input menu-search__input" placeholder="Поиск проекта" type="search">
-                    </label>
-                    <button type="submit" class="search__btn menu-search__btn"><img src="../../images/search-icon.png" width="32" alt="Поиск"></button>
-                </form>
-                <a class="menu__link" href="#">Главная</a>
-                <a class="menu__link" href="../software.html">Программирование</a>
-                <a class="menu__link" href="#">Контроллеры</a>
-                <a class="menu__link menu__link_sign-in" href="#">Войти</a>
-            </div>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="../software.html">Программирование</a></li>
+                <li><a class="menu__item" href="../hardware.html">Контроллеры</a></li>
+                <li><a class="menu__item" href="../project-list.html">Проекты</a></li>
+            </ul>
         </div>
     </nav>
 </header>

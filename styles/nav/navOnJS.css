@@ -9,13 +9,17 @@
 .nav{
     transition: 1s;
     text-transform: uppercase;
-    position: absolute;
+    position: fixed;
+    z-index: 1488;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     width: 100%;
     height: inherit;
     background-color: #00979d;
+}
+.nav *{
+    z-index: 1488;
 }
 .header_scroll{
     height: 45px;
