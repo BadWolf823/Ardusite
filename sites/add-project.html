@@ -1,10 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/main.js"></script>
+    <link href="../styles/common.css" rel="stylesheet">
+    <link href="../styles/nav/navOnJS.css" rel="stylesheet">
+    <link href="../styles/nav/navOnJS-mobile.css" rel="stylesheet">
+    <link href="../styles/footer.css" rel="stylesheet">
+    <link href="../styles/add-project/add-project.css" rel="stylesheet">
+    <title>Добавь проект</title>
 </head>
 <body>
-
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="../index.html" class="logo__link"></a>
+            </div>
+            <div class="navpanel">
+                <a class="navpanel__item" href="software.html">Программирование</a>
+                <a class="navpanel__item" href="hardware.html">Контроллеры</a>
+                <a class="navpanel__item" href="project-list.html">Проекты</a>
+            </div>
+            <a href="signin.html" class="nav__sign-in">Вход</a>
+            <div class="menu">
+                <a href="signin.html" class="menu__sign-in">Войти</a>
+                <button class="menu__btn" id="menu-btn">
+                    <div class="menu__btn-icon"></div>
+                </button>
+                <ul class="menu__box" id="menu-box">
+                    <li><a class="menu__item" href="software.html">Программирование</a></li>
+                    <li><a class="menu__item" href="hardware.html">Контроллеры</a></li>
+                    <li><a class="menu__item" href="project-list.html">Проекты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="main__title">Поделись проектом</h1>
+        <div class="content">
+            <form class="form">
+                <div class="group">
+                    <h2 class="group__title">Общая информация</h2>
+                    <div class="fieldset">
+                        <label for="name-project" class="fieldset__label">Название проекта</label>
+                        <input type="text" id="name-project" class="fieldset__input">
+                    </div>
+                    <div class="fieldset">
+                        <label for="main-img-project" class="fieldset__label">Обложка проекта</label>
+                        <div id="main-img-project" class="form-image">
+                            <label class="form-image__label" for="main-image">Загрузить</label>
+                            <input class="form-image__input-file" id="main-image" type="file" accept="image/jpeg">
+                        </div>
+                    </div>
+                    <div class="fieldset">
+                        <label for="about-project" class="fieldset__label">О проекте</label>
+                        <textarea class="fieldset__textarea" id="about-project"></textarea>
+                    </div>
+                </div>
+                <div class="group">
+                    <h2 class="group__title">Подключение</h2>
+                    <div class="fieldset">
+                        <label for="img-connect" class="fieldset__label">Схема подключения</label>
+                        <div id="img-connect" class="form-image">
+                            <label class="form-image__label" for="scheme">Загрузить</label>
+                            <input class="form-image__input-file" id="scheme" type="file" accept="image/jpeg">
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <h2 class="group__title">Детали</h2>
+                    <ul class="fieldset-parts">
+                        <li class="fieldset-part">
+                            <input class="fieldset-part__input-name" type="text">
+                            <input class="fieldset-part__input-number" type="number" value="0">
+                            <button class="fieldset-part__del" type="button" onclick="removeItem(this)"></button>
+                        </li>
+                        <button class="fieldset-part fieldset-part__add" id="add-item" onclick="addItem(this)" type="button">
+                            <img src="../images/add-icon.png" alt="Добавить элемент">
+                            <!-- Добавочный блок для формы визуально скрыт -->
+                            <li class="fieldset-part">
+                                <input class="fieldset-part__input-name" type="text">
+                                <input class="fieldset-part__input-number" type="number" value="0">
+                                <div class="fieldset-part__del" type="button" onclick="removeItem(this)"></div>
+                            </li>
+                        </button>
+                    </ul>
+                </div>
+                <div class="group">
+                    <h2 class="group__title">Программный код</h2>
+                    <div class="sketch">
+                        <div class="fieldset-link">
+                            <button class="fieldset-link__btn" onclick="openParentElement(this)" type="button">
+                                GITHUB<label for="link-git" class="fieldset-link__label"></label>
+                            </button>
+                            <input class="fieldset-link__link" id="link-git" type="url" placeholder="@github.com">
+                        </div>
+                        <span class="sketch__or">ИЛИ</span>
+                        <fieldset class="sketch-upload">
+                            <label class="sketch-upload__label" for="sketch">Загрузить исходный код</label>
+                            <input class="sketch-upload__input-file" id="sketch" type="file">
+                        </fieldset>
+                    </div>
+                </div>
+                <button class="form__submit" type="submit"></button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+            <ul>
+                <li>
+                    <a href="ptivacy_policy.html">
+                        Политика конфиденциальности
+                    </a>
+                </li>
+                <li>
+                    <a href="terms_of_service.html">
+                        Условия использования
+                    </a>
+                </li>
+                <li>
+                    <a href="about_us.html">
+                        О нас
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__copyright">
+            <a href="copyright.html" >
+                © 2020 МоклякМуравьёв
+            </a>
+        </div>
+        <div class="goup">
+            <a href="#">
+                <svg class="block center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg>
+            </a>
+        </div>
+        <div class="go2fb">
+            <a href="https://www.facebook.com/profile.php?id=100022277227464&__tn__=%2CdC-R-R&eid=ARDY8PjTlcacGCRqtpFWjoeDJTHaPeMY0nHfb8aKwQcPcWy-dfDBSYdkxDy1vfmHgg9joUT_39IhwgTc&hc_ref=ARTw8vcZvS-fHRJPj5hxRt4U_5IiAiX06ofk5h4JjL0RrdMMAKWbxpLCIFJaiqRrcNE&fref=nf"  target="_blank">
+                <img class="block centerfb" src="https://content.arduino.cc/website/social_icons/icon-facebook.svg" alt="facebook">
+            </a>
+        </div>
+        <div class="go2vk">
+            <a href="https://vk.com/press______f"  target="_blank">
+                <img class="block centervk" src="http://vk.com/images/svg_icons/ic_head_logo.svg" alt="vkontakte">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>

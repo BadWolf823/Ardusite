@@ -5,7 +5,7 @@ window.addEventListener("load",function () {
      */
     /* Открытие меню по кнопке */
     document.getElementById("menu-btn").addEventListener("click",function () {
-        openMenu(this);
+        openCloseMenu(this);
     });
 })
 window.addEventListener("scroll",function () {
@@ -14,7 +14,7 @@ window.addEventListener("scroll",function () {
         setScrollElement(document.getElementById("header"),0);
     }
 })
-function openMenu(element) {
+function openCloseMenu(element) {
     element.parentElement.classList.toggle(element.parentElement.classList.item(0)+"_open");
 }
 
@@ -26,6 +26,16 @@ function setScrollElement(element, top) {
         element.classList.remove(element.classList.item(0)+"_scroll")
     }
 }
-function setHideElement(element) {
-
+function addItem(element) {
+    let item = element.querySelector(".fieldset-part").cloneNode(true);
+    element.before(item);
+}
+function removeItem(element) {
+    element.parentElement.remove();
+}
+function openFirstChildElement(element) {
+    element.firstElementChild.classList.toggle(element.firstElementChild.classList[0]+'_open');
+}
+function openParentElement(element) {
+    element.parentElement.classList.toggle(element.parentElement.classList[0]+'_open');
 }

@@ -1,81 +1,167 @@
 *{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-input, label{
-    display: block;
+body{
+    background-color: rgba(0, 0, 0, 0.01);
 }
 .main{
-    margin: 120px 0 0;
-    padding: 0 30px;
+    padding: 20px 20px;
+}
+.main *{
+    display: block;
+    transition: 0.5s;
 }
 .group{
+    padding: 0 10px;
+}
+.group__title{
+    font-weight: 500;
+    font-size: 1.8em;
     padding: 10px 0;
+}
+fieldset{
+    border: none;
 }
 .fieldset{
-    min-height: 100px;
-    width: 100%;
-    border: none;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
 }
-
-.fieldset__input-file{
+.fieldset__input{
+    font-size: 1.4em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.fieldset__input, .fieldset__textarea, .form-image{
+    flex-grow: 2;
+}
+.fieldset__input-file, .form-image__input-file, .sketch-upload__input-file{
     display: none;
 }
-.fieldset__label-upload{
-    cursor: pointer;
-    font-size: 21px;
-    text-align: center;
-    background-color: whitesmoke;
-    color: #454545;
-    border: #454545 solid 1px;
-    border-radius: 2px;
+.fieldset-part__add .fieldset-part{
+    display: none;
+}
+.fieldset-part__input-number, .fieldset-part__input-name,
+.fieldset__input, .fieldset__textarea{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d7d7d7;
     padding: 5px 10px;
-    font-weight: 500;
-}
-.fieldset__label-upload:hover{
-    background-color: lightgray;
-}
-.fieldset__label{
-    padding: 10px 0;
-    font-weight: 600;
-    width: 300px;
-    font-size: 1.3em;
-}
-.fieldset__input-text{
-    font-size: 1.5em;
-    padding: 5px 10px;
-    font-weight: 400;
-    width: 400px;
 }
 .fieldset__textarea{
-    width: 100%;
-    font-size: 1em;
-    padding: 0.2em;
-    min-height: 50vh;
+    min-height: 250px;
+    font-size: 1.2em;
 }
-.fieldset__label-upload{
-    display: block;
-    width: 250px;
+.fieldset{
+    margin: 20px 0;
 }
-.fieldset__upload{
+.fieldset__label{
+    width: 300px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.fieldset-parts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fieldset-part{
+    margin: 5px 0;
+    width: 75%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fieldset-part__input-name{
+    font-size: 1.2em;
+    flex-grow: 2;
+}
+.fieldset-part__input-number{
+    font-size: 1.2em;
+    max-width: 90px;
+}
+.fieldset-part__del{
+    width: 24px;
+    height: 24px;
+    background-image: url("../../images/close-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 0 5px;
+    border: none;
+}
+.fieldset-part__del:hover{
+    background-color: rgba(255, 0, 0, 0.25);
+}
+.fieldset-part__add{
+    width: 50%;
+    height: 50px;
+    padding: 5px;
+    border: none;
+    background-color: whitesmoke;
+}
+.fieldset-part__add:hover{
+    background-color: #d7d7d7;
+}
+.sketch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sketch *{
+    transition: 1s;
+}
+.fieldset-link{
+    display: flex;
+}
+.fieldset-link__btn{
+    padding: 5px;
     display: flex;
     align-items: center;
-    width: 100%;
-}
-.fieldset__button-link{
-    width:40px;
-    height: 40px;
-    background-image: url("../../images/github-logo.svg");
-    background-size: 100% 100%;
-    display: block;
     border: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #444444;
+    height: 50px;
 }
-.fieldset__input-link{
-    display: block;
-    width: 0;
-    transition: 1s;
+.fieldset-link__label{
+    margin-left: 5px;
+    display: inline-block;
+    background-image: url("../../images/github-light-icon.png");
+    background-size: auto 100%;
+    width: 32px;
+    height: 32px;
+}
+.fieldset-link__link{
+    background-color: #444444;
+    border: none;
     overflow: hidden;
-    border: none;
+    min-width: 0;
+    max-width: 0;
 }
-.fieldset__input-link_open{
-    width: 100px;
+.fieldset-link_open .fieldset-link__link{
+    padding: 5px 10px;
+    font-size: 1.2em;
+    min-width: 300px;
+    background-color: #e2e2e2;
+    max-width: 100%;
+}
+.sketch__or{
+    padding: 10px 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+.form-image__label, .sketch-upload__label{
+    font-size: 1.4em;
+    max-width: 300px;
+    padding: 5px;
+    color: white;
+    background-color: #00979d;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
 }

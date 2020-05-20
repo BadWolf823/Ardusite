@@ -6,7 +6,7 @@ window.addEventListener("load",function () {
 function addEventOpenElementByClass(classname, typeEvent) {
     for (let i = 0; i < document.getElementsByClassName(classname).length; i++){
         document.getElementsByClassName(classname).item(i).addEventListener(typeEvent,function () {
-            this.parentElement.classList.toggle(this.parentElement.classList[0] + "_open");
+            openParentElement(this);
         })
     }
 }
