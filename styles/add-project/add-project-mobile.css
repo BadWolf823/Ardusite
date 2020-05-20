@@ -1,43 +1,54 @@
-@media screen and (max-width: 768px){
-    .main{
+@media screen and (max-width: 768px) {
+    .main {
         padding: 20px 5px;
     }
-    .fieldset__label{
+
+    .fieldset__label {
         padding: 5px 0;
         min-width: 200px;
     }
-    .fieldset{
+
+    .fieldset {
         display: block;
         padding: 10px;
     }
-    .fieldset__input, .fieldset__textarea{
+
+    .fieldset__input, .fieldset__textarea {
         width: 100%;
     }
-    .fieldset-parts{
+
+    .fieldset-parts {
         width: 100%;
     }
-    .fieldset-part{
+
+    .fieldset-part {
         width: 100%;
     }
-    .fieldset-part__input-number{
-        max-width: 50px;
+
+    .fieldset-part__input-number {
+        width: 50px;
     }
-    .fieldset-part__add{
+
+    .fieldset-part__add {
         width: 50%;
     }
-    .fieldset-link{
+
+    .fieldset-link {
         display: block;
     }
-    .fieldset-link__btn{
+
+    .fieldset-link__btn {
         justify-content: center;
         min-width: 300px;
     }
-    .fieldset-link__link{
+
+    .fieldset-link__link {
         max-height: 0;
         display: block;
         min-width: 300px;
     }
-    .fieldset-link_open .fieldset-link__link{
+
+    .fieldset-link_open .fieldset-link__link {
         max-height: 100%;
     }
 }

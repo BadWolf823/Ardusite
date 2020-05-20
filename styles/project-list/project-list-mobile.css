@@ -6,8 +6,11 @@
         padding: 5px;
     }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .project{
         margin: 5px 0;
+    }
+    .list-projects{
+        display: block;
     }
 }

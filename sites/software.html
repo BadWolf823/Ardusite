@@ -17,662 +17,685 @@
     </script>
 </head>
 <body>
-    <header class="header" id="header">
-        <nav class="nav">
-            <div class="logo">
-                <a href="../index.html" class="logo__link"></a>
-            </div>
-            <div class="navpanel">
-                <a class="navpanel__item" href="software.html">Программирование</a>
-                <a class="navpanel__item" href="hardware.html">Контроллеры</a>
-                <a class="navpanel__item" href="project-list.html">Проекты</a>
-            </div>
-            <a href="signin.html" class="nav__sign-in">Вход</a>
-            <div class="menu">
-                <a href="signin.html" class="menu__sign-in">Войти</a>
-                <button class="menu__btn" id="menu-btn">
-                    <div class="menu__btn-icon"></div>
-                </button>
-                <ul class="menu__box" id="menu-box">
-                    <li><a class="menu__item" href="software.html">Программирование</a></li>
-                    <li><a class="menu__item" href="hardware.html">Контроллеры</a></li>
-                    <li><a class="menu__item" href="project-list.html">Проекты</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main class="main">
-        <div class="main-nav">
-            <ul class="side-nav" id="side-nav">
-                <li class="side-nav-item">
-                    <p class="side-nav-item__link side-nav-item__link_main">Функции</p>
-                    <ul id="function-menu" class="side-nav-item__in">
-                        <li><a href="#main-function" class="side-nav-item__link">Главные функции</a></li>
-                        <li><a href="#function-digital-io" class="side-nav-item__link">Цифровой ввод/вывод</a></li>
-                        <li><a href="#function-analog-io" class="side-nav-item__link">Аналоговый ввод/вывод</a></li>
-                        <li><a href="#function-advanced-io" class="side-nav-item__link">Дополнительные фукции ввода/вывода</a></li>
-                    </ul>
-                </li>
-                <li class="side-nav-item">
-                    <p class="side-nav-item__link side-nav-item__link_main">Операторы</p>
-                    <ul id="operation-menu" class="side-nav-item__in">
-                        <li><a href="#manajer-operator" class="side-nav-item__link">Управляющие операторы</a></li>
-                        <li><a href="#arifmetic-operator" class="side-nav-item__link">Арифметические операторы</a></li>
-                        <li><a href="#compare-operator" class="side-nav-item__link">Операторы сравнения</a></li>
-                        <li><a href="#logic-operator" class="side-nav-item__link">Логические операторы</a></li>
-                        <li><a href="#unary-operator" class="side-nav-item__link">Унарные операторы</a></li>
-                    </ul>
-                </li>
-                <li class="side-nav-item">
-                    <p class="side-nav-item__link side-nav-item__link_main">Данные</p>
-                    <ul id="data-menu" class="side-nav-item__in">
-                        <li><a href="#const-data" class="side-nav-item__link">Константы</a></li>
-                        <li><a href="#type-data" class="side-nav-item__link">Типы данных</a></li>
-                        <li><a href="#re-type-data" class="side-nav-item__link">Преобразование типов</a></li>
-                    </ul>
-                </li>
+<header class="header" id="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../index.html" class="logo__link"></a>
+        </div>
+        <div class="navpanel">
+            <a class="navpanel__item" href="software.html">Программирование</a>
+            <a class="navpanel__item" href="hardware.html">Контроллеры</a>
+            <a class="navpanel__item" href="project-list.html">Проекты</a>
+        </div>
+        <a href="signin.html" class="nav__sign-in">Вход</a>
+        <div class="menu">
+            <a href="signin.html" class="menu__sign-in">Войти</a>
+            <button class="menu__btn" id="menu-btn">
+                <div class="menu__btn-icon"></div>
+            </button>
+            <ul class="menu__box" id="menu-box">
+                <li><a class="menu__item" href="software.html">Программирование</a></li>
+                <li><a class="menu__item" href="hardware.html">Контроллеры</a></li>
+                <li><a class="menu__item" href="project-list.html">Проекты</a></li>
             </ul>
         </div>
-        <div class="content">
-                <h2 class="content__title">Программирование ARDUINO</h2>
-                <p class="content__text">
-                    Язык программирования устройств Ардуино основан на C/C++. 
-                    Он прост в освоении, и на данный момент Arduino — это, пожалуй, самый удобный способ программирования устройств на микроконтроллерах.
-                </p>
-                <div class="group-list">
-                    <div class="group">
-                        <h3 class="group__title" id="function">Функции</h3>
-                        <div class="items" id="main-function">
-                            <h3 class="items__name">Главные функции</h3>
-                            <div class="command" id="setup">
-                                <p class="command__name">setup()</p>
-                                <div class="command__prompt" >
-                                    <p class="command__about">
-                                        Функция setup() вызывается, когда стартует скетч. 
-                                        Используется для инициализации переменных, определения режимов работы выводов, запуска используемых библиотек и т.д.
-                                        Функция setup запускает только один раз, после каждой подачи питания или сброса платы Arduino.                                    
-                                    </p>
-                                    <h4 class="command__about-name">Принимаемые значения</h4>
-                                    <p class="command__arguments">
-                                        Нет                                    
-                                    </p>
-                                    <h4 class="command__about-name">Возвращаемые значения</h4>
-                                    <p class="command__arguments">        
-                                        Нет     
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="loop">
-                                <p class="command__name">loop()</p>
-                                <div class="command__prompt" >
-                                    <p class="command__about">   
-                                        После вызова функции setup(), которая инициализирует и устанавливает первоначальные значения, 
-                                        функция loop() делает точь-в-точь то, что означает её название, и крутится в цикле,
-                                         позволяя вашей программе совершать вычисления и реагировать на них. 
-                                        Используйте её для активного управления платой Arduino.                                 
-                                    </p>
-                                    <h4 class="command__about-name">Принимаемые значения</h4>
-                                    <p class="command__arguments">      
-                                        Нет                              
-                                    </p>
-                                    <h4 class="command__about-name">Возвращаемые значения</h4>
-                                    <p class="command__arguments">             
-                                        Нет
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="items" id="function-digital-io">
-                            <h3 class="items__name">Цифровой ввод/вывод</h3>
-                            <div class="command" id="pinmode">
-                                <p class="command__name">pinMode(pin, mode)</p>
-                                <div class="command__prompt" >
-                                    <p class="command__about">
-                                        Устанавливает режим работы заданного вход/выхода(pin)
-                                    </p>
-                                    <h4 class="command__about-name">Принимаемые значения</h4>
-                                    <p class="command__arguments">
-                                        pin: номер вход/выхода(pin), который Вы хотите установить <br>
-                                        mode: режим одно из двух значение - INPUT или OUTPUT, устанавливает на вход или выход соответственно.
-                                    </p>
-                                    <h4 class="command__about-name">Возвращаемые значения</h4>
-                                    <p class="command__arguments">
-                                        Нет
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="digitalwrite">
-                                <p class="command__name">digitalWrite(pin, value)</p>
-                                <div class="command__prompt" >
-                                    <p class="command__about">
-                                        Подает HIGH или LOW значение на цифровой вход/выход (pin)
-                                    </p>
-                                    <h4 class="command__about-name">Принимаемые значения</h4>
-                                    <p class="command__arguments">
-                                        pin - номер вход/выхода(pin)<br>
-                                        value: значение HIGH или LOW
-                                    </p>
-                                    <h4 class="command__about-name">Возвращаемые значения</h4>
-                                    <p class="command__arguments">
-                                        Нет
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="digitalread">
-                                <p class="command__name">digitalRead(pin)</p>
-                                <div class="command__prompt" >
-                                    <p class="command__about">
-                                        Функция возвращает значение с заданного входа
-                                    </p>
-                                    <h4 class="command__about-name">Принимаемые значения</h4>
-                                    <p class="command__arguments">
-                                        pin: номер вход/выхода(pin) который Вы хотите считать
-                                    </p>
-                                    <h4 class="command__about-name">Возвращаемые значения</h4>
-                                    <p class="command__arguments">
-                                        HIGH/LOW
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="items" id="function-analog-io">
-                            <h3 class="items__name">Аналоговый ввод/выввод</h3>
-                            <div class="command" id="analogread">
-                                <p class="command__name">analogRead(pin)</p>
-                                <div class="command__prompt" >
-                                    <p class="command__about">
-                                        Функция возвращает значение с указанного аналогового входа
-                                    </p>
-                                    <h4 class="command__about-name">Принимаемые значения</h4>
-                                    <p class="command__arguments">
-                                        pin: номер порта аналогового входа с которого будет производиться считывание (A0..A5 для большинства плат, 0..7 для Mini и Nano и 0..15 для Mega)
-                                    </p>
-                                    <h4 class="command__about-name">Возвращаемые значения</h4>
-                                    <p class="command__arguments">
-                                        0..1024
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="analogreference">
-                                <p class="command__name">analogReference(type)</p>
-                                <div class="command__prompt" >
-                                    <p class="command__about">
-                                        Функция определяет опорное напряжение относительно которого происходят аналоговые измерения
-                                    </p>
-                                    <h4 class="command__about-name">Принимаемые значения</h4>
-                                    <p class="command__arguments">
-                                        type: определяет используемое опорное напряжение (DEFAULT, INTERNAL или EXTERNAL)
-                                    </p>
-                                    <h4 class="command__about-name">Возвращаемые значения</h4>
-                                    <p class="command__arguments">
-                                        Нет
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="analogwrite">
-                                <p class="command__name">analogWrite(pin, value)</p>
-                                <div class="command__prompt" >
-                                    <p class="command__about">
-                                        Выдает аналоговую величину (ШИМ волну) на порт вход/выхода
-                                    </p>
-                                    <h4 class="command__about-name">Принимаемые значения</h4>
-                                    <p class="command__arguments">
-                                        pin: порт вход/выхода на который подаем ШИМ сигнал<br>
-                                        value: период рабочего цикла значение между 0 (полностью выключено) and 255 (сигнал подан постоянно)
-                                    </p>
-                                    <h4 class="command__about-name">Возвращаемые значения</h4>
-                                    <p class="command__arguments">
-                                        Нет
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="items" id="function-advanced-io">
-                            <h3 class="items__name">Дополнительные функции ввода/вывода</h3>
-                            <div class="command" id="tone">
-                                <p class="command__name">tone(pin,frequency,duration)</p>
-                                <div class="command__prompt" >
-                                    <p class="command__about">
-                                        Генерирует на порту вход/выхода сигнал — прямоугольную "волну", заданной частоты и с 50% рабочим циклом.
-                                        Длительность может быть задана параметром, в противном случае сигнал генерируется пока не будет вызвана функция noTone()
-                                    </p>
-                                    <h4 class="command__about-name">Принимаемые значения</h4>
-                                    <p class="command__arguments">
-                                        pin: номер порта вход/выхода, на котором будет генерироваться сигнал <br>
-                                        frequency: частота сигнала в Герцах <br>
-                                        duration: длительность сигнала в миллисекундах<br>
-                                    </p>
-                                    <h4 class="command__about-name">Возвращаемые значения</h4>
-                                    <p class="command__arguments">
-                                        Нет
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="notone">
-                                <p class="command__name">noTone(pin)</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Останавливает сигнал, генерируемый на порту вход/выхода вызывом функции Tone()
-                                    </p>
-                                    <h4 class="command__about-name">Принимаемые значения</h4>
-                                    <p class="command__arguments">
-                                        pin: номер порта вход/выхода, на котором прекращаем сигнал
-                                    </p>
-                                    <h4 class="command__about-name">Возвращаемые значения</h4>
-                                    <p class="command__arguments">
-                                        Нет
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="shiftout">
-                                <p class="command__name">shiftOut(dataPin, clockPin, bitOrder, value)</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Выводит байт информации на порт вход/выхода последовательно (побитно).
-                                        Вывод может осуществляться как с первого (левого), так и с последнего (правого) бита.
-                                    </p>
-                                    <h4 class="command__about-name">Принимаемые значения</h4>
-                                    <p class="command__arguments">
-                                        dataPin: номер порта вход/выхода, на который выводятся биты (int)<br>
-                                        clockPin: номер порта по которому производится синхронизация (int)<br>
-                                        bitOrder: используемая последовательность вывода бит. MSBFIRST (Most Significant Bit First) — слева или LSBFIRST (Least Significant Bit First) — справа.<br>
-                                        value: значение (байт) для вывода (byte)
-                                    </p>
-                                    <h4 class="command__about-name">Возвращаемые значения</h4>
-                                    <p class="command__arguments">
-                                        Нет
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="pulsein">
-                                <p class="command__name">pulseIn(pin, value, timeout)</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Считывает длину сигнала на заданном порту (HIGH или LOW).
-                                        Например, если задано считывание HIGH функцией pulseIn(), функция ожидает пока на заданном порту не появиться HIGH.
-                                    </p>
-                                    <h4 class="command__about-name">Принимаемые значения</h4>
-                                    <p class="command__arguments">
-                                        pin: номер порта вход/выхода, на котором будет ожидаться сигнал. (int)<br>
-                                        value: тип ожидаемого сигнала — HIGH или LOW.<br>
-                                        timeout (опционально): время ожидания сигнала (таймаут) в микросекундах; по умолчанию - одна секунда. (unsigned long)
-                                    </p>
-                                    <h4 class="command__about-name">Возвращаемые значения</h4>
-                                    <p class="command__arguments">
-                                        Длина сигнала в микросекундах или 0, если сигнал не получен до истечения таймаута.
-                                    </p>
-                                </div>
-                            </div>
+    </nav>
+</header>
+<main class="main">
+    <div class="main-nav">
+        <ul class="side-nav" id="side-nav">
+            <li class="side-nav-item">
+                <p class="side-nav-item__link side-nav-item__link_main">Функции</p>
+                <ul id="function-menu" class="side-nav-item__in">
+                    <li><a href="#main-function" class="side-nav-item__link">Главные функции</a></li>
+                    <li><a href="#function-digital-io" class="side-nav-item__link">Цифровой ввод/вывод</a></li>
+                    <li><a href="#function-analog-io" class="side-nav-item__link">Аналоговый ввод/вывод</a></li>
+                    <li><a href="#function-advanced-io" class="side-nav-item__link">Дополнительные фукции ввода/вывода</a></li>
+                </ul>
+            </li>
+            <li class="side-nav-item">
+                <p class="side-nav-item__link side-nav-item__link_main">Операторы</p>
+                <ul id="operation-menu" class="side-nav-item__in">
+                    <li><a href="#manajer-operator" class="side-nav-item__link">Управляющие операторы</a></li>
+                    <li><a href="#arifmetic-operator" class="side-nav-item__link">Арифметические операторы</a></li>
+                    <li><a href="#compare-operator" class="side-nav-item__link">Операторы сравнения</a></li>
+                    <li><a href="#logic-operator" class="side-nav-item__link">Логические операторы</a></li>
+                    <li><a href="#unary-operator" class="side-nav-item__link">Унарные операторы</a></li>
+                </ul>
+            </li>
+            <li class="side-nav-item">
+                <p class="side-nav-item__link side-nav-item__link_main">Данные</p>
+                <ul id="data-menu" class="side-nav-item__in">
+                    <li><a href="#const-data" class="side-nav-item__link">Константы</a></li>
+                    <li><a href="#type-data" class="side-nav-item__link">Типы данных</a></li>
+                    <li><a href="#re-type-data" class="side-nav-item__link">Преобразование типов</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2 class="content__title">Программирование ARDUINO</h2>
+        <p class="content__text">
+            Язык программирования устройств Ардуино основан на C/C++.
+            Он прост в освоении, и на данный момент Arduino — это, пожалуй, самый удобный способ программирования
+            устройств на микроконтроллерах.
+        </p>
+        <div class="group-list">
+            <div class="group">
+                <h3 class="group__title" id="function">Функции</h3>
+                <div class="items" id="main-function">
+                    <h3 class="items__name">Главные функции</h3>
+                    <div class="command" id="setup">
+                        <p class="command__name">setup()</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Функция setup() вызывается, когда стартует скетч.
+                                Используется для инициализации переменных, определения режимов работы выводов, запуска
+                                используемых библиотек и т.д.
+                                Функция setup запускает только один раз, после каждой подачи питания или сброса платы
+                                Arduino.
+                            </p>
+                            <h4 class="command__about-name">Принимаемые значения</h4>
+                            <p class="command__arguments">
+                                Нет
+                            </p>
+                            <h4 class="command__about-name">Возвращаемые значения</h4>
+                            <p class="command__arguments">
+                                Нет
+                            </p>
                         </div>
                     </div>
-                    <div class="group">
-                        <h3 class="group__title" id="operator">Операторы</h3>
-                        <div class="items" id="manajer-operator">
-                            <h3 class="items__name">Управляющие операторы</h3>
-                            <div class="command" id="if-else">
-                                <p class="command__name">if..else</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Конструкция ветвление if..else 
-                                        при условии = true, выполняется код в блоке if, иначе в else                                 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="for">
-                                <p class="command__name">for</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Конструкция for используется для повторения блока операторов, 
-                                        заключенных в фигурные скобки. 
-                                        Счетчик приращений обычно используется для приращения и завершения цикла.
-                                        Оператор for подходит для любых повторяющихся действий и 
-                                        часто используется в сочетании с массивами коллекций данных/выводов.                                 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="switch-case">
-                                <p class="command__name">switch..case</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Подобно конструкции if, switch...case управляет процессом выполнения программы, позволяя программисту задавать альтернативный код,
-                                         который будет выполняться при разных условиях. В частности, оператор switch сравнивает значение переменной со значением, определенном в операторах case. 
-                                        Когда найден оператор case, значение которого равно значению переменной, выполняется программный код в этом операторе.<br>                                 
-                                        * Ключевое слово break является командой выхода из оператора case и обычно используется в конце каждого case
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="return">
-                                <p class="command__name">return</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Прекращает вычисления в функции и возвращает значение из прерванной функции в вызывающую, если это нужно
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="break">
-                                <p class="command__name">break</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Break используется для принудительного выхода из циклов do, 
-                                        for или while, не дожидаясь завершения цикла по условию.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="continue">
-                                <p class="command__name">continue</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Оператор continue пропускает оставшиеся операторы в текущем шаге цикла.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="while">
-                                <p class="command__name">while</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        While будет вычислять в цикле непрерывно и бесконечно до тех пор,
-                                         пока выражение в круглых скобках, () не станет равно логическому ЛОЖНО. 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="do-while">
-                                <p class="command__name">do..while</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Цикл do работает так же, как и цикл while, за исключением того, что условие проверяется 
-                                        в конце цикла, таким образом, цикл do будет всегда выполняться хотя бы раз. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="items" id="arifmetic-operator">
-                            <h3 class="items__name">Арифметические операторы</h3>
-                            <div class="command" id="add">
-                                <p class="command__name">+</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Сложение
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="sub">
-                                <p class="command__name">-</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Вычитание
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="multi">
-                                <p class="command__name">*</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Умножение
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="div">
-                                <p class="command__name">/</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Деление
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="mod">
-                                <p class="command__name">%</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Остаток от деления
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="assignment">
-                                <p class="command__name">=</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Присваивание
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="items" id="compare-operator">
-                            <h3 class="items__name">Операторы сравнения</h3>
-                            <div class="command" id="equal">
-                                <p class="command__name">==</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Равенство
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="greater">
-                                <p class="command__name">> (>=)</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Больше (Больше или равно)
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="less">
-                                <p class="command__name">< (<=)</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Меньше (Меньше или равно)
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="not-equal">
-                                <p class="command__name">!=</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Не равно
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="items" id="logic-operator">
-                            <h3 class="items__name">Логические операторы</h3>
-                            <div class="command" id="and">
-                                <p class="command__name">&&</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Логическое И
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="or">
-                                <p class="command__name">||</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Логическое ИЛИ
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="not">
-                                <p class="command__name">!</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Логическое НЕ
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="items" id="unary-operator">
-                            <h3 class="items__name">Унарные операторы</h3>
-                            <div class="command" id="increment">
-                                <p class="command__name">++</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Инкремент (x = x + 1)
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="decrement">
-                                <p class="command__name">--</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Дикремент (x = x - 1)
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="command" id="loop">
+                        <p class="command__name">loop()</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                После вызова функции setup(), которая инициализирует и устанавливает первоначальные
+                                значения,
+                                функция loop() делает точь-в-точь то, что означает её название, и крутится в цикле,
+                                позволяя вашей программе совершать вычисления и реагировать на них.
+                                Используйте её для активного управления платой Arduino.
+                            </p>
+                            <h4 class="command__about-name">Принимаемые значения</h4>
+                            <p class="command__arguments">
+                                Нет
+                            </p>
+                            <h4 class="command__about-name">Возвращаемые значения</h4>
+                            <p class="command__arguments">
+                                Нет
+                            </p>
                         </div>
                     </div>
-                    <div class="group">
-                        <h3 class="group__title" id="data">Данные</h3>
-                        <div class="items" id="const-data">
-                            <h3 class="items__name">Константы</h3>
-                            <div class="command" id="high-low">
-                                <p class="command__name">HIGH | LOW</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Задание значение на входа/выходе (HIGH - Высокий сигнал, LOW - Низкий сигнал)                                    
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="input-output">
-                                <p class="command__name">INPUT | OUTPUT</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Цифровые порты вход/выхода, могут быть установлены в режимы работы как вход или выход: 
-                                        INPUT или OUTPUT. Установка производится функцией pinMode().                                    
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="logic-const">
-                                <p class="command__name">true | false</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        В языке Ардуино есть две константы для представления логических значений истина и ложь: true и false.                                   
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="user-const">
-                                <p class="command__name">Пользовательские константы</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Ключевое слово const указывает, что значение переменной является константой и сообщает компилятору о том, что программист не сможет его изменить.               
-                                    </p>
-                                    <h4 class="command__about-name">Синтаксис</h4>
-                                    <p class="command__arguments">   
-                                        const 'тип константы' 'название константы' = 'значение'                                 
-                                    </p>
-                                </div>
-                            </div>
+                </div>
+                <div class="items" id="function-digital-io">
+                    <h3 class="items__name">Цифровой ввод/вывод</h3>
+                    <div class="command" id="pinmode">
+                        <p class="command__name">pinMode(pin, mode)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Устанавливает режим работы заданного вход/выхода(pin)
+                            </p>
+                            <h4 class="command__about-name">Принимаемые значения</h4>
+                            <p class="command__arguments">
+                                pin: номер вход/выхода(pin), который Вы хотите установить <br>
+                                mode: режим одно из двух значение - INPUT или OUTPUT, устанавливает на вход или выход
+                                соответственно.
+                            </p>
+                            <h4 class="command__about-name">Возвращаемые значения</h4>
+                            <p class="command__arguments">
+                                Нет
+                            </p>
                         </div>
-                        <div class="items" id="type-data">
-                            <h3 class="items__name">Типы данных</h3>
-                            <div class="command" id="int">
-                                <p class="command__name">Целочисленный тип</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        short int: 2 байта     [-32 768 ; 32 767]<br>
-                                        unsigned short int: 2 байта 	[0 ; 65 535]<br>
-                                        int: 4 байта    [-2 147 483 648 ; 2 147 483 647]<br>
-                                        unsigned int: 4 байта    [0 ; 4 294 967 295]<br>
-                                        long int: 4 байта    [-2 147 483 648 ; 2 147 483 647]<br>
-                                        unsigned long int: 4 байта	[0 ; 4 294 967 295]
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="bool">
-                                <p class="command__name">Логичееский тип</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        bool: 1 байт [0 ; 255]                               
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="char">
-                                <p class="command__name">Символьный тип</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        char: 1 байт [0 ; 255]                               
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="float">
-                                <p class="command__name">Типы данных с плавающей точкой</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        float: 4 байта [-2 147 483 648.0 ; 2 147 483 647.0]
-                                        double: 8 байт [-9 223 372 036 854 775 808 .0 ; 9 223 372 036 854 775 807.0]                              
-                                    </p>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="command" id="digitalwrite">
+                        <p class="command__name">digitalWrite(pin, value)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Подает HIGH или LOW значение на цифровой вход/выход (pin)
+                            </p>
+                            <h4 class="command__about-name">Принимаемые значения</h4>
+                            <p class="command__arguments">
+                                pin - номер вход/выхода(pin)<br>
+                                value: значение HIGH или LOW
+                            </p>
+                            <h4 class="command__about-name">Возвращаемые значения</h4>
+                            <p class="command__arguments">
+                                Нет
+                            </p>
                         </div>
-                        <div class="items" id="re-type-data">
-                            <h3 class="items__name">Преобразование типов</h3>
-                            <div class="command" id="re-char">
-                                <p class="command__name">char(x)</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Преобразует x в char                              
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="re-int">
-                                <p class="command__name">int(x)</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Преобразует x в int                              
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="command" id="re-float">
-                                <p class="command__name">float(x)</p>
-                                <div class="command__prompt">
-                                    <p class="command__about">
-                                        Преобразует x в float                              
-                                    </p>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="command" id="digitalread">
+                        <p class="command__name">digitalRead(pin)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Функция возвращает значение с заданного входа
+                            </p>
+                            <h4 class="command__about-name">Принимаемые значения</h4>
+                            <p class="command__arguments">
+                                pin: номер вход/выхода(pin) который Вы хотите считать
+                            </p>
+                            <h4 class="command__about-name">Возвращаемые значения</h4>
+                            <p class="command__arguments">
+                                HIGH/LOW
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items" id="function-analog-io">
+                    <h3 class="items__name">Аналоговый ввод/выввод</h3>
+                    <div class="command" id="analogread">
+                        <p class="command__name">analogRead(pin)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Функция возвращает значение с указанного аналогового входа
+                            </p>
+                            <h4 class="command__about-name">Принимаемые значения</h4>
+                            <p class="command__arguments">
+                                pin: номер порта аналогового входа с которого будет производиться считывание (A0..A5 для
+                                большинства плат, 0..7 для Mini и Nano и 0..15 для Mega)
+                            </p>
+                            <h4 class="command__about-name">Возвращаемые значения</h4>
+                            <p class="command__arguments">
+                                0..1024
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="analogreference">
+                        <p class="command__name">analogReference(type)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Функция определяет опорное напряжение относительно которого происходят аналоговые
+                                измерения
+                            </p>
+                            <h4 class="command__about-name">Принимаемые значения</h4>
+                            <p class="command__arguments">
+                                type: определяет используемое опорное напряжение (DEFAULT, INTERNAL или EXTERNAL)
+                            </p>
+                            <h4 class="command__about-name">Возвращаемые значения</h4>
+                            <p class="command__arguments">
+                                Нет
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="analogwrite">
+                        <p class="command__name">analogWrite(pin, value)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Выдает аналоговую величину (ШИМ волну) на порт вход/выхода
+                            </p>
+                            <h4 class="command__about-name">Принимаемые значения</h4>
+                            <p class="command__arguments">
+                                pin: порт вход/выхода на который подаем ШИМ сигнал<br>
+                                value: период рабочего цикла значение между 0 (полностью выключено) and 255 (сигнал
+                                подан постоянно)
+                            </p>
+                            <h4 class="command__about-name">Возвращаемые значения</h4>
+                            <p class="command__arguments">
+                                Нет
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items" id="function-advanced-io">
+                    <h3 class="items__name">Дополнительные функции ввода/вывода</h3>
+                    <div class="command" id="tone">
+                        <p class="command__name">tone(pin,frequency,duration)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Генерирует на порту вход/выхода сигнал — прямоугольную "волну", заданной частоты и с 50%
+                                рабочим циклом.
+                                Длительность может быть задана параметром, в противном случае сигнал генерируется пока
+                                не будет вызвана функция noTone()
+                            </p>
+                            <h4 class="command__about-name">Принимаемые значения</h4>
+                            <p class="command__arguments">
+                                pin: номер порта вход/выхода, на котором будет генерироваться сигнал <br>
+                                frequency: частота сигнала в Герцах <br>
+                                duration: длительность сигнала в миллисекундах<br>
+                            </p>
+                            <h4 class="command__about-name">Возвращаемые значения</h4>
+                            <p class="command__arguments">
+                                Нет
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="notone">
+                        <p class="command__name">noTone(pin)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Останавливает сигнал, генерируемый на порту вход/выхода вызывом функции Tone()
+                            </p>
+                            <h4 class="command__about-name">Принимаемые значения</h4>
+                            <p class="command__arguments">
+                                pin: номер порта вход/выхода, на котором прекращаем сигнал
+                            </p>
+                            <h4 class="command__about-name">Возвращаемые значения</h4>
+                            <p class="command__arguments">
+                                Нет
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="shiftout">
+                        <p class="command__name">shiftOut(dataPin, clockPin, bitOrder, value)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Выводит байт информации на порт вход/выхода последовательно (побитно).
+                                Вывод может осуществляться как с первого (левого), так и с последнего (правого) бита.
+                            </p>
+                            <h4 class="command__about-name">Принимаемые значения</h4>
+                            <p class="command__arguments">
+                                dataPin: номер порта вход/выхода, на который выводятся биты (int)<br>
+                                clockPin: номер порта по которому производится синхронизация (int)<br>
+                                bitOrder: используемая последовательность вывода бит. MSBFIRST (Most Significant Bit
+                                First) — слева или LSBFIRST (Least Significant Bit First) — справа.<br>
+                                value: значение (байт) для вывода (byte)
+                            </p>
+                            <h4 class="command__about-name">Возвращаемые значения</h4>
+                            <p class="command__arguments">
+                                Нет
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="pulsein">
+                        <p class="command__name">pulseIn(pin, value, timeout)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Считывает длину сигнала на заданном порту (HIGH или LOW).
+                                Например, если задано считывание HIGH функцией pulseIn(), функция ожидает пока на
+                                заданном порту не появиться HIGH.
+                            </p>
+                            <h4 class="command__about-name">Принимаемые значения</h4>
+                            <p class="command__arguments">
+                                pin: номер порта вход/выхода, на котором будет ожидаться сигнал. (int)<br>
+                                value: тип ожидаемого сигнала — HIGH или LOW.<br>
+                                timeout (опционально): время ожидания сигнала (таймаут) в микросекундах; по умолчанию -
+                                одна секунда. (unsigned long)
+                            </p>
+                            <h4 class="command__about-name">Возвращаемые значения</h4>
+                            <p class="command__arguments">
+                                Длина сигнала в микросекундах или 0, если сигнал не получен до истечения таймаута.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <h3 class="group__title" id="operator">Операторы</h3>
+                <div class="items" id="manajer-operator">
+                    <h3 class="items__name">Управляющие операторы</h3>
+                    <div class="command" id="if-else">
+                        <p class="command__name">if..else</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Конструкция ветвление if..else
+                                при условии = true, выполняется код в блоке if, иначе в else
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="for">
+                        <p class="command__name">for</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Конструкция for используется для повторения блока операторов,
+                                заключенных в фигурные скобки.
+                                Счетчик приращений обычно используется для приращения и завершения цикла.
+                                Оператор for подходит для любых повторяющихся действий и
+                                часто используется в сочетании с массивами коллекций данных/выводов.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="switch-case">
+                        <p class="command__name">switch..case</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Подобно конструкции if, switch...case управляет процессом выполнения программы, позволяя
+                                программисту задавать альтернативный код,
+                                который будет выполняться при разных условиях. В частности, оператор switch сравнивает
+                                значение переменной со значением, определенном в операторах case.
+                                Когда найден оператор case, значение которого равно значению переменной, выполняется
+                                программный код в этом операторе.<br>
+                                * Ключевое слово break является командой выхода из оператора case и обычно используется
+                                в конце каждого case
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="return">
+                        <p class="command__name">return</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Прекращает вычисления в функции и возвращает значение из прерванной функции в
+                                вызывающую, если это нужно
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="break">
+                        <p class="command__name">break</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Break используется для принудительного выхода из циклов do,
+                                for или while, не дожидаясь завершения цикла по условию.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="continue">
+                        <p class="command__name">continue</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Оператор continue пропускает оставшиеся операторы в текущем шаге цикла.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="while">
+                        <p class="command__name">while</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                While будет вычислять в цикле непрерывно и бесконечно до тех пор,
+                                пока выражение в круглых скобках, () не станет равно логическому ЛОЖНО.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="do-while">
+                        <p class="command__name">do..while</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Цикл do работает так же, как и цикл while, за исключением того, что условие проверяется
+                                в конце цикла, таким образом, цикл do будет всегда выполняться хотя бы раз.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items" id="arifmetic-operator">
+                    <h3 class="items__name">Арифметические операторы</h3>
+                    <div class="command" id="add">
+                        <p class="command__name">+</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Сложение
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="sub">
+                        <p class="command__name">-</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Вычитание
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="multi">
+                        <p class="command__name">*</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Умножение
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="div">
+                        <p class="command__name">/</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Деление
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="mod">
+                        <p class="command__name">%</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Остаток от деления
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="assignment">
+                        <p class="command__name">=</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Присваивание
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items" id="compare-operator">
+                    <h3 class="items__name">Операторы сравнения</h3>
+                    <div class="command" id="equal">
+                        <p class="command__name">==</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Равенство
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="greater">
+                        <p class="command__name">> (>=)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Больше (Больше или равно)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="less">
+                        <p class="command__name">&#60; (&#60;=)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Меньше (Меньше или равно)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="not-equal">
+                        <p class="command__name">!=</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Не равно
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items" id="logic-operator">
+                    <h3 class="items__name">Логические операторы</h3>
+                    <div class="command" id="and">
+                        <p class="command__name">&&</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Логическое И
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="or">
+                        <p class="command__name">||</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Логическое ИЛИ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="not">
+                        <p class="command__name">!</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Логическое НЕ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items" id="unary-operator">
+                    <h3 class="items__name">Унарные операторы</h3>
+                    <div class="command" id="increment">
+                        <p class="command__name">++</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Инкремент (x = x + 1)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="decrement">
+                        <p class="command__name">--</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Дикремент (x = x - 1)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <h3 class="group__title" id="data">Данные</h3>
+                <div class="items" id="const-data">
+                    <h3 class="items__name">Константы</h3>
+                    <div class="command" id="high-low">
+                        <p class="command__name">HIGH | LOW</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Задание значение на входа/выходе (HIGH - Высокий сигнал, LOW - Низкий сигнал)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="input-output">
+                        <p class="command__name">INPUT | OUTPUT</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Цифровые порты вход/выхода, могут быть установлены в режимы работы как вход или выход:
+                                INPUT или OUTPUT. Установка производится функцией pinMode().
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="logic-const">
+                        <p class="command__name">true | false</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                В языке Ардуино есть две константы для представления логических значений истина и ложь:
+                                true и false.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="user-const">
+                        <p class="command__name">Пользовательские константы</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Ключевое слово const указывает, что значение переменной является константой и сообщает
+                                компилятору о том, что программист не сможет его изменить.
+                            </p>
+                            <h4 class="command__about-name">Синтаксис</h4>
+                            <p class="command__arguments">
+                                const 'тип константы' 'название константы' = 'значение'
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items" id="type-data">
+                    <h3 class="items__name">Типы данных</h3>
+                    <div class="command" id="int">
+                        <p class="command__name">Целочисленный тип</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                short int: 2 байта [-32 768 ; 32 767]<br>
+                                unsigned short int: 2 байта [0 ; 65 535]<br>
+                                int: 4 байта [-2 147 483 648 ; 2 147 483 647]<br>
+                                unsigned int: 4 байта [0 ; 4 294 967 295]<br>
+                                long int: 4 байта [-2 147 483 648 ; 2 147 483 647]<br>
+                                unsigned long int: 4 байта [0 ; 4 294 967 295]
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="bool">
+                        <p class="command__name">Логичееский тип</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                bool: 1 байт [0 ; 255]
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="char">
+                        <p class="command__name">Символьный тип</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                char: 1 байт [0 ; 255]
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="float">
+                        <p class="command__name">Типы данных с плавающей точкой</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                float: 4 байта [-2 147 483 648.0 ; 2 147 483 647.0]
+                                double: 8 байт [-9 223 372 036 854 775 808 .0 ; 9 223 372 036 854 775 807.0]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items" id="re-type-data">
+                    <h3 class="items__name">Преобразование типов</h3>
+                    <div class="command" id="re-char">
+                        <p class="command__name">char(x)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Преобразует x в char
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="re-int">
+                        <p class="command__name">int(x)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Преобразует x в int
+                            </p>
+                        </div>
+                    </div>
+                    <div class="command" id="re-float">
+                        <p class="command__name">float(x)</p>
+                        <div class="command__prompt">
+                            <p class="command__about">
+                                Преобразует x в float
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="footer__info">
-            <ul>
-                <li>
-                    <a href="ptivacy_policy.html">
-                        Политика конфиденциальности
-                    </a>
-                </li>
-                <li>
-                    <a href="terms_of_service.html">
-                        Условия использования
-                    </a>
-                </li>
-                <li>
-                    <a href="about_us.html">
-                        О нас
-                    </a>
-                </li>
-            </ul>
-        </div>  
-        <div class="footer__copyright">
-            <a href="copyright.html" >
-                © 2020 МоклякМуравьёв
-           </a>
-        </div>
-        <div class="goup">
-            <a href="#">
-                <svg class="block center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg>
-            </a>
-        </div>
-        <div class="go2fb"> 
-            <a href="https://www.facebook.com/profile.php?id=100022277227464&__tn__=%2CdC-R-R&eid=ARDY8PjTlcacGCRqtpFWjoeDJTHaPeMY0nHfb8aKwQcPcWy-dfDBSYdkxDy1vfmHgg9joUT_39IhwgTc&hc_ref=ARTw8vcZvS-fHRJPj5hxRt4U_5IiAiX06ofk5h4JjL0RrdMMAKWbxpLCIFJaiqRrcNE&fref=nf"  target="_blank">
-                <img class="block centerfb" src="https://content.arduino.cc/website/social_icons/icon-facebook.svg" alt="facebook">
-            </a>
-        </div>
-        <div class="go2vk"> 
-            <a href="https://vk.com/press______f"  target="_blank">
-                <img class="block centervk" src="http://vk.com/images/svg_icons/ic_head_logo.svg" alt="vkontakte">
-            </a>
-        </div>
-    </footer>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__info">
+        <ul>
+            <li>
+                <a href="ptivacy_policy.html">
+                    Политика конфиденциальности
+                </a>
+            </li>
+            <li>
+                <a href="terms_of_service.html">
+                    Условия использования
+                </a>
+            </li>
+            <li>
+                <a href="about_us.html">
+                    О нас
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__copyright">
+        <a href="copyright.html">
+            © 2020 МоклякМуравьёв
+        </a>
+    </div>
+    <div class="goup">
+        <a href="#">
+            <svg class="block center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/>
+            </svg>
+        </a>
+    </div>
+    <div class="go2fb">
+        <a href="https://www.facebook.com/profile.php?id=100022277227464&__tn__=%2CdC-R-R&eid=ARDY8PjTlcacGCRqtpFWjoeDJTHaPeMY0nHfb8aKwQcPcWy-dfDBSYdkxDy1vfmHgg9joUT_39IhwgTc&hc_ref=ARTw8vcZvS-fHRJPj5hxRt4U_5IiAiX06ofk5h4JjL0RrdMMAKWbxpLCIFJaiqRrcNE&fref=nf"
+           target="_blank">
+            <img class="block centerfb" src="https://content.arduino.cc/website/social_icons/icon-facebook.svg"
+                 alt="facebook">
+        </a>
+    </div>
+    <div class="go2vk">
+        <a href="https://vk.com/press______f" target="_blank">
+            <img class="block centervk" src="http://vk.com/images/svg_icons/ic_head_logo.svg" alt="vkontakte">
+        </a>
+    </div>
+</footer>
 </body>
 </html>

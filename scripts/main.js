@@ -23,15 +23,15 @@ function setScrollElement(element, top) {
     if (positionInWindow.top < top){
         element.classList.add(element.classList.item(0)+"_scroll");
     } else {
-        element.classList.remove(element.classList.item(0)+"_scroll")
+        element.classList.remove(element.classList.item(0)+"_scroll");
     }
 }
 function addItem(element) {
     let item = element.querySelector(".fieldset-part").cloneNode(true);
-    element.before(item);
+    element.parentNode.insertBefore(item, element);
 }
 function removeItem(element) {
-    element.parentElement.remove();
+    element.parentNode.parentNode.removeChild(element.parentNode);
 }
 function openFirstChildElement(element) {
     element.firstElementChild.classList.toggle(element.firstElementChild.classList[0]+'_open');
