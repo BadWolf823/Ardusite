@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../scripts/main.js"></script>
-    <link href="../styles/common.css" rel="stylesheet">
-    <link href="../styles/nav/navOnJS.css" rel="stylesheet">
-    <link href="../styles/nav/navOnJS-mobile.css" rel="stylesheet">
-    <link href="../styles/footer.css" rel="stylesheet">
-    <link href="../styles/add-project/add-project.css" rel="stylesheet">
-    <link href="../styles/add-project/add-project-mobile.css" rel="stylesheet">
+    <script src="../../scripts/main.js"></script>
+    <link href="../../styles/common.css" rel="stylesheet">
+    <link href="../../styles/nav/navOnJS.css" rel="stylesheet">
+    <link href="../../styles/nav/navOnJS-mobile.css" rel="stylesheet">
+    <link href="../../styles/footer.css" rel="stylesheet">
+    <link href="../../styles/add-project/add-project.css" rel="stylesheet">
+    <link href="../../styles/add-project/add-project-mobile.css" rel="stylesheet">
     <title>Добавление проекта</title>
 </head>
 <body>
@@ -19,19 +19,19 @@
                 <a href="../index.html" class="logo__link"></a>
             </div>
             <div class="navpanel">
-                <a class="navpanel__item" href="software.html">Программирование</a>
-                <a class="navpanel__item" href="hardware.html">Контроллеры</a>
+                <a class="navpanel__item" href="../software.html">Программирование</a>
+                <a class="navpanel__item" href="../hardware/itemlist_new.html">Контроллеры</a>
                 <a class="navpanel__item" href="project-list.html">Проекты</a>
             </div>
-            <a href="signin.html" class="nav__sign-in">Вход</a>
+            <a href="../sign-in.html" class="nav__sign-in">Вход</a>
             <div class="menu">
-                <a href="signin.html" class="menu__sign-in">Войти</a>
+                <a href="../sign-in.html" class="menu__sign-in">Войти</a>
                 <button class="menu__btn" id="menu-btn">
                     <div class="menu__btn-icon"></div>
                 </button>
                 <ul class="menu__box" id="menu-box">
-                    <li><a class="menu__item" href="software.html">Программирование</a></li>
-                    <li><a class="menu__item" href="hardware.html">Контроллеры</a></li>
+                    <li><a class="menu__item" href="../software.html">Программирование</a></li>
+                    <li><a class="menu__item" href="../hardware/itemlist_new.html">Контроллеры</a></li>
                     <li><a class="menu__item" href="project-list.html">Проекты</a></li>
                 </ul>
             </div>
@@ -78,13 +78,14 @@
                             <button class="fieldset-part__del" type="button" onclick="removeItem(this)"></button>
                         </li>
                         <button class="fieldset-part fieldset-part__add" id="add-item" onclick="addItem(this)" type="button">
-                            <img src="../images/add-icon.png" alt="Добавить элемент">
-                            <!-- Добавочный блок для формы визуально скрыт -->
+                            <img src="../../images/add-icon.png" alt="Добавить элемент">
+                            <!-- Добавочный блок для формы визуально скрыт, извиняюсь за костыль-->
                             <li class="fieldset-part">
                                 <input class="fieldset-part__input-name" type="text">
                                 <input class="fieldset-part__input-number" type="number" value="0">
                                 <div class="fieldset-part__del" type="button" onclick="removeItem(this)"></div>
                             </li>
+                            <!-- Добавочный блок для формы визуально скрыт -->
                         </button>
                     </ul>
                 </div>
@@ -104,7 +105,9 @@
                         </fieldset>
                     </div>
                 </div>
-                <button class="form__submit" type="submit"></button>
+                <div class="form__btn">
+                    <button class="form__submit" type="submit">Готово</button>
+                </div>
             </form>
         </div>
     </main>
@@ -112,24 +115,24 @@
         <div class="footer__info">
             <ul>
                 <li>
-                    <a href="ptivacy_policy.html">
+                    <a href="../privacy_policy.html">
                         Политика конфиденциальности
                     </a>
                 </li>
                 <li>
-                    <a href="terms_of_service.html">
+                    <a href="../terms_of_service.html">
                         Условия использования
                     </a>
                 </li>
                 <li>
-                    <a href="about_us.html">
+                    <a href="../about_us.html">
                         О нас
                     </a>
                 </li>
             </ul>
         </div>
         <div class="footer__copyright">
-            <a href="copyright.html" >
+            <a href="../copyright.html" >
                 © 2020 МоклякМуравьёв
             </a>
         </div>
