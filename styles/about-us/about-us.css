@@ -1,0 +1,30 @@
+.about-us{
+    font-family: "typoninesans regular 18",lucida grande,Lucida,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    max-width: 920px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.about-us__text{
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+.about-us__h{
+    font-family: "typoninesans light 17";
+    font-size: 40px;
+    color: #4f4e4e;
+    margin-top: .6em;
+    margin-bottom: .6em;
+    line-height: 1.2em;
+}
+main {
+     font: normal 114%/1.75 serif; 
+}
+@media only screen and (min-width: 768px){
+    main {
+        font: normal 112.5%/1.75 serif;
+    }
+}

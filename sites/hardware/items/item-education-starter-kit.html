@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Ардуино начальный образовательный набор</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Ключевые слова страницы">
+    <meta name="description" content="Краткое описание страницы">
+    <link rel="stylesheet" type="text/css" href="../../../styles/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/nav/navOnJS.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/nav/navOnJS-mobile.css">
+    <script src="../../../scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../styles/item/item.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/item/item-mobile.css">
+</head> 
+<body>  
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="../../index.html" class="logo__link"></a>
+            </div>
+            <div class="navpanel">
+                <a class="navpanel__item" href="../../software.html">Программирование</a>
+                <a class="navpanel__item" href="../itemlist_new.html">Контроллеры</a>
+                <a class="navpanel__item" href="../../project-list.html">Проекты</a>
+            </div>
+            <a href="../../sign-in.html" class="nav__sign-in">Вход</a>
+            <div class="menu">
+                <a href="../../sign-in.html" class="menu__sign-in">Вход</a>
+                <button class="menu__btn" id="menu-btn">
+                    <div class="menu__btn-icon"></div>
+                </button>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="../../software.html">Программирование</a></li>
+                    <li><a class="menu__item" href="../itemlist_new.html">Контроллеры</a></li>
+                    <li><a class="menu__item" href="../../project-list.html">Проекты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="category">
+            <input type="checkbox" id="drop-btn">
+            <label for="drop-btn">
+                <h4>Категории</h4>
+            </label>
+            <ul class="cat-list">
+                <li>
+                    <a href="../../hardware/itemlist_new.html" class="cat-list__ref">Новое</a>
+                </li>
+                <li>
+                    <a href="../../hardware/itemlist_popular.html" class="cat-list__ref">Популярное</a>
+                </li>
+                <li>
+                    <a href="../../hardware/itemlist_arduino.html" class="cat-list__ref">Ардуино</a>
+                </li>
+                <li>
+                    <a href="../../hardware/itemlist_arduino_pro.html" class="cat-list__ref">Ардуино Про</a>
+                </li>
+                <li>
+                   <a href="../../hardware/itemlist_arduino_edu.html" class="cat-list__ref">Ардуино образование</a>
+                </li>
+            </ul>
+        </section>
+        <section class="item">
+            <h1 class="item__name"> Ардуино начальный образовательный набор </h1>
+            <div class="slide-wrap">
+                <input type="radio" name="slider" id="slide1" class="wrap__radio" checked>
+                <input type="radio" name="slider" id="slide2" class="wrap__radio">
+                <input type="radio" name="slider" id="slide3" class="wrap__radio">
+                <input type="radio" name="slider" id="slide4" class="wrap__radio">
+                <input type="radio" name="slider" id="slide5" class="wrap__radio">
+                <input type="radio" name="slider" id="slide6" class="wrap__radio">
+                <input type="radio" name="slider" id="slide7" class="wrap__radio">
+                <div class="slider">
+                   <div class="slide" id="slide-1">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-iso.jpg" alt="img1">
+                  </div>
+                  <div class="slide" id="slide-2">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-unbox.jpg" alt="img2">
+                  </div>
+                  <div class="slide" id="slide-3">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-front.jpg" alt="img3">
+                  </div>
+                  <div class="slide" id="slide-4">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-unbox-1.jpg" alt="img4">
+                  </div>
+                  <div class="slide" id="slide-5">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-unbox-2.jpg" alt="img5">
+                  </div>
+                  <div class="slide" id="slide-6">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-unbox-3.jpg" alt="img4">
+                  </div>
+                  <div class="slide" id="slide-7">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-unbox-4.jpg" alt="img5">
+                  </div>
+                </div>
+                <div class="slide-nav">
+                <label for="slide1" class="slide-nav__label">
+                 <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-iso.jpg" alt="1">
+                </label>
+                <label for="slide2" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-unbox.jpg" alt="2">
+                </label>
+                <label for="slide3" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-front.jpg" alt="3">
+                </label>
+                <label for="slide4" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-unbox-1.jpg" alt="4">
+                </label>
+                <label for="slide5" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-unbox-2.jpg" alt="5">
+                </label> 
+                <label for="slide6" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-unbox-3.jpg" alt="4">
+                </label>
+                <label for="slide7" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/a/k/akx00023-unbox-4.jpg" alt="5">
+                </label>
+                </div>
+            </div>
+            <div class="iteminfo">
+                <input type="radio" name="nav" id="review" class="iteminfo__select" checked>
+                <label for="review" class="iteminfo__selectlabel-4">Обзор</label>
+
+                <input type="radio" name="nav" id="techvalues" class="iteminfo__select">
+                <label for="techvalues" class="iteminfo__selectlabel-4">Ресурсы</label>
+
+                <input type="radio" name="nav" id="documentation" class="iteminfo__select">
+                <label for="documentation" class="iteminfo__selectlabel-4">Резюме</label>
+
+                <input type="radio" name="nav" id="FAQ" class="iteminfo__select">
+                <label for="FAQ" class="iteminfo__selectlabel-4">Материалы</label>
+
+                <div class="infocontent">
+                    <div id="infocontent__review">
+                        <p>
+                            Научите учащихся средних школ основам программирования, кодирования и электроники. Никаких предварительных знаний или опыта не требуется, так как комплекты ведут вас шаг за шагом, вас хорошо поддерживают учителя, а уроки могут проходить в соответствии с возможностями ваших студентов. Вы можете интегрировать этот комплект в учебную программу, предоставляя учащимся возможность уверенно заниматься программированием и электроникой, проводя занятия и проводя открытые эксперименты. Вы также научите их жизненно важным навыкам 21-го века, таким как сотрудничество и решение проблем.</p>
+                        <p>Arduino Education Starter Kit содержит все необходимое аппаратное и программное обеспечение для восьми учащихся (в группах по 2 человека). Вы получаете пошаговые уроки, заметки для учителей, упражнения, а для полного и углубленного изучения класса есть также дополнительные дополнительные ресурсы, включая занятия, концепции, историю и интересные факты.</p>
+                        <p>Онлайн-платформа содержит материалы для учителей, девять 90-минутных уроков и два открытых групповых проекта, которые обучают студентов программированию и электронике. Каждый урок строится на основе предыдущего, давая студентам дополнительную возможность применить навыки и концепции, которые они уже изучили. Студенты также получают технический журнал, который они заполняют по мере прохождения уроков.</p>
+                        <p>В начале каждого урока представлен обзор, примерное время завершения и цели обучения. На каждом уроке есть заметки учителя и информация, которая помогает уроку идти гладко. Идеи расширения представлены в конце каждого урока.</p>
+                        
+                    </div>
+                    <div id="infocontent__techvalues">
+                        <h4> Онлайн платформа
+                            
+                        </h4>
+                            <ul>
+                                <li>Все классы будут доступны онлайн, как для преподавателей, так и для студентов, следуя линейно.
+                                    вахтенный журнал</li>
+                            </ul>
+                        <h4>
+                            Журнал 
+                        </h4>
+                            <ul>
+                                <li>представляет собой загружаемую рабочую тетрадь в формате PDF, которую студенты должны заполнять на протяжении всего занятия</li>
+                                <li>Преподаватель может распечатать столько экземпляров, сколько необходимо для аудитории, и его можно заполнить как индивидуально, так и группами.</li>
+                                <li>Преподаватель также получает загружаемый журнал с решениями.</li>
+                            </ul>
+                        <h4>
+                            Центр внимания изобретения
+                        </h4>
+                            <ul>
+                                <li>В центре внимания изобретений учащиеся узнают о различных изобретениях и фактах, стоящих за темами и уроками, что дает им более широкое представление и историческое понимание.</li>
+                            </ul>
+                        <h4>
+                            Ресурсы
+                        </h4>
+                            <ul>
+                                <li>Дополнительные советы, такие как внеклассные исследования, идеи по разработке учебных курсов, презентации и краткая информация, которые дают учащимся более всесторонний опыт.</li>
+                            </ul>
+                        <h4>
+                            Словарь
+                        </h4>
+                        <ul>
+                                <li>Уроки также идут со словами, которые могут быть незнакомы студентам. Есть много словарных занятий, которые учитель может делать со своими учениками. Эти действия могут рассматриваться как дополнительные занятия в классе или как дополнительные задания, которые должны быть выполнены самостоятельно.</li>
+                         </ul>   
+                    </div>
+                    <div id="infocontent__documentation">
+                        <p> <h4>Начало работы (30 минут).</h4>
+                            На этом уроке студенты знакомятся с материалом набора. Узнайте об электробезопасности, как настроить программное обеспечение и создать свою первую программу.
+                        </p>
+                        <p>
+                            <h4>Урок 1 - Основы электричества (90 минут).</h4>
+                            В этом уроке студенты исследуют некоторые основные понятия электричества и строят свою первую простую схему, изучая компоненты, которые составляют цепь.
+                        </p>
+                        <p>
+                            <h4>Урок 2 - Закон Ома (90 минут). </h4>
+                            Студенты изучают один из физических законов, определяющих поведение электричества в цепи: закон Ома. Они узнают, создавая разницу между параллельными и последовательными цепями, и изучат, как ведут себя электрические измерения, используя мультиметр в качестве инструмента.
+                        </p>
+                        <p>
+                            <h4>рок 3 - Дорожные сигналы (90 минут).</h4>
+                            На этом уроке учащиеся знакомятся с программным обеспечением Arduino (IDE) и программируют свою первую световую цепь, которая управляет работой схемы.
+                        </p>
+                        <p>
+                            <h4>Урок 4 - Диммер (90 минут). </h4>
+                            Студенты узнают о потенциометре и о том, как их можно использовать вручную для управления цепью. В результате они построят схему светодиодов, где плата Arduino будет контролировать яркость светодиодов в зависимости от положения потенциометра. По мере того, как учащиеся кодируют свои схемы, они знакомятся с такими понятиями, как переменные, условные выражения и последовательная связь.
+                        </p>
+                        <p>
+                            <h4>Урок 5 - Проект Holiday Lights (90 минут).</h4>
+                            Студенты выполнят открытый проект, чтобы спроектировать, построить и запрограммировать собственную праздничную световую цепь. Проект должен соответствовать целям, критериям и ограничениям проекта.
+                        </p>
+                        <p>
+                            <h4>Урок 6 - Спортивный робот (90 минут).</h4>
+                            На этом уроке студенты узнают, как использовать серводвигатель для создания простого спортивного робота. Они запрограммируют робота на удар, удар или бросок мяча. 
+                        </p>
+                        <p>
+                            <h4>Урок 7 - Стеклоочистители (90 минут).</h4>
+                            Этот урок знакомит студентов с новыми концепциями программирования, такими как вложенные условные выражения, структуры переключателей и циклы. Студенты изучают новые концепции, программируя и создавая схему стеклоочистителя. 
+                        </p>
+                        <p>
+                            <h4>Урок 8 - Музыкальная клавиатура (90 минут).</h4>
+                            На этом уроке студенты узнают о пьезо-зуммерах и о том, как создавать разные звуки, тоны и музыку. С этим пониманием студент будет создавать и кодировать музыкальную клавиатуру. 
+                        </p>
+                        <p>
+                            <h4>Урок 9 - Радар световой волны (90 минут). </h4>
+                            Студенты будут использовать свою плату Arduino и фототранзистор для измерения интенсивности света и изучат основной принцип передачи информации через световые волны. 
+                        </p>
+                        <p>
+                            <h4>Урок 10 - Проект системы управления теплицей (180 минут).</h4>
+                            Студенты завершат открытый проект по проектированию, созданию и программированию системы климат-контроля для теплицы. Проект должен соответствовать целям, критериям и ограничениям проекта.
+                        </p>
+                    </div>
+                    <div id="infocontent__FAQ">
+                        <h2>
+                            ЧТО В КОМПЛЕКТЕ?
+                        </h2>
+                        <p>
+                            В комплект входят несколько частей и компонентов, которые учащиеся будут использовать для построения цепей при завершении уроков и проектов на протяжении всего курса. Вот краткое описание того, что входит в комплект:
+                        </p>
+                        <p>
+                            Получите доступ к эксклюзивному онлайн-контенту, включая инструкции для преподавателей, пошаговые уроки и дополнительные материалы, такие как ресурсы, прожекторы изобретений и журналы в формате PDF для студентов и преподавателей.
+                            4 Arduino UNO rev 3 <br>
+                            4 Монтажное основание Starter Kit Легкое в сборке пластиковое основание <br>
+                            4 Аккумулятор Snap 9v<br>
+                            8 батарей 9v<br>
+                            4 макета 400 баллов<br>
+                            4 конденсатора - 100 мкФ<br>
+                            4 женские и мужские соединительные провода (красные)<br>
+                            4 женские и мужские соединительные провода (черные)<br>
+                            20 светодиодов (красный)<br>
+                            20 светодиодов (зеленый)<br>
+                            20 светодиодов (желтый)<br>
+                            20 светодиодов (синий)<br>
+                            4 мультиметра<br>
+                            4 пьезо-зуммера [PKM17EPP-4001-B0]<br>
+                            4 фототранзистора<br>
+                            8 Потенциометр 10 кОм<br>
+                            20 нажимных кнопок<br>
+                            4 резистора - 1 кОм<br>
+                            20 резисторов - 10 кОм<br>
+                            20 резисторов - 220 Ом<br>
+                            20 резисторов - 560 Ом<br>
+                            70 проволочных перемычек<br>
+                            4 многожильные соединительные провода (красные)<br>
+                            4 Серводвигатель<br>
+                            4 Датчик температуры [TMP36]<br>
+                            4 USB-кабель<br>
+                            12 M 3 Винт<br>
+                            12 болтов M3<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+            <ul>
+                <li>
+                    <a href="../../privacy_policy.html">
+                        Политика конфиденциальности
+                    </a>
+                </li>
+                <li>
+                    <a href="../../terms_of_service.html">
+                        Условия использования
+                    </a>
+                </li>
+                <li>
+                    <a href="../../about_us.html">
+                        О нас
+                    </a>
+                </li>
+            </ul>
+        </div>  
+        <div class="footer__copyright">
+            <a href="../../copyright.html" >
+                © 2020 Ардуино
+           </a>
+        </div>
+        <div class="goup">
+            <a href="#">
+                <svg class="block center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg>
+            </a>
+        </div>
+        <div class="go2fb"> 
+            <a href="https://www.facebook.com/profile.php?id=100022277227464&__tn__=%2CdC-R-R&eid=ARDY8PjTlcacGCRqtpFWjoeDJTHaPeMY0nHfb8aKwQcPcWy-dfDBSYdkxDy1vfmHgg9joUT_39IhwgTc&hc_ref=ARTw8vcZvS-fHRJPj5hxRt4U_5IiAiX06ofk5h4JjL0RrdMMAKWbxpLCIFJaiqRrcNE&fref=nf"  target="_blank">
+                <img class="block centerfb" src="https://content.arduino.cc/website/social_icons/icon-facebook.svg" alt="facebook">
+            </a>
+        </div>
+        <div class="go2vk"> 
+            <a href="https://vk.com/press______f"  target="_blank">
+                <img class="block centervk" src="http://vk.com/images/svg_icons/ic_head_logo.svg" alt="vkontakte">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

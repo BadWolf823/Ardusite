@@ -1,0 +1,53 @@
+@media screen and (max-width: 1110px){
+    .cat-list{
+      position: relative;
+      display: none;
+    }
+    #drop-btn:checked ~ .cat-list{
+      display: block;
+    }
+    .cat-list__ref{
+      color: black;
+      background-color: lightblue;
+      width: 100%;
+    }
+    .category{
+      position: relative;
+      padding: 0px;  
+    }
+    .item{
+      margin-top: 0px;
+    }
+    #drop-btn + label{
+      height: 50px;
+      background-color: cadetblue;
+      color: white;
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+    #drop-btn + label > h4{
+      display: block;
+      padding: 10px 0px 10px 0px;
+    }
+    #drop-btn + label:hover{
+      background-color: teal;
+    }
+
+    .content{
+      margin-top: 10px;
+    }
+  }
+  @media screen and (max-width: 910px){
+    .content{
+       width: 670px;
+       margin-left: -335px;
+    }
+  }
+
+  @media screen and (max-width: 680px){
+    .content{
+      width: 320px;
+      margin-left: -160px;
+    }
+  }

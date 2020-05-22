@@ -1,0 +1,90 @@
+.terms{
+    padding-top: 10px;
+    width: 920px;
+    display: block;
+    position: relative;
+    left: 50%;
+    margin-left: -460px;
+    font-family: "typoninesans regular 18",lucida grande,Lucida,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.terms__text{
+}
+.terms__h2{
+    font-family: "typoninesans light 17";
+    font-size: 40px;
+    color: #4f4e4e;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    line-height: 48px;
+}
+.question{
+    width: 20%;
+    float: left;
+    clear: both;
+    margin-bottom: 20px;
+    color: #00979c;
+}
+.answer{
+    float: left;
+    width: 78%;
+    margin-left: 2%;
+    margin-bottom: 30px;
+}
+.terms strong{
+    font-family: "typoninesans text 18";
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: normal;
+}
+.terms a{
+    color: #00979c;
+    text-decoration: none;
+}
+.terms a:hover{
+    text-decoration: underline;
+}
+.vspace{
+    color: white;
+}
+
+main {
+    font: normal 114%/1.75 serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 114%;
+    line-height: 1.75;
+    font-family: serif;
+}
+@media only screen and (min-width: 768px){
+    main {
+        font: normal 112.5%/1.75 serif;
+        font-style: normal;
+        font-variant-ligatures: normal;
+        font-variant-caps: normal;
+        font-variant-numeric: normal;
+        font-variant-east-asian: normal;
+        font-weight: normal;
+        font-stretch: normal;
+        font-size: 112.5%;
+        line-height: 1.75;
+        font-family: serif;
+    }
+    
+}
+@media screen and (max-width: 960px){
+    .terms{
+        left: 0px;
+        width:  100%;
+        margin-left: 0px;
+        }
+}

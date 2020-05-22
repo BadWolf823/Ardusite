@@ -1,0 +1,27 @@
+@media screen and (max-width: 1040px){
+    .between__line{
+        width: 500px;
+        height: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    main{
+        height: 1100px;
+    }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .registersug{
+        margin-top: -50px;
+        display: -ms-flexbox;
+        -ms-flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    
+ }
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 1040px) {
+    .registersug{
+        margin-top: -150px;
+    }
+    
+ }

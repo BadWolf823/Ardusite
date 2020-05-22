@@ -1,0 +1,148 @@
+
+.question{
+    width: 20%;
+    float: left;
+    clear: both;
+    margin-bottom: 20px;
+    color: #00979c;
+}
+.answer{
+    float: left;
+    width: 78%;
+    margin-left: 2%;
+    margin-bottom: 30px;
+}
+.urllink{
+    color: #00979c;
+    text-decoration: none;
+}
+.urllink:hover{
+    text-decoration: underline;
+}
+.privacy-policy{
+    font-family: typoninesans regular 20 ,lucida 
+        grande,Lucida,Verdana,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: normal;
+    max-width: 920px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+.answer__text{
+    display: block;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.privacy-policy__text{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.privacy-policy__text strong{
+    font-family: typoninesans text 18;
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: normal;
+}
+.answer__text strong{
+    font-family: typoninesans text 18;
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: normal;
+}
+.privacy-policy__ol{
+    margin-left: 1.5em;   
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1.25em;
+    list-style-position: outside;
+    font-family: inherit; 
+}
+.privacy-policy > table{
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-size: .8888rem;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+.privacy-policy > table td{
+    padding-right: 20px;
+}
+.privacy-policy__ol a{
+    color: #00979c;
+    text-decoration: none;
+}
+.privacy-policy__ol a:hover{
+    text-decoration: underline;
+}
+.vaspce{
+    height: 1px;
+    display: block;
+    color: white;
+}
+.COPPA{
+    display: flex;
+    display: -ms-flexbox;
+    width: 100%;
+    align-items: center;
+    -ms-flex-align: center;
+}
+.COPPA > img{
+    max-width: 100%;
+    height: auto;
+}
+.COPPA__seal{
+    -ms-flex: 1;
+    flex: 1;
+}
+.COPPA__text{
+    -ms-flex: 3;
+    flex: 3;
+    display: block;
+}
+#physics-lab {
+    font-family: "typoninesans light 17";
+    font-size: 40px;
+    color: #4f4e4e;
+    margin-top: .6em;
+    margin-bottom: .6em;
+    line-height: 1.2em;
+    width: 100%;
+    text-align: center
+}
+
+
+
+@media only screen and (min-width: 768px){
+    .privacy-policy{
+        font: normal 112.5%/1.75 serif;
+        font-style: normal;
+        font-variant-ligatures: normal;
+        font-variant-caps: normal;
+        font-variant-numeric: normal;
+        font-variant-east-asian: normal;
+        font-weight: normal;
+        font-stretch: normal;
+        font-size: 112.5%;
+        line-height: 1.75;
+        font-family: serif;
+    }
+}
+.privacy-policy {
+    font: normal 114%/1.75 serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 114%;
+    line-height: 1.75;
+    font-family: serif;
+}
