@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title> Arduino Due </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Ключевые слова страницы">
+    <meta name="description" content="Краткое описание страницы">
+    <link rel="stylesheet" type="text/css" href="../../../styles/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/nav/navOnJS.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/nav/navOnJS-mobile.css">
+    <script src="../../../scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../styles/item/item.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/item/item-mobile.css">
+</head> 
+<body>  
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="../../index.html" class="logo__link"></a>
+            </div>
+            <div class="navpanel">
+                <a class="navpanel__item" href="../../software.html">Программирование</a>
+                <a class="navpanel__item" href="../itemlist_new.html">Контроллеры</a>
+                <a class="navpanel__item" href="../../projects/project-list.html">Проекты</a>
+            </div>
+            <a href="../../sign-in.html" class="nav__sign-in">Вход</a>
+            <div class="menu">
+                <a href="../../sign-in.html" class="menu__sign-in">Вход</a>
+                <button class="menu__btn" id="menu-btn">
+                    <div class="menu__btn-icon"></div>
+                </button>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="../../software.html">Программирование</a></li>
+                    <li><a class="menu__item" href="../itemlist_new.html">Контроллеры</a></li>
+                    <li><a class="menu__item" href="../../projects/project-list.html">Проекты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="category">
+            <input type="checkbox" id="drop-btn">
+            <label for="drop-btn">
+                <h4>Категории</h4>
+            </label>
+            <ul class="cat-list">
+                <li>
+                    <a href="../../hardware/itemlist_new.html" class="cat-list__ref">Новое</a>
+                </li>
+                <li>
+                    <a href="../../hardware/itemlist_popular.html" class="cat-list__ref">Популярное</a>
+                </li>
+                <li>
+                    <a href="../../hardware/itemlist_arduino.html" class="cat-list__ref">Ардуино</a>
+                </li>
+                <li>
+                    <a href="../../hardware/itemlist_arduino_pro.html" class="cat-list__ref">Ардуино Про</a>
+                </li>
+                <li>
+                   <a href="../../hardware/itemlist_arduino_edu.html" class="cat-list__ref">Ардуино образование</a>
+                </li>
+            </ul>
+        </section>
+        <section class="item">
+            <h1 class="item__name"> Arduino Due </h1>
+            <div class="slide-wrap">
+                <input type="radio" name="slider" id="slide1" class="wrap__radio" checked>
+                <input type="radio" name="slider" id="slide2" class="wrap__radio">
+                <input type="radio" name="slider" id="slide3" class="wrap__radio">
+                <input type="radio" name="slider" id="slide4" class="wrap__radio">
+                <input type="radio" name="slider" id="slide5" class="wrap__radio">
+                <div class="slider">
+                   <div class="slide" id="slide-1">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/0/a000062_iso_1.jpg" alt="img1">
+                  </div>
+                  <div class="slide" id="slide-2">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/0/a000062_unbox_2.jpg" alt="img2">
+                  </div>
+                  <div class="slide" id="slide-3">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/0/a000062_front_1.jpg" alt="img3">
+                  </div>
+                  <div class="slide" id="slide-4">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/0/a000062_back_1.jpg" alt="img4">
+                  </div>
+                  <div class="slide" id="slide-5">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/0/a000062_box_1.jpg" alt="img5">
+                  </div>
+                </div>
+                <div class="slide-nav">
+                <label for="slide1" class="slide-nav__label">
+                 <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/a/0/a000062_iso_1.jpg" alt="1">
+                </label>
+                <label for="slide2" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/a/0/a000062_unbox_2.jpg" alt="2">
+                </label>
+                <label for="slide3" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/a/0/a000062_front_1.jpg" alt="3">
+                </label>
+                <label for="slide4" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/a/0/a000062_back_1.jpg" alt="4">
+                </label>
+                <label for="slide5" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/a/0/a000062_box_1.jpg" alt="5">
+                </label> 
+                </div>
+            </div>
+            <div class="iteminfo">
+                <input type="radio" name="nav" id="review" class="iteminfo__select" checked>
+                <label for="review" class="iteminfo__selectlabel-3">Обзор</label>
+
+                <input type="radio" name="nav" id="techvalues" class="iteminfo__select">
+                <label style="left: 33%;" for="techvalues" class="iteminfo__selectlabel-3">Технические характеристики</label>
+
+                <input type="radio" name="nav" id="documentation" class="iteminfo__select">
+                <label style="left: 66%;" for="documentation" class="iteminfo__selectlabel-3">Документация</label>
+
+
+                <div class="infocontent">
+                    <div id="infocontent__review">
+                        <p>Arduino Due - это микроконтроллерная плата на базе процессора Atmel SAM3X8E ARM Cortex-M3. Это первая плата Arduino на базе 32-разрядного ядра ARM. Он имеет 54 цифровых входа /выхода (из которых 12 могут использоваться в качестве ШИМ-выходов), 12 аналоговых входов, 4 UART (аппаратные последовательные порты), тактовую частоту 84 МГц, соединение с поддержкой USB OTG, 2 ЦАП (цифро-аналоговый) , 2 TWI, разъем питания, заголовок SPI, заголовок JTAG, кнопка сброса и кнопка стирания.
+                        </p>
+                        <p>Предупреждение: В отличие от большинства плат Arduino, плата Arduino Due работает при напряжении 3,3 В. Максимальное напряжение, которое могут выдержать контакты ввода /вывода, составляет 3,3 В. Подача напряжения выше 3,3 В на любой вывод ввода-вывода может повредить плату.
+                        </p>
+                        <p>Плата содержит все необходимое для поддержки микроконтроллера; просто подключите его к компьютеру с помощью кабеля micro-USB или включите адаптер переменного тока в постоянный ток или аккумулятор, чтобы начать работу. Due совместим со всеми экранами Arduino, которые работают при напряжении 3,3 В и соответствуют распиновке 1,0 Arduino.
+                        </p>
+                        <p>Должно следовать распиновке 1.0:
+                        </p>
+                        <UL>
+                            <li> <strong> TWI </strong>. Выводы SDA и SCL находятся рядом со выводом AREF. </li>
+                            <li> <strong> IOREF </strong>: позволяет прикрепленному экрану с правильной конфигурацией адаптироваться к напряжению, обеспечиваемому платой. Это обеспечивает совместимость экрана с платой 3.3 В, такой как платы Due и AVR, которые работают при 5 В. </li>
+                            <li> Неподключенный пин-код, зарезервированный для будущего использования. </li>
+                            </UL>
+                    </div>
+                    <div id="infocontent__techvalues">
+                        <table>
+                            <thead></thead>
+<TR>
+<TD> Микроконтроллер </TD>
+<TD> AT91SAM3X8E </TD>
+</TR>
+<TR>
+<td> Рабочее напряжение </td>
+<TD> 3.3V </TD>
+</TR>
+<TR>
+<td> Входное напряжение (рекомендуется) </td>
+<TD> 7-12V </TD>
+</TR>
+<TR>
+<td> Входное напряжение (пределы) </td>
+<TD> 6-16V </TD>
+</TR>
+<TR>
+<td> Цифровые выводы ввода /вывода </td>
+<td> 54 (из которых 12 обеспечивают выход ШИМ) </td>
+</TR>
+<TR>
+<td> Выводы аналогового входа </td>
+<TD> 12 </TD>
+</TR>
+<TR>
+<td> Выводы аналогового выхода </td>
+<td> 2 (ЦАП) </td>
+</TR>
+<TR>
+<td> Общий выходной ток постоянного тока на всех линиях ввода /вывода </td>
+<td> 130 мА </td>
+</TR>
+<TR>
+<td> постоянный ток для контакта 3.3 В </td>
+<td> 800 мА </td>
+</TR>
+<TR>
+<td> постоянный ток для контакта 5 В </td>
+<td> 800 мА </td>
+</TR>
+<TR>
+<td> Флэш-память </td>
+<td> 512 КБ всего доступно для пользовательских приложений </td>
+</TR>
+<TR>
+<TD> SRAM </TD>
+<td> 96 КБ (два банка: 64 КБ и 32 КБ) </td>
+</TR>
+<TR>
+<td> тактовая частота </td>
+<td> 84 МГц </td>
+</TR>
+<TR>
+<TD> Длина </TD>
+<td> 101,52 мм </td>
+</TR>
+<TR>
+<TD> Ширина </TD>
+<td> 53,3 мм </td>
+</TR>
+<TR>
+<TD> Вес </TD>
+<td> 36 г </td>
+</TR>
+</TBODY>
+</Table>
+                    </div>
+                    <div id="infocontent__documentation">
+                        <h3>Схема распиновки
+                        </h3>
+                        <img src="https://content.arduino.cc/assets/Pinout-Due_latest.png" alt="">
+                        <h3>Питание</h3>
+                        <p>Arduino Due может запитываться через USB-разъем или от внешнего источника питания. Источник питания выбирается автоматически.
+                        </p>
+                        <p>Внешнее (не USB) питание может подаваться либо от адаптера переменного тока в постоянный ток, либо от аккумулятора. Адаптер можно подключить, вставив центральный положительный штекер 2,1 мм в разъем питания платы. Выводы от аккумулятора можно вставить в разъемы Gnd и Vin разъема POWER.
+                        </p>
+                        <p>Плата может работать от внешнего источника питания от 6 до 20 вольт. Однако, если на него подается напряжение менее 7 В, на вывод 5 В может подаваться напряжение менее 5 В, и плата может быть нестабильной. При использовании более 12 В регулятор напряжения может перегреться и повредить плату. Рекомендуемый диапазон составляет от 7 до 12 вольт.
+                        </p>
+                        <p>Штыри питания следующие:
+                        </p>
+                        <UL>
+                            <li> <strong> Vin. </strong> & nbsp; Входное напряжение для платы Arduino при использовании внешнего источника питания (в отличие от 5 вольт от USB-подключения или другого регулируемого источника питания). Вы можете подавать напряжение через этот контакт или, если вы подаете напряжение через разъем питания, получить к нему доступ через этот контакт. </Li>
+                            <li> <strong> 5 В </strong>. Этот вывод выводит регулируемое напряжение 5 В от регулятора на плате. Плата может питаться от разъема питания постоянного тока (7–12 В), разъема USB (5 В) или VIN-контакта платы (7–12 В). Подача напряжения через контакты 5 В или 3,3 В обходит регулятор и может повредить вашу плату. Мы не советуем это. </Li>
+                            <Li> <strong> 3V3 </STRONG>. Питание 3,3 В от встроенного регулятора. Максимальный ток потребления составляет 800 мА. Этот регулятор также обеспечивает питание микроконтроллера SAM3X. </Li>
+                            <Li> <strong> GND </STRONG>. Штыри. </Li>
+                            <Li> <strong> IOREF </STRONG>. Этот штырь на плате Arduino обеспечивает источник опорного напряжения, с которой микроконтроллер работает. Правильно настроенный экран может считывать напряжение на выводе IOREF и выбирать соответствующий источник питания или включать преобразователи напряжения на выходах для работы с 5 В или 3,3 В. </li>
+                            </UL>
+                        <h3>Память</h3>
+                        <p>SAM3X имеет 512 КБ (2 блока по 256 КБ) флэш-памяти для хранения кода. Загрузчик предварительно сожжен на заводе Atmel и хранится в выделенной памяти ПЗУ. Доступная SRAM составляет 96 КБ в двух смежных банках по 64 КБ и 32 КБ. Вся доступная память (Flash, RAM и ROM) может быть доступна напрямую как единое адресное пространство.
+                        </p>
+                        <p>Можно стереть флэш-память SAM3X с помощью встроенной кнопки стирания. Это удалит текущий загруженный эскиз из MCU. Чтобы стереть, нажмите и удерживайте кнопку «Стереть» в течение нескольких секунд, пока плата включена.
+                        </p>
+                        <h3>Вход и выход
+                        </h3>
+                        <ul>   
+                            <li>Цифровой ввод / вывод: выводы от 0 до 53</li>
+                            <li>Каждый из 54 цифровых выводов на Due может использоваться как вход или выход, используя функции pinMode (), digitalWrite () и digitalRead (). Они работают при 3,3 вольт. Каждый вывод может обеспечивать (источник) ток 3 мА или 15 мА, в зависимости от вывода, или принимать (потреблять) ток 6 мА или 9 мА, в зависимости от вывода. Они также имеют внутренний подтягивающий резистор (по умолчанию отключен) на 100 кОм. Кроме того, некоторые выводы имеют специальные функции:</li>
+                            <li>Серийный номер: 0 (RX) и 1 (TX)</li>
+                            <li>Серийный 1: 19 (RX) и 18 (TX)</li>
+                            <li>Серийный номер 2: 17 (RX) и 16 (TX)</li>
+                            <li>Последовательный 3: 15 (RX) и 14 (TX) Используется для приема (RX) и передачи (TX) последовательных данных TTL (с уровнем 3,3 В). Контакты 0 и 1 подключены к соответствующим контактам последовательного чипа ATmega16U2 USB-to-TTL.</li>
+                            <li>ШИМ: контакты от 2 до 13 Обеспечивают 8-битный ШИМ-выход с помощью функции analogWrite (). разрешение ШИМ может быть изменено с помощью функции analogWriteResolution ().</li>
+                            <li>SPI: заголовок SPI (заголовок ICSP на других платах Arduino) Эти контакты поддерживают связь SPI с использованием библиотеки SPI. Контакты SPI разбиты на центральном 6-контактном разъеме, который физически совместим с Uno, Leonardo и Mega2560. Заголовок SPI можно использовать только для связи с другими устройствами SPI, а не для программирования SAM3X с помощью технологии In-Circuit-Serial-Programming. SPI для Due также имеет расширенные функции, которые можно использовать с методами расширенного SPI для Due.</li>
+                            <li>CAN: CANRX и CANTX Эти контакты поддерживают протокол связи CAN, но еще не поддерживаются API Arduino.</li>
+                            <li>Светодиод «L»: 13 К цифровому выводу 13 подключен встроенный светодиод. Когда вывод HIGH, светодиод светится, когда вывод НИЗКИЙ, он выключен. Также возможно затемнить светодиод, потому что цифровой вывод 13 также является ШИМ-выходом.</li>
+                            <li>TWI 1:20 (SDA) и 21 (SCL)</li>
+                            <li>TWI 2: SDA1 и SCL1. Поддержка TWI связи с использованием библиотеки Wire. SDA1 и SCL1 можно контролировать с помощью класса Wire1, предоставляемого библиотекой Wire. В то время как SDA и SCL имеют внутренние подтягивающие резисторы, SDA1 и SCL1 не имеют. Добавление двух подтягивающих резисторов на линии SDA1 и SCL1 требуется для использования Wire1.</li>
+                            <li>Аналоговые входы: контакты от A0 до A11. Due имеет 12 аналоговых входов, каждый из которых может обеспечивать разрешение 12 бит (т.е. 4096 различных значений). По умолчанию разрешение показаний установлено на 10 бит для совместимости с другими платами Arduino. Можно изменить разрешение АЦП с помощью аналогаReadResolution (). Выводы аналоговых входов Due измеряются от земли до максимального значения 3,3 В. Подача напряжения более 3,3 В на контакты Due повредит чип SAM3X. Функция analogReference () игнорируется в Due.</li>
+                        </ul>
+                        <p>AREF вывод подключен к SAM3X аналогового опорного штифта через резистор моста. Чтобы использовать вывод AREF, резистор BR1 должен быть отсоединен от платы.
+                        </p>
+                        <ul>
+                            <li>DAC1 и DAC2 Эти контакты обеспечивают истинные аналоговые выходы с 12-битным разрешением (4096 уровней) с функцией analogWrite (). Эти контакты можно использовать для создания аудиовыхода с использованием библиотеки аудио.
+                            </li>
+                        </ul>
+                        <p>Обратите внимание, что выходной диапазон ЦАП фактически составляет только от 0,55 В до 2,75 В.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+            <ul>
+                <li>
+                    <a href="../../privacy_policy.html">
+                        Политика конфиденциальности
+                    </a>
+                </li>
+                <li>
+                    <a href="../../terms_of_service.html">
+                        Условия использования
+                    </a>
+                </li>
+                <li>
+                    <a href="../../about_us.html">
+                        О нас
+                    </a>
+                </li>
+            </ul>
+        </div>  
+        <div class="footer__copyright">
+            <a href="../../copyright.html" >
+                © 2020 Ардуино
+           </a>
+        </div>
+        <div class="goup">
+            <a href="#">
+                <svg class="block center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg>
+            </a>
+        </div>
+        <div class="go2fb"> 
+            <a href="https://www.facebook.com/profile.php?id=100022277227464&__tn__=%2CdC-R-R&eid=ARDY8PjTlcacGCRqtpFWjoeDJTHaPeMY0nHfb8aKwQcPcWy-dfDBSYdkxDy1vfmHgg9joUT_39IhwgTc&hc_ref=ARTw8vcZvS-fHRJPj5hxRt4U_5IiAiX06ofk5h4JjL0RrdMMAKWbxpLCIFJaiqRrcNE&fref=nf"  target="_blank">
+                <img class="block centerfb" src="https://content.arduino.cc/website/social_icons/icon-facebook.svg" alt="facebook">
+            </a>
+        </div>
+        <div class="go2vk"> 
+            <a href="https://vk.com/press______f"  target="_blank">
+                <img class="block centervk" src="http://vk.com/images/svg_icons/ic_head_logo.svg" alt="vkontakte">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

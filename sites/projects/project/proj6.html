@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles/common.css">
+    <link rel="stylesheet" href="../../../styles/footer.css">
+    <link rel="stylesheet" href="../../../styles/nav/navOnJS.css">
+    <link rel="stylesheet" href="../../../styles/nav/navOnJS-mobile.css">
+    <link rel="stylesheet" href="../../../styles/project/project.css">
+    <link rel="stylesheet" href="../../../styles/project/project-mobile.css">
+    <script src="../../../scripts/main.js"></script>
+    <title>Arduino своими руками</title>
+</head>
+<body>
+<header class="header" id="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../index.html" class="logo__link"></a>
+        </div>
+        <div class="navpanel">
+            <a class="navpanel__item" href="../../software.html">Программирование</a>
+            <a class="navpanel__item" href="../../hardware/itemlist_new.html">Контроллеры</a>
+            <a class="navpanel__item" href="../project-list.html">Проекты</a>
+        </div>
+        <a href="../../sign-in.html" class="nav__sign-in">Вход</a>
+        <div class="menu">
+            <a href="../../sign-in.html" class="menu__sign-in">Войти</a>
+            <button class="menu__btn" id="menu-btn">
+                <div class="menu__btn-icon"></div>
+            </button>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="../../software.html">Программирование</a></li>
+                <li><a class="menu__item" href="../../hardware/itemlist_new.html">Контроллеры</a></li>
+                <li><a class="menu__item" href="../project-list.html">Проекты</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="main">
+    <div class="about-project">
+        <img class="about-project__main-image" src="../../../images/projects/Proj5/project5.jpg" alt="Обложка">
+        <div class="about-project__information">
+            <div class="about-project__only-text">
+                <h1 class="about-project__title">Ардуино своими руками</h1>
+                <a href="#" class="about-project__master">@mbraccagni</a>
+                <p class="about-project__text">В этот статье мы расскажем как своими руками собрать Arduino на обычной макетной плате.</p>
+            </div>
+        </div>
+    </div>
+    <div class="parts">
+        <h2 class="parts__title subtitle">Компоненты и расходные материалы</h2>
+        <div class="parts__list">
+            <div class="parts__item">
+                <a href="#" class="parts__item-link"></a>
+                <div class="parts__illustration">
+                    <img class="parts__item-image" src="../../../images/projects/Proj6/atmega.jpg" alt="Компонент">
+                </div>
+                <p class="parts__item-title">ATMega 328</p>
+                <p class="parts__item-number">x 1</p>
+            </div>
+            <div class="parts__item">
+                <a href="#" class="parts__item-link"></a>
+                <div class="parts__illustration">
+                    <img class="parts__item-image" src="../../../images/projects/Proj6/breadboard.jpeg" alt="Компонент">
+                </div>
+                <p class="parts__item-title">Макетка</p>
+                <p class="parts__item-number">x 1</p>
+            </div>
+            <div class="parts__item">
+                <a href="#" class="parts__item-link"></a>
+                <div class="parts__illustration">
+                    <img class="parts__item-image" src="../../../images/projects/Proj6/wires.jpg" alt="Компонент">
+                </div>
+                <p class="parts__item-title">Провода</p>
+                <p class="parts__item-number">x 1</p>
+            </div>
+            <div class="parts__item">
+                <a href="#" class="parts__item-link"></a>
+                <div class="parts__illustration">
+                    <img class="parts__item-image" src="../../../images/projects/Proj6/crystal.jpg" alt="Компонент">
+                </div>
+                <p class="parts__item-title">Кварцевый резонатор на 16 МГц</p>
+                <p class="parts__item-number">x 1</p>
+            </div>
+            <div class="parts__item">
+                <a href="#" class="parts__item-link"></a>
+                <div class="parts__illustration">
+                    <img class="parts__item-image" src="../../../images/projects/Proj6/conder.jpg" alt="Компонент">
+                </div>
+                <p class="parts__item-title">Конденсатор 22 пф</p>
+                <p class="parts__item-number">x 2</p>
+            </div>
+        </div>
+    </div>
+    <div class="connect">
+        <h2 class="connect__title subtitle">Схема</h2>
+        <div class="connect__image-container"><img src="../../../images/projects/Proj6/scheme.jpg" class="connect__img" alt="Схема"></div>
+
+    </div>
+    <div class="sketch">
+        <h2 class="sketch__title subtitle">Код</h2>
+        <div class="sketch-around-code">
+            <a href="../../../files/proj6/Blink.ino" class="sketch__download"><img src="../../../images/download-icon.png" alt="Загрузка"></a>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__info">
+        <ul>
+            <li>
+                <a href="../../privacy_policy.html">
+                    Политика конфиденциальности
+                </a>
+            </li>
+            <li>
+                <a href="../../terms_of_service.html">
+                    Условия использования
+                </a>
+            </li>
+            <li>
+                <a href="../../about_us.html">
+                    О нас
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__copyright">
+        <a href="../../copyright.html" >
+            © 2020 МоклякМуравьёв
+        </a>
+    </div>
+    <div class="goup">
+        <a href="#">
+            <svg class="block center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg>
+        </a>
+    </div>
+    <div class="go2fb">
+        <a href="https://www.facebook.com/profile.php?id=100022277227464&__tn__=%2CdC-R-R&eid=ARDY8PjTlcacGCRqtpFWjoeDJTHaPeMY0nHfb8aKwQcPcWy-dfDBSYdkxDy1vfmHgg9joUT_39IhwgTc&hc_ref=ARTw8vcZvS-fHRJPj5hxRt4U_5IiAiX06ofk5h4JjL0RrdMMAKWbxpLCIFJaiqRrcNE&fref=nf"  target="_blank">
+            <img class="block centerfb" src="https://content.arduino.cc/website/social_icons/icon-facebook.svg" alt="facebook">
+        </a>
+    </div>
+    <div class="go2vk">
+        <a href="https://vk.com/press______f"  target="_blank">
+            <img class="block centervk" src="http://vk.com/images/svg_icons/ic_head_logo.svg" alt="vkontakte">
+        </a>
+    </div>
+</footer>
+</body>
+</html>

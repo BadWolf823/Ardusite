@@ -105,6 +105,7 @@
 }
 .project__about{
     position: absolute;
+    text-overflow: ellipsis;
     display: flex;
     align-items: center;
     text-align: center;
