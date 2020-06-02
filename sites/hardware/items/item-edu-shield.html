@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ARDUINO образовательный щит</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Ключевые слова страницы">
+    <meta name="description" content="Краткое описание страницы">
+    <link rel="stylesheet" type="text/css" href="../../../styles/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/nav/navOnJS.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/nav/navOnJS-mobile.css">
+    <script src="../../../scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../styles/item/item.css">
+    <link rel="stylesheet" type="text/css" href="../../../styles/item/item-mobile.css">
+</head>
+<body>
+<header class="header" id="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../../index.html" class="logo__link"></a>
+        </div>
+        <div class="navpanel">
+            <a class="navpanel__item" href="../../software.html">Программирование</a>
+            <a class="navpanel__item" href="../itemlist_new.html">Контроллеры</a>
+            <a class="navpanel__item" href="../../projects/project-list.html">Проекты</a>
+        </div>
+        <a href="../../sign-in.html" class="nav__sign-in">Вход</a>
+        <div class="menu">
+            <a href="../../sign-in.html" class="menu__sign-in">Вход</a>
+            <button class="menu__btn" id="menu-btn">
+                <div class="menu__btn-icon"></div>
+            </button>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="../../software.html">Программирование</a></li>
+                <li><a class="menu__item" href="../itemlist_new.html">Контроллеры</a></li>
+                <li><a class="menu__item" href="../../projects/project-list.html">Проекты</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <main>
+        <section class="category">
+            <input type="checkbox" id="drop-btn">
+            <label for="drop-btn">
+                <h4>Категории</h4>
+            </label>
+            <ul class="cat-list">
+                <li>
+                    <a href="../../hardware/itemlist_new.html" class="cat-list__ref">Новое</a>
+                </li>
+                <li>
+                    <a href="../../hardware/itemlist_popular.html" class="cat-list__ref">Популярное</a>
+                </li>
+                <li>
+                    <a href="../../hardware/itemlist_arduino.html" class="cat-list__ref">Ардуино</a>
+                </li>
+                <li>
+                    <a href="../../hardware/itemlist_arduino_pro.html" class="cat-list__ref">Ардуино Про</a>
+                </li>
+                <li>
+                    <a href="../../hardware/itemlist_arduino_edu.html" class="cat-list__ref">Ардуино образование</a>
+                </li>
+            </ul>
+        </section>
+        <section class="item">
+            <h1 class="item__name"> Название </h1>
+            <div class="slide-wrap">
+                <input type="radio" name="slider" id="slide1" class="wrap__radio" checked>
+                <input type="radio" name="slider" id="slide2" class="wrap__radio">
+                <input type="radio" name="slider" id="slide3" class="wrap__radio">
+                <input type="radio" name="slider" id="slide4" class="wrap__radio">
+                
+                <div class="slider">
+                   <div class="slide" id="slide-1">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/t/s/tsx00006_iso.jpg" alt="img1">
+                  </div>
+                  <div class="slide" id="slide-2">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/t/s/tsx00006_unbox.jpg" alt="img2">
+                  </div>
+                  <div class="slide" id="slide-3">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/t/s/tsx00006_front.jpg" alt="img3">
+                  </div>
+                  <div class="slide" id="slide-4">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/t/s/tsx00006_back.jpg" alt="img4">
+                  </div>
+                </div>
+                <div class="slide-nav">
+                <label for="slide1" class="slide-nav__label">
+                 <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/t/s/tsx00006_iso.jpg" alt="1">
+                </label>
+                <label for="slide2" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/t/s/tsx00006_unbox.jpg" alt="2">
+                </label>
+                <label for="slide3" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/t/s/tsx00006_front.jpg" alt="3">
+                </label>
+                <label for="slide4" class="slide-nav__label">
+                    <img src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/75x/f8876a31b63532bbba4e781c30024a0a/t/s/tsx00006_back.jpg" alt="4">
+                </label>
+                </div>
+            </div>
+            <div class="iteminfo">
+                <input type="radio" name="nav" id="review" class="iteminfo__select" checked>
+                <label for="review" class="iteminfo__selectlabel-1">Обзор</label>
+
+              
+                <div class="infocontent">
+                    <div id="infocontent__review">
+                        <h4>Введение
+                        </h4>
+                        <p>Education Shield - это щит, изготовленный на заказ, разработанный Arduino Education, специально разработанный для образовательных целей, позволяющий быстро и легко учиться при создании проектов. Экран предназначен для использования в сочетании с программой CTC. Он подключается к Arduino 101 или UNO и расширяет их возможности. Щит обладает набором функций, которые облегчают создание небольших проектов в классе или за его пределами:
+                        </p>
+                        <img src="https://lh3.googleusercontent.com/zGVK-31yhSaaSag9eGf-V9o87YhrmtZi6E_h5tkNGwm8BAu5hKOoE9ACaWBt6TwHrTghjh40Y79pjZe8vt_Ad-gxFLKuJ6SaTBB9gt2APp2r-6SXBj-J5aMlHqQrb9dHWYXv37bL" alt="">
+                        <ol style="list-style-type: none;" >
+                        <li > Кнопка сброса. При нажатии этой кнопки загружаемая на панель управления программа перезапускается. </li>
+                        <li > Встроенный протодвигатель или используемый для размещения макета.  </li>
+                        <li > Цифровые входные и выходные контакты. Прямое подключение к цифровым контактам на плате.  </li>
+                        <li > Разъем I2C.  </LI>
+                        <li > A1 3-контактный порт заголовка: аналоговый выход / вход. Это также можно использовать в качестве цифрового входа / выхода  .  </LI>
+                        <li > D6 и D9: порты цифрового 3-контактного разъема, подключенные к цифровым контактам 6 и 9.  </li>
+                        <li > Штекер динамика: он подключен к цифровому выводу 11.  </li>
+                        <li > Заземление и выводы питания. Вывод подачи напряжения, используемый в CTC, является выводом IOREF. Этот вывод выводит различные напряжения в зависимости от платы (плата 101: 3,3 В, плата UNO: 5 В).  </li>
+                        <li > Аналоговые входные / выходные контакты.  </LI>
+                        <li > Устройство чтения / записи SD-карт, подключенное к цифровым контактам с 10 по 13.  </li>
+                        </ol>
+                        <h4>
+                            Замечания:</h4>
+                        <UL>
+                            <li >  Избегайте использования аналоговых A4 и A5. К ним подключены подтягивающие резисторы, и их следует избегать, если вы не знаете, что делаете.  </li>
+                            <li >  Не используйте цифровые контакты 4, 10, 11, 12 и 13 при использовании устройства чтения карт памяти micro SD.  </li>
+                            <li >  Цифровые контакты 9–13 нельзя использовать для емкостных датчиков, они подключены к устройству чтения SD-карт, которое имеет резисторы и, следовательно, может давать ложные показания.  </LI>
+                            <li >  Цифровой контакт 6, 9 и аналоговый контакт A1 подключены к портам компонентного модуля. Если используются порты, не используйте соответствующие контакты.  </li>
+                            <li >  Цифровой контакт 11 подключен к аудиоразъему. Если сокет используется, не используйте пин-код.  </li>
+                            </UL>
+                        <h4>Используйте модули с простыми разъемами
+                        </h4>
+                        <p>Простой 3-контактный разъем, который фиксируется на месте, используется для всех 3-контактных модулей. Вот несколько примеров компонентов. Все они упрощают подключение и создание прототипов благодаря своей упрощенной конструкции: модули с нажимными кнопками, модули датчиков освещенности и модули питания светодиодов.
+                        </p>
+                        <p>Если вы пытаетесь подключить сервоприводы или другие 3-контактные модули, убедитесь в правильности направления разъема, чтобы GND был подключен к GND, к источнику питания и к сигналу. Цвет простого соединительного провода поможет вам запомнить его: красный означает питание, оранжевый или белый означает сигнал, а черный означает заземление. Технически вы можете подключать модули с помощью простых разъемов без 3-контактных портов, если вы подключаете провода к правым контактам.
+                        </p>
+                        <img src="https://lh3.googleusercontent.com/A0h_AIc47TXDkmAgAOx6VUu0l85sN0nBPZ6ANfnOd2yg-4f04rp1K8swQm3qPUYPWqSx6v4sly166I0PPbRlVJ643sv6P_t-jqKfNHiB4ZLndSzNpoMqcjXtvypw6cBd02z0V1am" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+            <ul>
+                <li>
+                    <a href="../../privacy_policy.html">
+                        Политика конфиденциальности
+                    </a>
+                </li>
+                <li>
+                    <a href="../../terms_of_service.html">
+                        Условия использования
+                    </a>
+                </li>
+                <li>
+                    <a href="../../about_us.html">
+                        О нас
+                    </a>
+                </li>
+            </ul>
+        </div>  
+        <div class="footer__copyright">
+            <a href="../../copyright.html" >
+                © 2020 Ардуино
+           </a>
+        </div>
+        <div class="goup">
+            <a href="#">
+                <svg class="block center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg>
+            </a>
+        </div>
+        <div class="go2fb"> 
+            <a href="https://www.facebook.com/profile.php?id=100022277227464&__tn__=%2CdC-R-R&eid=ARDY8PjTlcacGCRqtpFWjoeDJTHaPeMY0nHfb8aKwQcPcWy-dfDBSYdkxDy1vfmHgg9joUT_39IhwgTc&hc_ref=ARTw8vcZvS-fHRJPj5hxRt4U_5IiAiX06ofk5h4JjL0RrdMMAKWbxpLCIFJaiqRrcNE&fref=nf"  target="_blank">
+                <img class="block centerfb" src="https://content.arduino.cc/website/social_icons/icon-facebook.svg" alt="facebook">
+            </a>
+        </div>
+        <div class="go2vk"> 
+            <a href="https://vk.com/press______f"  target="_blank">
+                <img class="block centervk" src="http://vk.com/images/svg_icons/ic_head_logo.svg" alt="vkontakte">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
