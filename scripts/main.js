@@ -1,33 +1,31 @@
-window.addEventListener("load",function () {
-    /* С загрузкой страницы назначаем обработку события на элемент с id = "menu-btn" на нажатие
+/* С загрузкой страницы назначаем обработку события на элемент с id = "menu-btn" на нажатие
     т.к. скрипт объявляю в head, до загрузки body, а тем более menu-btn, использую событие загрузки
     страницы
      */
-    /* Открытие меню по кнопке */
-    document.getElementById("menu-btn").addEventListener("click",function () {
-        openParentElement(this);
-    });
-
-    /* Переход по якорным ссылкам */
-    const links = document.getElementsByClassName('anker-link');
-    for (let i = 0; i < links.length; i++){
-        links[i].addEventListener('click',function (e){
-            e.preventDefault();
-            const elementId = this.getAttribute('href');
-            document.querySelector(elementId).scrollIntoView({
-                block: 'center',
-                behavior: 'smooth'
-            });
-        });
-    }
+/* Открытие меню по кнопке */
+document.getElementById("menu-btn").addEventListener("click", function () {
+    openParentElement(this);
 });
+
+/* Переход по якорным ссылкам */
+const links = document.getElementsByClassName('anker-link');
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        const elementId = this.getAttribute('href');
+        document.querySelector(elementId).scrollIntoView({
+            block: 'center',
+            behavior: 'smooth'
+        });
+    });
+}
 
 /* События на скролл страницы */
 
-window.addEventListener("scroll",function () {
-    if (document.documentElement.clientWidth > 768){
+window.addEventListener("scroll", function () {
+    if (document.documentElement.clientWidth > 768) {
         /* Изменяет меню при сколле */
-        setScrollElement(document.getElementById("header"),0);
+        setScrollElement(document.getElementById("header"), 0);
     }
 })
 
@@ -35,22 +33,26 @@ window.addEventListener("scroll",function () {
 
 function setScrollElement(element, top) {
     let positionInWindow = element.getBoundingClientRect();
-    if (positionInWindow.top < top){
-        element.classList.add(element.classList.item(0)+"_scroll");
+    if (positionInWindow.top < top) {
+        element.classList.add(element.classList.item(0) + "_scroll");
     } else {
-        element.classList.remove(element.classList.item(0)+"_scroll");
+        element.classList.remove(element.classList.item(0) + "_scroll");
     }
 }
+
 function addItem(element) {
     let item = element.querySelector(".fieldset-part").cloneNode(true);
     element.parentNode.insertBefore(item, element);
 }
+
 function removeItem(element) {
     element.parentNode.parentNode.removeChild(element.parentNode);
 }
+
 function openFirstChildElement(element) {
-    element.firstElementChild.classList.toggle(element.firstElementChild.classList[0]+'_open');
+    element.firstElementChild.classList.toggle(element.firstElementChild.classList[0] + '_open');
 }
+
 function openParentElement(element) {
-    element.parentElement.classList.toggle(element.parentElement.classList[0]+'_open');
+    element.parentElement.classList.toggle(element.parentElement.classList[0] + '_open');
 }
