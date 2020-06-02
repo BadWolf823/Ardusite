@@ -86,6 +86,8 @@ main{
     justify-content: center;
     -ms-flex-pack: center;
     align-content: center;
+    align-items: center;
+    -ms-flex-align: center;
     width: 500px;
     height: 500px;
 }
@@ -93,7 +95,6 @@ main{
     text-align: center;
     width: 100%;
     color: black;
-    height: 60px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 200;
 }
@@ -106,7 +107,7 @@ main{
 .registerref__img{
     display: block;
     position: relative;
-    border-radius: 150px;
+    border-radius: 50%;
     height: 250px;
 }
 .registerref__img:hover{

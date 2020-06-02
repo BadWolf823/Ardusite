@@ -3,6 +3,7 @@ main{
 }
 main *{
     box-sizing: content-box;
+    transition: 0.5s;
 }
 .registration{
     position: relative;
@@ -60,6 +61,7 @@ main *{
     margin: 20px;
 }
 .regform__submit{
+    border: none;
     display: block;
     color: white;
     width: 280px;

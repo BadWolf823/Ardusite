@@ -15,7 +15,6 @@
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .registersug{
-        margin-top: -50px;
         display: -ms-flexbox;
         -ms-flex-direction: column;
         -ms-flex-pack: distribute;
