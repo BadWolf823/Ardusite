@@ -2,23 +2,39 @@ main{
     display: block;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+main *{
+    transition: 0.5s;
+    text-transform: uppercase;
+}
 .category{
     padding-top: 20px;
 }
 .cat-list{
-
+    list-style-type: none;
+    position: fixed;
+    top: 150px;
+    left: 45px;
+    text-transform: uppercase;
 }
 .cat-list__ref{
+    font-weight: lighter;
+    padding: 5px 0;
+    color: white;
+    text-transform: uppercase;
     text-align: center;
-    background-color: #00979d;
+    background-color: rgba(0, 151, 157, 0.75);
+    border-bottom: 1px solid #007074;
     min-height: 30px;
-    max-height:50px;
-    width: 100px;
+    width: 120px;
     display: block;
-    padding-bottom: 2px;
 }
 .cat-list__ref:hover{
     background-color: rgb(0, 102, 102);
+    color: white;
+}
+.cat-list__ref_active{
+    background-color: #a5f2ee;
+    color: black;
 }
 #drop-btn{
     display: none;
@@ -31,9 +47,7 @@ main{
 
 .content{
     position: relative;
-    left: 50%;
-    margin-left: -450px;
-    margin-top: -170px;
+    margin: 0 auto;
     display: flex;
     display: -ms-flexbox;
     flex-wrap: wrap;
@@ -45,9 +59,17 @@ main{
     width: 900px;
 }
 .content__h{
-    text-align: center;
-    padding-bottom: 10px;
+    padding: 10px 0;
     width: 100%;
+    font-size: 1.8em;
+}
+.content-nav__a{
+    font-weight: lighter;
+    padding: 5px;
+    background-color: #007074;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
 }
 .content-item{
     margin-bottom: 10px;

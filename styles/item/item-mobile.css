@@ -38,6 +38,7 @@
   }
 }
 @media screen and (max-width: 830px){
+
   .item{
     max-width: 500px;
     margin-left: -250px;

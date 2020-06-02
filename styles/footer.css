@@ -44,14 +44,23 @@ footer {
     background-color: #3578E5;
 }
 .goup{
-    position: relative;
-    top: -110px;
-    right: 30px;
-    fill: white;
-    float: right;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    position: fixed;
+    right: 10px;
+    z-index: 20;
+    bottom: 120px;
+}
+.goup_scroll{
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 151, 157, 0.6);
 }
 .goup:hover{
-    fill: yellow;
+    background-color: #00979d;
 }
 .footer__info{
     padding-top: 30px;

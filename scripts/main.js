@@ -27,6 +27,11 @@ window.addEventListener("scroll", function () {
         /* Изменяет меню при сколле */
         setScrollElement(document.getElementById("header"), 0);
     }
+    if (pageYOffset > 0){
+        document.querySelector('.goup').classList.add('goup_scroll');
+    } else {
+        document.querySelector('.goup').classList.remove('goup_scroll');
+    }
 })
 
 /******************* ФУНКЦИИ **********************/
