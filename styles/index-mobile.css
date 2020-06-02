@@ -1,0 +1,9 @@
+@media screen and (max-width: 400px){
+    .main{
+        margin: 5px;
+    }
+    .item{
+        margin: 5px;
+        width: 100%;
+    }
+}
