@@ -14,32 +14,32 @@
     <script src="../../../scripts/main.js"></script>
     <link rel="stylesheet" type="text/css" href="../../../styles/item/item.css">
     <link rel="stylesheet" type="text/css" href="../../../styles/item/item-mobile.css">
-</head> 
-<body>  
-    <header class="header" id="header">
-        <nav class="nav">
-            <div class="logo">
-                <a href="../../index.html" class="logo__link"></a>
-            </div>
-            <div class="navpanel">
-                <a class="navpanel__item" href="../../software.html">Программирование</a>
-                <a class="navpanel__item" href="../itemlist_new.html">Контроллеры</a>
-                <a class="navpanel__item" href="../../projects/project-list.html">Проекты</a>
-            </div>
-            <a href="../../sign-in.html" class="nav__sign-in">Вход</a>
-            <div class="menu">
-                <a href="../../sign-in.html" class="menu__sign-in">Вход</a>
-                <button class="menu__btn" id="menu-btn">
-                    <div class="menu__btn-icon"></div>
-                </button>
-                <ul class="menu__box">
-                    <li><a class="menu__item" href="../../software.html">Программирование</a></li>
-                    <li><a class="menu__item" href="../itemlist_new.html">Контроллеры</a></li>
-                    <li><a class="menu__item" href="../../projects/project-list.html">Проекты</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+</head>
+<body>
+<header class="header" id="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../../index.html" class="logo__link"></a>
+        </div>
+        <div class="navpanel">
+            <a class="navpanel__item" href="../../software.html">Программирование</a>
+            <a class="navpanel__item" href="../itemlist_new.html">Контроллеры</a>
+            <a class="navpanel__item" href="../../projects/project-list.html">Проекты</a>
+        </div>
+        <a href="../../sign-in.html" class="nav__sign-in">Вход</a>
+        <div class="menu">
+            <a href="../../sign-in.html" class="menu__sign-in">Вход</a>
+            <button class="menu__btn" id="menu-btn">
+                <div class="menu__btn-icon"></div>
+            </button>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="../../software.html">Программирование</a></li>
+                <li><a class="menu__item" href="../itemlist_new.html">Контроллеры</a></li>
+                <li><a class="menu__item" href="../../projects/project-list.html">Проекты</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
     <main>
         <section class="category">
             <input type="checkbox" id="drop-btn">
@@ -60,7 +60,7 @@
                     <a href="../../hardware/itemlist_arduino_pro.html" class="cat-list__ref">Ардуино Про</a>
                 </li>
                 <li>
-                   <a href="../../hardware/itemlist_arduino_edu.html" class="cat-list__ref">Ардуино образование</a>
+                    <a href="../../hardware/itemlist_arduino_edu.html" class="cat-list__ref">Ардуино образование</a>
                 </li>
             </ul>
         </section>
@@ -220,9 +220,9 @@
                         <UL>
                             <li> <strong> Vin. </strong> & nbsp; Входное напряжение для платы Arduino при использовании внешнего источника питания (в отличие от 5 вольт от USB-подключения или другого регулируемого источника питания). Вы можете подавать напряжение через этот контакт или, если вы подаете напряжение через разъем питания, получить к нему доступ через этот контакт. </Li>
                             <li> <strong> 5 В </strong>. Этот вывод выводит регулируемое напряжение 5 В от регулятора на плате. Плата может питаться от разъема питания постоянного тока (7–12 В), разъема USB (5 В) или VIN-контакта платы (7–12 В). Подача напряжения через контакты 5 В или 3,3 В обходит регулятор и может повредить вашу плату. Мы не советуем это. </Li>
-                            <Li> <strong> 3V3 </STRONG>. Питание 3,3 В от встроенного регулятора. Максимальный ток потребления составляет 800 мА. Этот регулятор также обеспечивает питание микроконтроллера SAM3X. </Li>
-                            <Li> <strong> GND </STRONG>. Штыри. </Li>
-                            <Li> <strong> IOREF </STRONG>. Этот штырь на плате Arduino обеспечивает источник опорного напряжения, с которой микроконтроллер работает. Правильно настроенный экран может считывать напряжение на выводе IOREF и выбирать соответствующий источник питания или включать преобразователи напряжения на выходах для работы с 5 В или 3,3 В. </li>
+                            <Li> <сильный> 3V3 </STRONG>. Питание 3,3 В от встроенного регулятора. Максимальный ток потребления составляет 800 мА. Этот регулятор также обеспечивает питание микроконтроллера SAM3X. </Li>
+                            <Li> <сильный> GND </STRONG>. Штыри. </Li>
+                            <Li> <сильный> IOREF </STRONG>. Этот штырь на плате Arduino обеспечивает источник опорного напряжения, с которой микроконтроллер работает. Правильно настроенный экран может считывать напряжение на выводе IOREF и выбирать соответствующий источник питания или включать преобразователи напряжения на выходах для работы с 5 В или 3,3 В. </li>
                             </UL>
                         <h3>Память</h3>
                         <p>SAM3X имеет 512 КБ (2 блока по 256 КБ) флэш-памяти для хранения кода. Загрузчик предварительно сожжен на заводе Atmel и хранится в выделенной памяти ПЗУ. Доступная SRAM составляет 96 КБ в двух смежных банках по 64 КБ и 32 КБ. Вся доступная память (Flash, RAM и ROM) может быть доступна напрямую как единое адресное пространство.

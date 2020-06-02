@@ -5,18 +5,33 @@ window.addEventListener("load",function () {
      */
     /* Открытие меню по кнопке */
     document.getElementById("menu-btn").addEventListener("click",function () {
-        openCloseMenu(this);
+        openParentElement(this);
     });
-})
+
+    /* Переход по якорным ссылкам */
+    const links = document.getElementsByClassName('anker-link');
+    for (let i = 0; i < links.length; i++){
+        links[i].addEventListener('click',function (e){
+            e.preventDefault();
+            const elementId = this.getAttribute('href');
+            document.querySelector(elementId).scrollIntoView({
+                block: 'center',
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+
+/* События на скролл страницы */
+
 window.addEventListener("scroll",function () {
     if (document.documentElement.clientWidth > 768){
         /* Изменяет меню при сколле */
         setScrollElement(document.getElementById("header"),0);
     }
 })
-function openCloseMenu(element) {
-    element.parentElement.classList.toggle(element.parentElement.classList.item(0)+"_open");
-}
+
+/******************* ФУНКЦИИ **********************/
 
 function setScrollElement(element, top) {
     let positionInWindow = element.getBoundingClientRect();
