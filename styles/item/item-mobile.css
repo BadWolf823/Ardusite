@@ -1,7 +1,7 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   
 }
-@media screen and (max-width: 1010px){
+@media screen and (max-width: 1333px){
   .cat-list{
     position: relative;
     display: none;

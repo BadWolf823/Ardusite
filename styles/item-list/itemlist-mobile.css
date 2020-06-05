@@ -1,7 +1,8 @@
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1366px) {
     .cat-list {
         position: relative;
         top: 0;
+        left: 0;
         display: none;
     }
 
@@ -46,14 +47,14 @@
 
 @media screen and (max-width: 910px) {
     .content {
-        width: 670px;
-        margin-left: -335px;
+        width: auto;
+        margin-left: 0;
     }
 }
 
 @media screen and (max-width: 680px) {
     .content {
-        width: 320px;
-        margin-left: -160px;
+        width: auto;
+        margin-left: 0;
     }
 }

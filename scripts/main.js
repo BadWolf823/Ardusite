@@ -4,7 +4,7 @@
      */
 /* Открытие меню по кнопке */
 document.getElementById("menu-btn").addEventListener("click", function () {
-    openParentElement(this);
+    toggleClassNameParent(this,'open');
 });
 
 /* Переход по якорным ссылкам */
@@ -53,11 +53,6 @@ function addItem(element) {
 function removeItem(element) {
     element.parentNode.parentNode.removeChild(element.parentNode);
 }
-
-function openFirstChildElement(element) {
-    element.firstElementChild.classList.toggle(element.firstElementChild.classList[0] + '_open');
-}
-
-function openParentElement(element) {
-    element.parentElement.classList.toggle(element.parentElement.classList[0] + '_open');
+function toggleClassNameParent(element, mod) {
+    element.parentElement.classList.toggle(element.parentElement.classList[0] + '_'+ mod);
 }

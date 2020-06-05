@@ -59,6 +59,9 @@ main *{
     width: 900px;
 }
 .content__h{
+    font-weight: lighter;
+    text-align: center;
+    color: rgba(0, 112, 116, 0.66);
     padding: 10px 0;
     width: 100%;
     font-size: 1.8em;
@@ -78,6 +81,7 @@ main *{
     width: 280px;
 }
 .content-item__h{
+    font-weight: normal;
     color: teal;
     padding-top: 10px;
     width: 100%;

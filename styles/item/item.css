@@ -5,22 +5,33 @@ main{
     padding-top: 20px;
 }
 .cat-list{
-    display: block;
+    list-style-type: none;
+    position: fixed;
+    top: 150px;
+    left: 45px;
+    text-transform: uppercase;
 }
 .cat-list__ref{
+    font-weight: lighter;
+    padding: 5px 0;
+    color: white;
+    text-transform: uppercase;
     text-align: center;
-    background-color: #00979d;
+    background-color: rgba(0, 151, 157, 0.75);
+    border-bottom: 1px solid #007074;
     min-height: 30px;
-    max-height:50px;
-    width: 100px;
+    width: 120px;
     display: block;
-    padding-bottom: 2px;
 }
 .cat-list__ref:hover{
     background-color: rgb(0, 102, 102);
+    color: white;
+}
+.cat-list__ref_active{
+    background-color: #a5f2ee;
+    color: black;
 }
 .item{
-    margin-top: -170px;
     position: relative;
     left: 50%;
     margin-left: -400px;
@@ -178,6 +189,7 @@ main{
 .slide-nav{
     margin-top: 50px;
     display: flex;
+    justify-content: center;
     display: -ms-flexbox;
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -187,8 +199,8 @@ main{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
-    display: inline-block;
-    width: 75px;
+    display: block;
+    width: max-content;
     height: 75px;
     cursor: pointer;
 }
