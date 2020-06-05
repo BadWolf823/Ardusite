@@ -39,23 +39,23 @@
     <main class="main">
         <h1 class="main__title">Добавление проекта</h1>
         <div class="content">
-            <form class="form">
+            <form class="form" id="form">
                 <div class="group">
                     <h2 class="group__title">Общая информация</h2>
                     <div class="fieldset">
                         <label for="name-project" class="fieldset__label">Название проекта</label>
-                        <input type="text" id="name-project" class="fieldset__input">
+                        <input type="text" id="name-project" class="fieldset__input" required>
                     </div>
                     <div class="fieldset">
                         <label for="main-img-project" class="fieldset__label">Обложка проекта</label>
                         <div id="main-img-project" class="form-image">
                             <label class="form-image__label" for="main-image">Загрузить</label>
-                            <input class="form-image__input-file" id="main-image" type="file" accept="image/jpeg">
+                            <input class="form-image__input-file" id="main-image" type="file" accept="image/jpeg" required>
                         </div>
                     </div>
                     <div class="fieldset">
                         <label for="about-project" class="fieldset__label">О проекте</label>
-                        <textarea class="fieldset__textarea" id="about-project"></textarea>
+                        <textarea class="fieldset__textarea" id="about-project" required></textarea>
                     </div>
                 </div>
                 <div class="group">
@@ -64,7 +64,7 @@
                         <label for="img-connect" class="fieldset__label">Схема подключения</label>
                         <div id="img-connect" class="form-image">
                             <label class="form-image__label" for="scheme">Загрузить</label>
-                            <input class="form-image__input-file" id="scheme" type="file" accept="image/jpeg">
+                            <input class="form-image__input-file" id="scheme" type="file" accept="image/jpeg" required>
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                     <h2 class="group__title">Программный код</h2>
                     <div class="sketch">
                         <div class="fieldset-link">
-                            <button class="fieldset-link__btn" onclick="openParentElement(this)" type="button">
+                            <button class="fieldset-link__btn" onclick="toggleClassNameParent(this,'open')" type="button">
                                 GITHUB<label for="link-git" class="fieldset-link__label"></label>
                             </button>
                             <input class="fieldset-link__link" id="link-git" type="url" placeholder="@github.com">
@@ -152,5 +152,6 @@
         </div>
     </footer>
     <script src="../../scripts/main.js"></script>
+    <script src="../../scripts/add-project.js"></script>
 </body>
 </html>

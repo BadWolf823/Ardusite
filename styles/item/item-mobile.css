@@ -5,6 +5,8 @@
   .cat-list{
     position: relative;
     display: none;
+    top: 0;
+    left: 0;
   }
   #drop-btn:checked ~ .cat-list{
     display: block;
@@ -16,7 +18,7 @@
   }
   .category{
     position: relative;
-    padding: 0px;  
+    padding: 0px;
   }
   .item{
     margin-top: 0px;
@@ -31,7 +33,7 @@
   }
   #drop-btn + label > h4{
     display: block;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0 10px 0;
   }
   #drop-btn + label:hover{
     background-color: teal;

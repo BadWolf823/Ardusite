@@ -24,12 +24,13 @@ body{
     box-shadow: 0 0 2px gray;
 }
 .about-project__main-image{
-    min-width: 40%;
-    max-width: 50%;
+    min-width: 30%;
+    max-width: 40%;
+    max-height: 50%;
     height: auto;
 }
 .about-project__information{
-    max-width: 60%;
+    max-width: 100%;
     flex-grow: 2;
     padding: 0.5em;
     background: #a5f2ee;
@@ -67,7 +68,8 @@ body{
     height: 250px;
 }
 .parts__item-image{
-    width: 250px;
+    max-height: 250px;
+    max-width: 250px;
 }
 .parts__item{
     text-align: center;
