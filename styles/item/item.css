@@ -12,13 +12,12 @@ main{
 }
 .cat-list__ref{
     font-weight: lighter;
-    padding: 5px 0;
     color: white;
     text-transform: uppercase;
     text-align: center;
     background-color: rgba(0, 151, 157, 0.75);
     border-bottom: 1px solid #007074;
-    min-height: 30px;
+    padding: 10px 5px;
     width: 120px;
     display: block;
 }
@@ -35,6 +34,11 @@ main{
     left: 50%;
     margin-left: -400px;
     width: 800px;
+}
+.item__name{
+    font-weight: normal;
+    color: #00979d;
+    padding: 10px 5px;
 }
 .iteminfo{
     width: 100%;
@@ -245,4 +249,8 @@ main{
     display: none;
     cursor: pointer;
     width: 100%;
+}
+td{
+    text-align: center;
+    padding: 5px;
 }

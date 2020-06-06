@@ -40,10 +40,45 @@
   }
 }
 @media screen and (max-width: 830px){
-
+  label[for="techvalues"],
+  label[for="FAQ"],
+  label[for="documentation"],
+  label[for="review"]{
+    background-size: auto 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+  }
+  label[for="techvalues"]{
+    background-image: url("../../images/icon-technique.png");
+  }
+  label[for="FAQ"]{
+    background-image: url("../../images/icon-faq.png");
+  }
+  label[for="review"]{
+    background-image: url("../../images/icon-review.png");
+  }
+  label[for="documentation"]{
+    background-image: url("../../images/icon-platform.png");
+  }
   .item{
     max-width: 500px;
-    margin-left: -250px;
+  }
+  #review:checked+label{
+    color: transparent;
+    background-color: #a5f2ee;
+  }
+  #techvalues:checked+label{
+    color: transparent;
+    background-color:  #a5f2ee;
+  }
+  #documentation:checked+label{
+    color: transparent;
+    background-color:  #a5f2ee;
+  }
+  #FAQ:checked+label{
+    color: transparent;
+    background-color:  #a5f2ee;
   }
   
 }

@@ -18,13 +18,7 @@
         display: -ms-flexbox;
         -ms-flex-direction: column;
         -ms-flex-pack: distribute;
-        justify-content: space-around;
-    }
-    
- }
- @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 1040px) {
-    .registersug{
-        margin-top: -150px;
+        justify-content: center;
     }
     
  }

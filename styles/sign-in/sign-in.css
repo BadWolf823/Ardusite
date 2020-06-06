@@ -92,6 +92,8 @@ main{
     height: 500px;
 }
 .registersug__h{
+    padding-bottom: 20px;
+    height: max-content;
     text-align: center;
     width: 100%;
     color: black;

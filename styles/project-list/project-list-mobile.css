@@ -9,6 +9,7 @@
 @media screen and (max-width: 768px) {
     .project{
         margin: 5px 0;
+        width: 100%;
     }
     .list-projects{
         display: block;

@@ -10,10 +10,10 @@ document.querySelector('.form__submit').addEventListener('click',function (event
     text.classList.add('uploadProject__text')
     buttonEnd.classList.add('uploadProject__buttonEnd');
     uploadProject.classList.add('uploadProject');
-    uploadProject.append(text);
+    uploadProject.appendChild(text);
     buttonEnd.addEventListener('click',function (event) {
         document.location.href = '../projects/project-list.html';
     },true)
-    uploadProject.append(buttonEnd);
-    document.querySelector('.main').append(uploadProject);
+    uploadProject.appendChild(buttonEnd);
+    document.querySelector('.main').appendChild(uploadProject);
 },true);
