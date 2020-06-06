@@ -4,13 +4,11 @@
         display: block;
     }
     .registration{
-        width: 800px;
-        left: 50%;
+        width: 100%;
         display: block;
-        margin-left: -400px;
     }
     .registration__h{
-        width: 800px;
+        width: 100%;
         display: block;
     }
     .regform{
@@ -40,15 +38,17 @@
         display: block;
     }
  }
- @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:800px){
-    
+ @media screen and (max-width:800px){
+
     .regform{
         display: flex;
         display: -ms-flexbox;
         -ms-flex-align: center;
         -ms-flex-direction: column;
+        max-width: 100%;
+        width: auto;
         -ms-flex: 1;
-        width: 800px;
+
         margin-top: 40px;
     }
     .regcheck{
