@@ -24,11 +24,11 @@ let updateItemList = function () {
 }
 
 for (let i = 0; i < contentNavMain.length; i++) {
-    let thisSelectUser = localStorage.getItem(contentNavMain[i].id);
     contentNavMain[i].parentElement.tabIndex = 1;
     if (localStorage.getItem(contentNavMain[i].id) === null) { //Если пусто хранилище
         localStorage.setItem(contentNavMain[i].id, 'any-'+contentNavMain[i].id);
     }
+    let thisSelectUser = localStorage.getItem(contentNavMain[i].id);
     contentNavMain[i].setAttribute('data-select', document.getElementById(thisSelectUser).innerHTML);
     contentNavMain[i].addEventListener('click', function () {
         this.parentElement.addEventListener('blur', function () {
