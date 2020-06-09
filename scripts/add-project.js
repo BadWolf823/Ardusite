@@ -38,5 +38,5 @@ function addPart(element) {
     item.appendChild(inputName);
     item.appendChild(inputNumber);
     item.append(remove);
-    element.parentNode.before(item);
+    element.before(item);
 }
