@@ -42,12 +42,6 @@ fieldset{
 .fieldset__input, .fieldset__textarea, .form-image{
     flex-grow: 2;
 }
-.fieldset__input-file, .form-image__input-file, .sketch-upload__input-file{
-    display: none;
-}
-.fieldset-part__add .fieldset-part{
-    display: none;
-}
 .fieldset-part__input-number, .fieldset-part__input-name,
 .fieldset__input, .fieldset__textarea{
     border-style: solid;
@@ -152,7 +146,6 @@ fieldset{
     background-color: #444444;
     border: none;
     overflow: hidden;
-    min-width: 0;
     max-width: 0;
 }
 .fieldset-link_open .fieldset-link__link{
@@ -166,19 +159,6 @@ fieldset{
     padding: 10px 0;
     font-size: 2em;
     font-weight: bold;
-}
-.form-image__label, .sketch-upload__label{
-    font-size: 1.4em;
-    max-width: 300px;
-    padding: 5px;
-    color: white;
-    background-color: #00979d;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.sketch-upload__label:hover{
-    background-color: #007074;
 }
 .form__btn{
     padding: 20px 0;
@@ -230,6 +210,9 @@ fieldset{
 .uploadProject__buttonEnd:hover{
     background-color: #004a4c;
 }
-input:invalid ~ label{
+input:invalid{
+    border: 2px solid rgba(255, 0, 0, 0.53);
+}
+textarea:invalid{
     border: 2px solid red;
 }

@@ -49,7 +49,7 @@
                     <div class="fieldset">
                         <label for="main-img-project" class="fieldset__label">Обложка проекта</label>
                         <div id="main-img-project" class="form-image">
-                            <label class="form-image__label" for="main-image">Загрузить</label>
+                            <label class="form-image__label" for="main-image"></label>
                             <input class="form-image__input-file" id="main-image" type="file" accept="image/jpeg" required>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                     <div class="fieldset">
                         <label for="img-connect" class="fieldset__label">Схема подключения</label>
                         <div id="img-connect" class="form-image">
-                            <label class="form-image__label" for="scheme">Загрузить</label>
+                            <label class="form-image__label" for="scheme"></label>
                             <input class="form-image__input-file" id="scheme" type="file" accept="image/jpeg" required>
                         </div>
                     </div>
@@ -76,15 +76,8 @@
                             <input class="fieldset-part__input-number" type="number" value="0">
                             <button class="fieldset-part__del" type="button" onclick="removeItem(this)"></button>
                         </li>
-                        <button class="fieldset-part fieldset-part__add" id="add-item" onclick="addItem(this)" type="button">
+                        <button class="fieldset-part fieldset-part__add" id="add-item" onclick="addPart(this)" type="button">
                             <img src="../../images/add-icon.png" alt="Добавить элемент">
-                            <!-- Добавочный блок для формы визуально скрыт, извиняюсь за костыль-->
-                            <li class="fieldset-part">
-                                <input class="fieldset-part__input-name" type="text">
-                                <input class="fieldset-part__input-number" type="number" value="0">
-                                <div class="fieldset-part__del" type="button" onclick="removeItem(this)"></div>
-                            </li>
-                            <!-- Добавочный блок для формы визуально скрыт -->
                         </button>
                     </ul>
                 </div>
@@ -99,7 +92,7 @@
                         </div>
                         <span class="sketch__or">ИЛИ</span>
                         <fieldset class="sketch-upload">
-                            <label class="sketch-upload__label" for="sketch">Загрузить исходный код</label>
+                            <label class="sketch-upload__label" for="sketch"></label>
                             <input class="sketch-upload__input-file" id="sketch" type="file">
                         </fieldset>
                     </div>

@@ -1,5 +1,8 @@
-document.querySelector('.form__submit').addEventListener('click',function (event) {
-    event.preventDefault();
+document.getElementById('form').addEventListener('submit', function (event) {
+    uploadProject(event);
+})
+function uploadProject(event) {
+    event.preventDefault()
     let uploadProject = document.createElement('div');
     let text = document.createElement('p')
     text.innerHTML = 'ПРОЕКТ ДОБАВЛЕН';
@@ -11,9 +14,29 @@ document.querySelector('.form__submit').addEventListener('click',function (event
     buttonEnd.classList.add('uploadProject__buttonEnd');
     uploadProject.classList.add('uploadProject');
     uploadProject.appendChild(text);
-    buttonEnd.addEventListener('click',function (event) {
+    buttonEnd.addEventListener('click',function () {
         document.location.href = '../projects/project-list.html';
     },true)
     uploadProject.appendChild(buttonEnd);
     document.querySelector('.main').appendChild(uploadProject);
-},true);
+}
+function addPart(element) {
+    let item = document.createElement('li');
+    item.classList.add('fieldset-part');
+    let inputName = document.createElement("input");
+    inputName.classList.add("fieldset-part__input-name");
+    inputName.type = 'text';
+    let inputNumber = document.createElement("input");
+    inputNumber.classList.add('fieldset-part__input-number');
+    inputNumber.type = 'number';
+    inputNumber.value = '0';
+    let remove = document.createElement('div');
+    remove.classList.add("fieldset-part__del");
+    remove.addEventListener('click',function () {
+        removeItem(this);
+    })
+    item.appendChild(inputName);
+    item.appendChild(inputNumber);
+    item.append(remove);
+    element.parentNode.before(item);
+}

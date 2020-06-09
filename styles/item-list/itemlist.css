@@ -18,7 +18,7 @@ main *{
 }
 .cat-list__ref{
     font-weight: lighter;
-    padding: 5px 0;
+    padding: 10px 5px;
     color: white;
     text-transform: uppercase;
     text-align: center;

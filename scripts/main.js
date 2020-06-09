@@ -45,11 +45,6 @@ function setScrollElement(element, top) {
     }
 }
 
-function addItem(element) {
-    let item = element.querySelector(".fieldset-part").cloneNode(true);
-    element.parentNode.insertBefore(item, element);
-}
-
 function removeItem(element) {
     element.parentNode.parentNode.removeChild(element.parentNode);
 }

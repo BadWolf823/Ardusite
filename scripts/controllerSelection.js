@@ -2,12 +2,11 @@ const contentNavMain = document.getElementsByClassName('content-nav-item__elemen
 
 /* Проверка соответсвия элемента фильтру */
 let checkInItem = function (item) {
-    let itemListInformation = item.getAttribute('data-about');
-    let itemInformation = itemListInformation.split(' ');
+    let aboutItem = item.getAttribute('data-about');
     for (let i = 0; i < contentNavMain.length; i++) {
-        if (itemInformation[i].indexOf('any') !== -1) continue; //Если "метка" в данной позиции содержит 'any' - пропуск
+        if (aboutItem.indexOf('any-'+contentNavMain[i].id) !== -1) continue;
         if (localStorage.getItem(contentNavMain[i].id).indexOf('any') !== -1) continue; //Если в фильтре есть срока 'any' - любое, то пропускаем итерацию
-        if (itemInformation[i] !== localStorage.getItem(contentNavMain[i].id)) return false; //Сюда цикл дойдёт, если не выполнились предыдущие условия
+        if (aboutItem.indexOf(localStorage.getItem(contentNavMain[i].id)) === -1) return false; //Сюда цикл дойдёт, если не выполнились предыдущие условия
     }
     return true;
 }
@@ -24,11 +23,11 @@ let updateItemList = function () {
 }
 
 for (let i = 0; i < contentNavMain.length; i++) {
-    let thisSelectUser = localStorage.getItem(contentNavMain[i].id);
     contentNavMain[i].parentElement.tabIndex = 1;
     if (localStorage.getItem(contentNavMain[i].id) === null) { //Если пусто хранилище
         localStorage.setItem(contentNavMain[i].id, 'any-'+contentNavMain[i].id);
     }
+    let thisSelectUser = localStorage.getItem(contentNavMain[i].id);
     contentNavMain[i].setAttribute('data-select', document.getElementById(thisSelectUser).innerHTML);
     contentNavMain[i].addEventListener('click', function () {
         this.parentElement.addEventListener('blur', function () {
