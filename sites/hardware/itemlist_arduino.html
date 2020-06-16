@@ -23,18 +23,23 @@
         </div>
         <div class="navpanel">
             <a class="navpanel__item" href="../software.html">Программирование</a>
-            <a class="navpanel__item" href="itemlist_new.html">Контроллеры</a>
+            <a class="navpanel__item" href="../hardware/itemlist_new.html">Контроллеры</a>
             <a class="navpanel__item" href="../projects/project-list.html">Проекты</a>
         </div>
-        <a href="../sign-in.html" class="nav__sign-in">Вход</a>
+        <div class="user">
+            <a href="../../sites/sign-in.html" class="user__sign-in" id="user">Вход</a>
+            <ul class="user-list">
+                <li class="user-list__btn" id="user-edit"><a href="../edit-profile.html">Редактировать профиль</a></li>
+                <li class="user-list__btn" id="log-out">Выйти</li>
+            </ul>
+        </div>
         <div class="menu">
-            <a href="../sign-in.html" class="menu__sign-in">Вход</a>
             <button class="menu__btn" id="menu-btn">
                 <div class="menu__btn-icon"></div>
             </button>
             <ul class="menu__box">
                 <li><a class="menu__item" href="../software.html">Программирование</a></li>
-                <li><a class="menu__item" href="itemlist_new.html">Контроллеры</a></li>
+                <li><a class="menu__item" href="../hardware/itemlist_new.html">Контроллеры</a></li>
                 <li><a class="menu__item" href="../projects/project-list.html">Проекты</a></li>
             </ul>
         </div>
@@ -79,7 +84,9 @@
             <li class="content-nav-item">
                 <p class="content-nav-item__element content-nav-item__element_main" id="type-product">Тип продукта</p>
                 <ul class="content-nav-item__list">
-                    <li class="content-nav-item__element  content-nav-item__element_any" id="any-type-product">Все продукты</li>
+                    <li class="content-nav-item__element  content-nav-item__element_any" id="any-type-product">Все
+                        продукты
+                    </li>
                     <li class="content-nav-item__element" id="controller">Контроллер</li>
                     <li class="content-nav-item__element" id="shield">Шилд</li>
                     <li class="content-nav-item__element" id="kit">Набор</li>
@@ -193,7 +200,7 @@
                 <h4 class="content-item__h">Arduino MKR RGB Shield</h4>
             </a>
         </div>
-        <div class="content-item"  data-about="shield diy any-level">
+        <div class="content-item" data-about="shield diy any-level">
             <a href="items/item-mkr-env-shield.html">
                 <img class="content-item__img"
                      src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/small_image/560x/54a39ccf936f55cfda55ed856d76c198/a/s/asx00011_featurede.jpg"
@@ -300,7 +307,9 @@
         </div>
         <div class="content-item" data-about="controller internet hard programming">
             <a href="items/item-portenta-h7.html">
-                <img class="content-item__img" src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/small_image/560x/54a39ccf936f55cfda55ed856d76c198/a/b/abx00042_featured.jpg" alt="Превью">
+                <img class="content-item__img"
+                     src="https://store-cdn.arduino.cc/usa/catalog/product/cache/1/small_image/560x/54a39ccf936f55cfda55ed856d76c198/a/b/abx00042_featured.jpg"
+                     alt="Превью">
                 <h4 class="content-item__h">Portenta H7</h4>
             </a>
         </div>

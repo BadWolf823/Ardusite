@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Редактирование профиля</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Ключевые слова страницы">
+    <meta name="description" content="Краткое описание страницы">
+    <link rel="stylesheet" type="text/css" href="../styles/common.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/nav/navOnJS.css">
+    <link rel="stylesheet" type="text/css" href="../styles/nav/navOnJS-mobile.css">
+    <link rel="stylesheet" type="text/css" href="../styles/register/register.css">
+    <link rel="stylesheet" type="text/css" href="../styles/register/register-media.css">
+</head>
+<body>
+<header class="header" id="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../index.html" class="logo__link"></a>
+        </div>
+        <div class="navpanel">
+            <a class="navpanel__item" href="../sites/software.html">Программирование</a>
+            <a class="navpanel__item" href="../sites/hardware/itemlist_new.html">Контроллеры</a>
+            <a class="navpanel__item" href="../sites/projects/project-list.html">Проекты</a>
+        </div>
+        <div class="user">
+            <a href="../sites/sign-in.html" class="user__sign-in" id="user">Вход</a>
+        </div>
+        <div class="menu">
+            <div class="user_mobile">
+                <a href="../sites/sign-in.html" class="user__sign-in">Вход</a>
+                <button type="button" class="user__log-out"></button>
+            </div>
+            <button class="menu__btn" id="menu-btn">
+                <div class="menu__btn-icon"></div>
+            </button>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="../sites/software.html">Программирование</a></li>
+                <li><a class="menu__item" href="../sites/hardware/itemlist_new.html">Контроллеры</a></li>
+                <li><a class="menu__item" href="../sites/projects/project-list.html">Проекты</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="main">
+    <div class="registration">
+        <h1 class="registration__h">Редактирование профиля</h1>
+        <form class="regform" method="POST">
+            <div class="regblok">
+                <p class="regblok__text">Имя пользователя:</p>
+                <input id="username" type="text" class="regblock__field" placeholder="Имя пользователя" required disabled>
+            </div>
+            <div class="regblok r">
+                <p class="regblok__text">Адрес электронной почты:</p>
+                <input id="email" type="email" class="regblock__field" placeholder="E-mail" required>
+            </div>
+            <div class="regblok">
+                <p class="regblok__text">Пароль:</p>
+                <input id="pass" type="password" class="regblock__field" placeholder="Пароль" required>
+            </div>
+            <div class="regblok r">
+                <p class="regblok__text">Повторите пароль:</p>
+                <input id="pass-conf" type="password" class="regblock__field" placeholder="Повторите пароль" required>
+            </div>
+            <div class="regcheck">
+                <input class="regcheck__check" id="terms" type="checkbox" required>
+                <p class="regcheck__text">Я подтверждаю, что ознакомился с <a href="privacy_policy.html">Политикой конфиденциальности </a><span>*</span> и принимаю <a href="terms_of_service.html">Условия предоставления услуг </a><span>*</span></p>
+                <br>
+                <input class="regcheck__check" id="newsletter" type="checkbox">
+                <p class="regcheck__text">Я подтверждаю свое согласие на получение вашей рассылки</p>
+                <br>
+                <input class="regcheck__check" id="marketing" type="checkbox">
+                <p class="regcheck__text">Я подтверждаю свое согласие на обработку моих персональных данных в маркетинговых целях, состоящую из коммерческих
+                    предложений, отправляемых по электронной почте</p>
+                <br>
+                <input class="regcheck__check" id="custommarketing" type="checkbox">
+                <p class="regcheck__text">Я подтверждаю свое согласие на автоматическую обработку моих персональных данных посредством профилирования для получения
+                    коммерческих предложений, настроенных на основе моего просмотра и покупательского поведения.</p>
+
+            </div>
+            <input class="regform__submit" type="submit"  id="submit" value="Сохранить изминения" class="registratoin__submit">
+        </form>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__info">
+        <ul>
+            <li>
+                <a href="privacy_policy.html">
+                    Политика конфиденциальности
+                </a>
+            </li>
+            <li>
+                <a href="terms_of_service.html">
+                    Условия предоставления услуг
+                </a>
+            </li>
+            <li>
+                <a href="about_us.html">
+                    О нас
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__copyright">
+        <a href="copyright.html" >
+            © 2020 Ардуино
+        </a>
+    </div>
+    <div class="goup">
+        <a href="#">
+            <svg class="goup__img block center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg>
+        </a>
+    </div>
+    <div class="go2fb">
+        <a href="https://www.facebook.com/profile.php?id=100022277227464&__tn__=%2CdC-R-R&eid=ARDY8PjTlcacGCRqtpFWjoeDJTHaPeMY0nHfb8aKwQcPcWy-dfDBSYdkxDy1vfmHgg9joUT_39IhwgTc&hc_ref=ARTw8vcZvS-fHRJPj5hxRt4U_5IiAiX06ofk5h4JjL0RrdMMAKWbxpLCIFJaiqRrcNE&fref=nf"  target="_blank">
+            <img class="go2fb__img block centerfb" src="https://content.arduino.cc/website/social_icons/icon-facebook.svg" alt="facebook">
+        </a>
+    </div>
+    <div class="go2vk">
+        <a href="https://vk.com/press______f"  target="_blank">
+            <img class="go2vk__img block centervk" src="http://vk.com/images/svg_icons/ic_head_logo.svg" alt="vkontakte">
+        </a>
+    </div>
+</footer>
+<script src="../scripts/main.js"></script>
+<script src="../scripts/edit-profile.js"></script>
+</body>
+</html>

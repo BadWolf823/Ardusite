@@ -1,3 +1,4 @@
+if (localStorage.getItem('username') === null) document.location.href = '../sign-in.html';
 document.getElementById('form').addEventListener('submit', function (event) {
     uploadProject(event);
 })

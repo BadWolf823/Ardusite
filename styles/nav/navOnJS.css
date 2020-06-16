@@ -1,12 +1,14 @@
-.header *{
-    transition: 1s;
+.header * {
+    transition: 0.2s;
 }
-.header{
-    transition: 1s;
+
+.header {
+    transition: 0.2s;
     height: 120px;
     font-family: 'Noto Sans', sans-serif;
 }
-.nav{
+
+.nav {
     transition: 1s;
     text-transform: uppercase;
     position: fixed;
@@ -18,57 +20,80 @@
     height: inherit;
     background-color: #00979d;
 }
-.nav *{
+
+.nav * {
     z-index: 1488;
 }
-.header_scroll{
+
+.header_scroll {
     height: 45px;
 }
-.header_scroll .logo{
+
+.header_scroll .logo {
     transition: 1s;
     height: 45px;
     width: 80px;
 }
-.header_scroll .navpanel__item, .header_scroll .nav__sign-in{
+
+.header_scroll .navpanel__item, .header_scroll .nav__sign-in {
     padding-bottom: 10px;
 }
-.logo{
+
+.logo {
     transition: 1s;
     height: 120px;
     width: 160px;
     padding: 5px;
 }
-.logo:hover{
-    background-color: rgba(255,255,255,.5);
+
+.logo:hover {
+    background-color: rgba(255, 255, 255, .5);
 }
-.logo__link{
+
+.logo__link {
     transition: 1s;
     display: block;
     width: 100%;
     height: 100%;
     background-image: url("../../images/arduino-white.svg");
+    background-repeat: no-repeat;
     background-size: 100%
 }
-.menu{
+
+.menu {
     display: none;
 }
-.navpanel{
+
+.navpanel {
     transition: 0.5s;
     display: flex;
     align-items: flex-end;
 }
-.navpanel__item{
+
+.navpanel__item {
     transition: 0.4s;
     color: white;
     font-size: 20px;
     font-weight: 600;
     padding: 4px 10px 14px;
 }
-.navpanel__item:hover, .nav__sign-in:hover{
-    background-color: rgba(255,255,255,.5);
+
+.navpanel__item:hover, .user__sign-in:hover {
+    background-color: rgba(255, 255, 255, .5);
     color: #007377;
 }
-.nav__sign-in{
+
+.user {
+    position: relative;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__sign-in {
+    width: 100%;
+    text-align: center;
     transition: 0s;
     color: white;
     font-size: 20px;
@@ -76,6 +101,32 @@
     padding: 4px 10px 14px;
     display: block;
 }
-.menu__sign-in{
+
+.user_mobile {
     display: none;
+}
+
+.user-list {
+    width: 100%;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    position: absolute;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.user-list__btn {
+    cursor: pointer;
+    background-color: #cbcbcb;
+    padding: 10px 5px;
+}
+
+.user-list__btn:hover {
+    background-color: #9f9f9f;
+}
+
+.user_open .user-list {
+    max-height: 1000px;
 }

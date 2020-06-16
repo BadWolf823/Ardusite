@@ -1,17 +1,21 @@
-main{
+main {
     min-height: 80vh;
 }
-main *{
+
+main * {
     transition: 0.5s;
 }
-.registration{
+
+.registration {
+    margin: 0 auto;
     position: relative;
     max-width: 800px;
     min-width: 300px;
     padding-top: 20px;
     padding-bottom: 10px;
 }
-.registration__h{
+
+.registration__h {
     font-size: 1.8em;
     text-align: center;
     display: block;
@@ -20,28 +24,36 @@ main *{
     font-weight: 200;
     height: 60px;
 }
-.regform{
-    display: flex;       
+
+.regform {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.regblock{
+
+.regblock {
 
 }
-.regblok__text{
+
+.regblok__text {
     margin-left: 20px;
 }
-#regblock__email:after{
+
+#regblock__email:after {
 }
-#regblock__username{
-    
+
+#regblock__username {
+
 }
-#regblock__pass{
+
+#regblock__pass {
 }
-#regblock__pass-conf{
-    
+
+#regblock__pass-conf {
+
 }
-.regblock__field{
+
+.regblock__field {
 
     margin: 10px;
     width: 280px;
@@ -52,14 +64,17 @@ main *{
     padding-left: 10px;
     padding-right: 10px;
 }
-.regblock__field{
+
+.regblock__field {
 }
-.regcheck{
+
+.regcheck {
     background-color: rgb(214, 214, 214);
     padding: 20px;
     margin: 20px 0;
 }
-.regform__submit{
+
+.regform__submit {
     border: none;
     display: block;
     color: white;
@@ -72,34 +87,42 @@ main *{
     padding-right: 10px;
     background-color: cadetblue;
 }
-.regform__submit:hover{
+
+.regform__submit:hover {
     background-color: rgb(76, 144, 146);
 }
-.main{
+
+.main {
     display: flex;
     justify-content: center;
 }
-.regcheck{
+
+.regcheck {
 
 }
-.regcheck__check{
+
+.regcheck__check {
     margin-top: 3px;
     vertical-align: top;
     display: inline-block;
     width: 15px;
 }
-.regcheck__text{
+
+.regcheck__text {
     display: inline-block;
     width: 90%;
-    word-break: break-all; 
+    word-break: break-all;
 }
-.regcheck__text a{
+
+.regcheck__text a {
     color: teal;
     text-decoration: none;
 }
-.regcheck__text a:hover{
+
+.regcheck__text a:hover {
     color: rgb(116, 199, 231);
 }
-.regcheck__text span{
+
+.regcheck__text span {
     color: red;
 }

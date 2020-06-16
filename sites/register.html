@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Registration</title>
+    <title>Регистрация</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -21,20 +21,25 @@
                 <a href="../index.html" class="logo__link"></a>
             </div>
             <div class="navpanel">
-                <a class="navpanel__item" href="software.html">Программирование</a>
-                <a class="navpanel__item" href="hardware/itemlist_new.html">Контроллеры</a>
-                <a class="navpanel__item" href="projects/project-list.html">Проекты</a>
+                <a class="navpanel__item" href="../sites/software.html">Программирование</a>
+                <a class="navpanel__item" href="../sites/hardware/itemlist_new.html">Контроллеры</a>
+                <a class="navpanel__item" href="../sites/projects/project-list.html">Проекты</a>
             </div>
-            <a href="sign-in.html" class="nav__sign-in">Вход</a>
+            <div class="user">
+                <a href="../sites/sign-in.html" class="user__sign-in" id="user">Вход</a>
+                <ul class="user-list">
+                    <li class="user-list__btn" id="user-edit"><a href="../sites/edit-profile.html">Редактировать профиль</a></li>
+                    <li class="user-list__btn" id="log-out">Выйти</li>
+                </ul>
+            </div>
             <div class="menu">
-                <a href="sign-in.html" class="menu__sign-in">Вход</a>
                 <button class="menu__btn" id="menu-btn">
                     <div class="menu__btn-icon"></div>
                 </button>
                 <ul class="menu__box">
-                    <li><a class="menu__item" href="software.html">Программирование</a></li>
-                    <li><a class="menu__item" href="hardware/itemlist_new.html">Контроллеры</a></li>
-                    <li><a class="menu__item" href="projects/project-list.html">Проекты</a></li>
+                    <li><a class="menu__item" href="../sites/software.html">Программирование</a></li>
+                    <li><a class="menu__item" href="../sites/hardware/itemlist_new.html">Контроллеры</a></li>
+                    <li><a class="menu__item" href="../sites/projects/project-list.html">Проекты</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,7 +47,7 @@
     <main class="main">
             <div class="registration">
                 <h1 class="registration__h">Регистрация</h1>
-                <form class="regform" action="reg.php" method="POST">
+                <form class="regform" method="POST">
                     <div class="regblok">
                         <p class="regblok__text">Имя пользователя:</p>
                         <input id="username" type="text" class="regblock__field" placeholder="Имя пользователя" required>
@@ -121,5 +126,6 @@
         </div>
     </footer>
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/registr.js"></script>
 </body>
 </html>

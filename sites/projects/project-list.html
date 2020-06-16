@@ -22,9 +22,16 @@
                 <a class="navpanel__item" href="../hardware/itemlist_new.html">Контроллеры</a>
                 <a class="navpanel__item" href="project-list.html">Проекты</a>
             </div>
-            <a href="../sign-in.html" class="nav__sign-in">Вход</a>
+            <div class="user">
+                <a href="../../sites/sign-in.html" class="user__sign-in" id="user">Вход</a>
+                <ul class="user-list">
+                    <li class="user-list__btn" id="myproject">Мои проекты</li>
+                    <li class="user-list__btn" id="user-edit"><a href="../edit-profile.html">Редактировать профиль</a>
+                    </li>
+                    <li class="user-list__btn" id="log-out">Выйти</li>
+                </ul>
+            </div>
             <div class="menu">
-                <a href="../sign-in.html" class="menu__sign-in">Войти</a>
                 <button class="menu__btn" id="menu-btn">
                     <div class="menu__btn-icon"></div>
                 </button>
@@ -38,8 +45,8 @@
     </header>
     <main class="main">
         <div class="title">
-            <h1 class="title__main">Проекты</h1>
-            <p class="title__text">Здесь вы можете найти интересный для себя проект, а также добавить свой</p>
+            <h1 class="title__main" id="title">Проекты</h1>
+            <p class="title__text" id="title-text">Здесь вы можете найти интересный для себя проект, а также добавить свой</p>
         </div>
         <div class="project-communication" id="project-communication">
             <div class="search-and-add-project">

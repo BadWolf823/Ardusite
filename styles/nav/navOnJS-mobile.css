@@ -21,7 +21,7 @@
         align-items: center;
     }
     .menu__box{
-        transition: 1s;
+        transition: 0.4s;
         text-align: center;
         overflow: hidden;
         max-height: 0;
@@ -61,5 +61,15 @@
     }
     .menu_open > .menu__box{
         max-height: 1000px;
+    }
+    .user{
+        flex-grow: 2;
+    }
+    .user__sign-in{
+        text-align: right;
+        padding: 12px 5px;
+    }
+    .user-list{
+        width: 100%
     }
 }

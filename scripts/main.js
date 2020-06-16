@@ -33,9 +33,24 @@ window.addEventListener("scroll", function () {
         document.querySelector('.goup').classList.remove('goup_scroll');
     }
 })
+/* "Учётка" */
+let user = document.getElementById('user');
+if (localStorage.getItem('username') !== null){
+    user.innerHTML = '@'+localStorage.getItem('username');
+    user.onclick = function(event){
+        event.preventDefault();
+        userMenu();
+    }
+}
 
 /******************* ФУНКЦИИ **********************/
-
+function userMenu() { //менюшка пользователя
+    toggleClassNameParent(user,'open');
+    document.getElementById('log-out').addEventListener('click', function () {
+        localStorage.removeItem('username');
+        window.location.reload();
+    })
+}
 function setScrollElement(element, top) {
     let positionInWindow = element.getBoundingClientRect();
     if (positionInWindow.top < top) {
