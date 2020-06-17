@@ -63,8 +63,7 @@ body{
     overflow: hidden;
     max-height: 0;
     color: white;
-    border-radius: 10px;
-    border-top-left-radius: 0;
+    border-radius: 0 10px 10px 10px;
 }
 .command__about-name{
     color: rgb(169, 255, 252);

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../../styles/nav/navOnJS-mobile.css">
     <link rel="stylesheet" href="../../../styles/project/project.css">
     <link rel="stylesheet" href="../../../styles/project/project-mobile.css">
-    <title>Поливочный насос</title>
+    <title>Светодиодный куб</title>
 </head>
 <body>
 <header class="header" id="header">
@@ -43,16 +43,15 @@
 </header>
 <main class="main">
     <div class="about-project">
-        <img class="about-project__main-image" src="../../../images/projects/Proj5/project5.jpg" alt="Обложка">
+        <img class="about-project__main-image" src="../../../images/projects/Proj7/project7.jpg" alt="Обложка">
         <div class="about-project__information">
             <div class="about-project__only-text">
-                <h1 class="about-project__title">Поливочный насос</h1>
-                <a href="#" class="about-project__master">@mbraccagni</a>
-                <p class="about-project__text">Мне нужна была система для полива моего лимонного дерева с аппаратной регулировкой продолжительности и частоты полива.
-                    Сначала я попробовал с влажным сенсором, но ваза была очень большой, и результат не был хорошим. Кроме того, проблема состоит в том, чтобы поливать
-                    дерево зимой, когда мы приносим его в наш дом, а дождевой воды нет.
-                    Поэтому я решил реализовать систему, основанную на графике полива, активированную мини-насосом 12 В. Время устанавливается с
-                    помощью DIP-переключателя, а расписание регулируется часами реального времени (RTC).</p>
+                <h1 class="about-project__title">Светодиодный куб 8x8x8</h1>
+                <a href="#" class="about-project__master">@harry_le</a>
+                <p class="about-project__text">Некоторое время назад я наткнулся на видео на YouTube, демонстрирующее удивительный светодиодный куб,
+                    который отображает анимацию в 3D. Я был заинтригован. Я искал в интернете учебник и нашел пост,
+                    по совпадению, автором статьи является тот же человек, который сделал видео на YouTube.
+                    Это вдохновило меня на создание собственного.</p>
             </div>
         </div>
     </div>
@@ -61,63 +60,23 @@
         <div class="parts__list">
             <div class="parts__item">
                 <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">Arduino Pro Mini</p>
+                <p class="parts__item-title">Arduino Uno</p>
                 <p class="parts__item-number">x 1</p>
             </div>
             <div class="parts__item">
                 <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">DS3231</p>
+                <p class="parts__item-title">Светодиоды 5мм</p>
+                <p class="parts__item-number">x 512</p>
+            </div>
+            <div class="parts__item">
+                <a href="#" class="parts__item-link"></a>
+                <p class="parts__item-title">Блок питания 5В 10 ± 2А</p>
                 <p class="parts__item-number">x 1</p>
             </div>
             <div class="parts__item">
                 <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">LCD 1602</p>
-                <p class="parts__item-number">x 1</p>
-            </div>
-            <div class="parts__item">
-                <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">Мощный MOSFET</p>
-                <p class="parts__item-number">x 2</p>
-            </div>
-            <div class="parts__item">
-                <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">Диод 1N4007</p>
-                <p class="parts__item-number">x 2</p>
-            </div>
-            <div class="parts__item">
-                <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">Линейный регулятор (7805)</p>
-                <p class="parts__item-number">x 1</p>
-            </div>
-            <div class="parts__item">
-                <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">Резистор 10 кОм</p>
-                <p class="parts__item-number">x 8</p>
-            </div>
-            <div class="parts__item">
-                <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">Резистор 100 Ом</p>
-                <p class="parts__item-number">x 3</p>
-            </div>
-            <div class="parts__item">
-                <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">Кнопка</p>
-                <p class="parts__item-number">x 1</p>
-            </div>
-            <div class="parts__item">
-                <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">DIP/SIP переключатель</p>
-                <p class="parts__item-number">x 1</p>
-            </div>
-            <div class="parts__item">
-                <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">Разъём питания</p>
-                <p class="parts__item-number">x 1</p>
-            </div>
-            <div class="parts__item">
-                <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">Блок питания</p>
-                <p class="parts__item-number">x 1</p>
+                <p class="parts__item-title">SN74HC595</p>
+                <p class="parts__item-number">x 9</p>
             </div>
             <div class="parts__item">
                 <a href="#" class="parts__item-link"></a>
@@ -126,25 +85,29 @@
             </div>
             <div class="parts__item">
                 <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">Кастомная печатная плата</p>
-                <p class="parts__item-number">x 1</p>
+                <p class="parts__item-title">Резистор 100 Ом</p>
+                <p class="parts__item-number">x 512</p>
             </div>
             <div class="parts__item">
                 <a href="#" class="parts__item-link"></a>
-                <p class="parts__item-title">Помпа</p>
-                <p class="parts__item-number">x 2</p>
+                <p class="parts__item-title">Транзисторы BD241C</p>
+                <p class="parts__item-number">x 512</p>
             </div>
         </div>
     </div>
     <div class="connect">
         <h2 class="connect__title subtitle">Схема</h2>
-        <div class="connect__image-container"><img src="../../../images/projects/Proj5/scheme.jpg" class="connect__img" alt="Схема"></div>
+        <div class="connect__image-container"><img src="../../../images/projects/Proj7/scheme.jpg" class="connect__img" alt="Схема"></div>
 
+    </div>
+    <div class="extra">
+        <h2 class="extra__title subtitle">Дополнительный материал</h2>
+        <iframe class="extra__content extra__content_video" width="560" height="315" src="https://www.youtube.com/embed/T5Aq7cRc-mU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="sketch">
         <h2 class="sketch__title subtitle">Код</h2>
         <div class="sketch-around-code">
-            <a href="../../../files/proj5/watering_system__one_pump_.ino" class="sketch__download"><img src="../../../images/download-icon.png" alt="Загрузка"></a>
+            <a href="https://github.com/VectStudio/LED_CUBE" class="sketch__download"><img src="../../../images/download-icon.png" alt="Загрузка"></a>
         </div>
     </div>
 </main>

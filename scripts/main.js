@@ -23,7 +23,7 @@ for (let i = 0; i < links.length; i++) {
 /* События на скролл страницы */
 
 window.addEventListener("scroll", function () {
-    if (document.documentElement.clientWidth > 768) {
+    if (document.documentElement.clientWidth > 768) {// короче, если не с мобильного устройства (планшет/смартфон)
         /* Изменяет меню при сколле */
         setScrollElement(document.getElementById("header"), 0);
     }

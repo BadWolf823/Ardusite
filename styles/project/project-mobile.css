@@ -17,11 +17,16 @@
     .sketch__around-code{
         align-items: center;
     }
+    .extra__content{
+        max-width: 100%;
+    }
 }
 @media screen and (max-width: 768px){
-    .project__illustration{
-        width: 100%;
-        height: auto;
+    .connect,
+    .parts,
+    .extra,
+    .sketch{
+        margin: 30px 0;
     }
     .about-project{
         display: block;
