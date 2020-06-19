@@ -16,7 +16,6 @@ search.addEventListener("input",function (event) {
 searchInList = function (requestSearch, list){
     let hasElement = false;
     for (let i = 0; i < list.length; i++){
-        console.log(list[i].textContent)
         if (list[i].textContent.toLowerCase().indexOf(requestSearch.toLowerCase()) === -1){
             list[i].parentElement.parentElement.style.display = 'none';
         } else {
@@ -27,6 +26,7 @@ searchInList = function (requestSearch, list){
     return hasElement;
 }
 document.getElementById('myproject').onclick = function () {
+    this.parentElement.parentElement.classList.remove('user_open');
     document.getElementById('title').textContent = 'Мои проекты';
     document.getElementById('title-text').textContent = 'Здесь вы можете посмотреть список своих проектов'
     document.getElementById('project-communication').style.display = 'none';

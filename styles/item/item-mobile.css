@@ -63,6 +63,7 @@
   }
   .item{
     max-width: 500px;
+    margin-left: -250px;
   }
   #review:checked+label{
     color: transparent;

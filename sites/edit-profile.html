@@ -49,16 +49,16 @@
         <h1 class="registration__h">Редактирование профиля</h1>
         <form class="regform" method="POST">
             <div class="regblok">
-                <p class="regblok__text">Имя пользователя:</p>
-                <input id="username" type="text" class="regblock__field" placeholder="Имя пользователя" required disabled>
-            </div>
-            <div class="regblok r">
                 <p class="regblok__text">Адрес электронной почты:</p>
                 <input id="email" type="email" class="regblock__field" placeholder="E-mail" required>
             </div>
+            <div class="regblok r">
+                <p class="regblok__text">Старый пароль:</p>
+                <input id="pass-old" type="email" class="regblock__field" placeholder="Старый пароль" required>
+            </div>
             <div class="regblok">
-                <p class="regblok__text">Пароль:</p>
-                <input id="pass" type="password" class="regblock__field" placeholder="Пароль" required>
+                <p class="regblok__text">Новый пароль:</p>
+                <input id="pass" type="password" class="regblock__field" placeholder="Новый пароль" required>
             </div>
             <div class="regblok r">
                 <p class="regblok__text">Повторите пароль:</p>
@@ -80,7 +80,7 @@
                     коммерческих предложений, настроенных на основе моего просмотра и покупательского поведения.</p>
 
             </div>
-            <input class="regform__submit" type="submit"  id="submit" value="Сохранить изминения" class="registratoin__submit">
+            <input class="regform__submit" type="submit"  id="submit" value="Сохранить изменения" class="registratoin__submit">
         </form>
     </div>
 </main>

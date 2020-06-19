@@ -101,7 +101,6 @@
     padding: 4px 10px 14px;
     display: block;
 }
-
 .user_mobile {
     display: none;
 }
@@ -126,7 +125,10 @@
 .user-list__btn:hover {
     background-color: #9f9f9f;
 }
-
+.user_open .user__sign-in{
+    background-color: rgba(255, 255, 255, .5);
+    color: #007377;;
+}
 .user_open .user-list {
     max-height: 1000px;
 }

@@ -131,13 +131,15 @@ h2{
     margin: 10px 20px;
 }
 .extra__content{
-    max-width: 1024px;
     font-size: 1.4em;
     padding: 0 25px;
+    margin: 20px auto;
+    width: max-content;
 }
-.extra__content_video{
-    margin: 0 auto;
+.extra__content_video iframe{
+    max-width: 100%;
+    width: 560px;
+    height: 318px;
 }
-
 
 

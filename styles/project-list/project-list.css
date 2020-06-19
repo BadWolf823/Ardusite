@@ -112,6 +112,7 @@ body{
     text-overflow: ellipsis;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 1.3em;
     padding: 5px;

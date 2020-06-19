@@ -5,6 +5,10 @@
 /* Открытие меню по кнопке */
 document.getElementById("menu-btn").addEventListener("click", function () {
     toggleClassNameParent(this,'open');
+    this.tabIndex = 2;
+    this.onblur = () => {
+        this.parentElement.classList.remove('menu_open');
+    }
 });
 
 /* Переход по якорным ссылкам */
@@ -35,12 +39,15 @@ window.addEventListener("scroll", function () {
 })
 /* "Учётка" */
 let user = document.getElementById('user');
+user.tabIndex = 1;
+user.addEventListener('blur', () => user.parentElement.classList.remove('user_open'));
 if (localStorage.getItem('username') !== null){
     user.innerHTML = '@'+localStorage.getItem('username');
     user.onclick = function(event){
         event.preventDefault();
         userMenu();
     }
+
 }
 
 /******************* ФУНКЦИИ **********************/

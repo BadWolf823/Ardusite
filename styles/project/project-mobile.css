@@ -1,10 +1,7 @@
 @media screen  and (max-width: 1310px){
     .about-project__title{
         font-size: 1em;
-    }/*
-    .about-project__main-image{
-        max-width: 400px;
-    }*/
+    }
     .about-project__master{
         font-size: 1em;
     }
@@ -12,7 +9,7 @@
         font-size: 1em;
     }
     .connect__img{
-        width: 100%;
+        max-width: 100%;
     }
     .sketch__around-code{
         align-items: center;
