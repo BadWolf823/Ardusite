@@ -11,8 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../styles/footer.css">
     <link rel="stylesheet" type="text/css" href="../styles/nav/navOnJS.css">
     <link rel="stylesheet" type="text/css" href="../styles/nav/navOnJS-mobile.css">
-    <link rel="stylesheet" type="text/css" href="../styles/register/register.css">
-    <link rel="stylesheet" type="text/css" href="../styles/register/register-media.css">
+    <link rel="stylesheet" type="text/css" href="../styles/edit-profile/edit-profile.css">
 </head>
 <body>
 <header class="header" id="header">
@@ -45,43 +44,40 @@
     </nav>
 </header>
 <main class="main">
-    <div class="registration">
-        <h1 class="registration__h">Редактирование профиля</h1>
-        <form class="regform" method="POST">
-            <div class="regblok">
-                <p class="regblok__text">Адрес электронной почты:</p>
-                <input id="email" type="email" class="regblock__field" placeholder="E-mail" required>
-            </div>
-            <div class="regblok r">
-                <p class="regblok__text">Старый пароль:</p>
-                <input id="pass-old" type="email" class="regblock__field" placeholder="Старый пароль" required>
-            </div>
-            <div class="regblok">
-                <p class="regblok__text">Новый пароль:</p>
-                <input id="pass" type="password" class="regblock__field" placeholder="Новый пароль" required>
-            </div>
-            <div class="regblok r">
-                <p class="regblok__text">Повторите пароль:</p>
-                <input id="pass-conf" type="password" class="regblock__field" placeholder="Повторите пароль" required>
-            </div>
-            <div class="regcheck">
-                <input class="regcheck__check" id="terms" type="checkbox" required>
-                <p class="regcheck__text">Я подтверждаю, что ознакомился с <a href="privacy_policy.html">Политикой конфиденциальности </a><span>*</span> и принимаю <a href="terms_of_service.html">Условия предоставления услуг </a><span>*</span></p>
-                <br>
-                <input class="regcheck__check" id="newsletter" type="checkbox">
-                <p class="regcheck__text">Я подтверждаю свое согласие на получение вашей рассылки</p>
-                <br>
-                <input class="regcheck__check" id="marketing" type="checkbox">
-                <p class="regcheck__text">Я подтверждаю свое согласие на обработку моих персональных данных в маркетинговых целях, состоящую из коммерческих
-                    предложений, отправляемых по электронной почте</p>
-                <br>
-                <input class="regcheck__check" id="custommarketing" type="checkbox">
-                <p class="regcheck__text">Я подтверждаю свое согласие на автоматическую обработку моих персональных данных посредством профилирования для получения
-                    коммерческих предложений, настроенных на основе моего просмотра и покупательского поведения.</p>
-
-            </div>
-            <input class="regform__submit" type="submit"  id="submit" value="Сохранить изменения" class="registratoin__submit">
-        </form>
+    <div class="edit">
+        <h1 class="edit__h">
+            Редактирование профиля
+        </h1>
+        <div class="forms">
+            <form class="form-edit" id="edit-email">
+                <h2 class="form-edit__h">Изменение адреса электронной почты</h2>
+                <fieldset class="fieldset">
+                    <label for="email" class="fieldset__label">Новый адрес электронной почты</label>
+                    <input type="email" id="email" placeholder="email" class="fieldset__input" required>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label for="email-pass" class="fieldset__label">Пароль</label>
+                    <input type="password" id="email-pass" placeholder="Пароль" class="fieldset__input" required>
+                </fieldset>
+                <button class="form-edit__submit" type="submit">Изменить адрес электронной почты</button>
+            </form>
+            <form class="form-edit" id="edit-pass">
+                <h2 class="form-edit__h">Изменение пароля</h2>
+                <fieldset class="fieldset">
+                    <label for="email" class="fieldset__label">Старый пароль</label>
+                    <input type="password" id="pass-old" placeholder="Старый пароль" class="fieldset__input" required>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label for="pass-new" class="fieldset__label">Пароль</label>
+                    <input type="password" id="pass-new" placeholder="Новый пароль" class="fieldset__input" required>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label for="pass-rep" class="fieldset__label">Повторите пароль</label>
+                    <input type="password" id="pass-rep" placeholder="Повторите пароль" class="fieldset__input" required>
+                </fieldset>
+                <button class="form-edit__submit" type="submit">Изменить пароль</button>
+            </form>
+        </div>
     </div>
 </main>
 <footer class="footer">
