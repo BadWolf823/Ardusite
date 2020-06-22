@@ -1,3 +1,4 @@
+if (localStorage.getItem('username') === null) window.history.back();
 document.getElementById('edit-email').addEventListener('submit', function (event) {
     alert('Адрес электронной почты успешно изменён');
 })
