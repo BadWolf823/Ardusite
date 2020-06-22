@@ -91,40 +91,6 @@
         <div class="sketch">
             <h2 class="sketch__title subtitle">Код</h2>
             <div class="sketch-around-code">
-                <pre class="sketch-code" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(255, 255, 255); color: rgb(67, 79, 84);">
-<span class="sketch-comment" style="color: rgba(149, 165, 166, 0.8);">/*
- * HC-SR04 example sketch
- *
- * https://create.arduino.cc/projecthub/Isaac100/getting-started-with-the-hc-sr04-ultrasonic-sensor-036380
- *
- * by Isaac100
- */</span>
-
-<span class="sketch-keyword" style="color: rgb(0, 151, 157);">const</span> <span class="sketch-keyword" style="color: rgb(0, 151, 157);">int</span> trigPin = <span class="sketch-number" style="color: rgb(138, 123, 82);">9</span>;
-<span class="sketch-keyword" style="color: rgb(0, 151, 157);">const</span> <span class="sketch-keyword" style="color: rgb(0, 151, 157);">int</span> echoPin = <span class="sketch-number" style="color: rgb(138, 123, 82);">10</span>;
-
-<span class="sketch-keyword" style="color: rgb(0, 151, 157);">float</span> duration, distance;
-
-<span class="sketch-keyword" style="color: rgb(0, 151, 157);">void</span> <span class="sketch-built-in" style="color: rgb(211, 84, 0);">setup</span>() {
-  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">pinMode</span>(trigPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">OUTPUT</span>);
-  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">pinMode</span>(echoPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">INPUT</span>);
-  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">Serial</span>.<span class="sketch-built-in" style="color: rgb(211, 84, 0);">begin</span>(<span class="sketch-number" style="color: rgb(138, 123, 82);">9600</span>);
-}
-
-<span class="sketch-keyword" style="color: rgb(0, 151, 157);">void</span> <span class="sketch-built-in" style="color: rgb(211, 84, 0);">loop</span>() {
-  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">digitalWrite</span>(trigPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">LOW</span>);
-  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">delayMicroseconds</span>(<span class="sketch-number" style="color: rgb(138, 123, 82);">2</span>);
-  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">digitalWrite</span>(trigPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">HIGH</span>);
-  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">delayMicroseconds</span>(<span class="sketch-number" style="color: rgb(138, 123, 82);">10</span>);
-  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">digitalWrite</span>(trigPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">LOW</span>);
-
-  duration = <span class="sketch-built-in" style="color: rgb(211, 84, 0);">pulseIn</span>(echoPin, <span class="sketch-literal" style="color: rgb(211, 84, 0);">HIGH</span>);
-  distance = (duration*<span class="sketch-number" style="color: rgb(138, 123, 82);">.0343</span>)/<span class="sketch-number" style="color: rgb(138, 123, 82);">2</span>;
-  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">Serial</span>.<span class="sketch-built-in" style="color: rgb(211, 84, 0);">print</span>(<span class="sketch-string" style="color: rgb(0, 92, 95);">"Distance: "</span>);
-  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">Serial</span>.<span class="sketch-built-in" style="color: rgb(211, 84, 0);">println</span>(distance);
-  <span class="sketch-built-in" style="color: rgb(211, 84, 0);">delay</span>(<span class="sketch-number" style="color: rgb(138, 123, 82);">100</span>);
-}
-                </pre>
                 <a href="../../../files/proj1/HC_SR04.zip" class="sketch__download"><img src="../../../images/download-icon.png" alt="Загрузка"></a>
             </div>
         </div>
@@ -151,7 +117,7 @@
         </div>  
         <div class="footer__copyright">
             <a href="../../copyright.html" >
-                © 2020 МоклякМуравьёв
+                © 2020 Ардуино
            </a>
         </div>
         <div class="goup">

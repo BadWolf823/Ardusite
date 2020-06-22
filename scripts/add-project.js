@@ -1,26 +1,7 @@
 if (localStorage.getItem('username') === null) document.location.href = '../sign-in.html';
 document.getElementById('form').addEventListener('submit', function (event) {
-    uploadProject(event);
+    alert('Проект добавлен');
 })
-function uploadProject(event) {
-    event.preventDefault()
-    let uploadProject = document.createElement('div');
-    let text = document.createElement('p')
-    text.innerHTML = 'ПРОЕКТ ДОБАВЛЕН';
-    let buttonEnd = document.createElement('button');
-    buttonEnd.type = 'submit';
-    buttonEnd.innerHTML = 'ОК';
-    buttonEnd.form = 'form';
-    text.classList.add('uploadProject__text')
-    buttonEnd.classList.add('uploadProject__buttonEnd');
-    uploadProject.classList.add('uploadProject');
-    uploadProject.appendChild(text);
-    buttonEnd.addEventListener('click',function () {
-        document.location.href = '../projects/project-list.html';
-    },true)
-    uploadProject.appendChild(buttonEnd);
-    document.querySelector('.main').appendChild(uploadProject);
-}
 function addPart(element) {
     let item = document.createElement('li');
     item.classList.add('fieldset-part');

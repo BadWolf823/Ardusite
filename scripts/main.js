@@ -6,7 +6,7 @@
 document.getElementById("menu-btn").addEventListener("click", function () {
     toggleClassNameParent(this,'open');
     this.tabIndex = 2;
-    this.onblur = () => {
+    this.onblur = function () {
         this.parentElement.classList.remove('menu_open');
     }
 });
@@ -40,7 +40,9 @@ window.addEventListener("scroll", function () {
 /* "Учётка" */
 let user = document.getElementById('user');
 user.tabIndex = 1;
-user.addEventListener('blur', () => user.parentElement.classList.remove('user_open'));
+user.addEventListener('blur', function () {
+    this.parentElement.classList.remove('user_open')
+});
 if (localStorage.getItem('username') !== null){
     user.innerHTML = '@'+localStorage.getItem('username');
     user.onclick = function(event){

@@ -16,7 +16,6 @@ body{
 }
 .main *{
     display: block;
-    transition: 0.5s;
 }
 .group{
     padding: 0 10px;
@@ -85,6 +84,7 @@ fieldset{
     max-width: 90px;
 }
 .fieldset-part__del{
+    transition: 0.6s;
     width: 24px;
     height: 24px;
     background-image: url("../../images/close-icon.png");
@@ -99,6 +99,7 @@ fieldset{
     background-color: rgba(255, 0, 0, 0.25);
 }
 .fieldset-part__add{
+    transition: 0.6s;
     width: 50%;
     height: 50px;
     padding: 5px;
@@ -113,9 +114,6 @@ fieldset{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.sketch *{
-    transition: 1s;
 }
 .fieldset-link{
     display: flex;
@@ -166,6 +164,7 @@ fieldset{
     justify-content: flex-end;
 }
 .form__submit {
+    transition: 0.6s;
     min-width: 200px;
     padding: 10px;
     font-size: 1.2em;
@@ -178,38 +177,7 @@ fieldset{
     background-color: #007074;
     color: white;
 }
-.uploadProject{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.58);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1900;
-}
-.uploadProject__text{
-    background-color: rgba(255, 255, 255, 0.84);
-    font-size: 2.2em;
-    font-weight: normal;
-    text-align: center;
-    color: #007074;
 
-}
-.uploadProject__buttonEnd{
-    padding: 10px;
-    background-color: #00979c;
-    color: white;
-    font-size: 1.4em;
-    width: 320px;
-    border: none;
-}
-.uploadProject__buttonEnd:hover{
-    background-color: #004a4c;
-}
 input:invalid{
     border: 2px solid rgba(255, 0, 0, 0.53);
 }

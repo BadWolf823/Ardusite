@@ -28,7 +28,9 @@
     .fieldset-part__input-number {
         width: 50px;
     }
-
+    .fieldset-part__input-name{
+        width: 50%;
+    }
     .fieldset-part__add {
         width: 50%;
     }
@@ -39,13 +41,14 @@
 
     .fieldset-link__btn {
         justify-content: center;
-        min-width: 300px;
+        width: 100%;
     }
 
     .fieldset-link__link {
+        max-width: 100%;
         max-height: 0;
         display: block;
-        min-width: 300px;
+        width: 100%;
     }
 
     .fieldset-link_open .fieldset-link__link {
