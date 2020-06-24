@@ -1,15 +1,11 @@
-.header * {
-    transition: 0.4s;
-}
-
 .header {
-    transition: 0.4s;
+    transition: height 0.3s;
     height: 120px;
     font-family: 'Noto Sans', sans-serif;
 }
 
 .nav {
-    transition: 0.4s;
+
     text-transform: uppercase;
     position: fixed;
     z-index: 1488;
