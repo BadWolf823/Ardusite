@@ -100,6 +100,7 @@
 }
 
 .user-list {
+    transition: max-height 0.4s;
     width: 100%;
     text-align: center;
     top: 100%;
