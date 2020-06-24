@@ -39,10 +39,6 @@ window.addEventListener("scroll", function () {
 })
 /* "Учётка" */
 let user = document.getElementById('user');
-user.tabIndex = 1;
-user.addEventListener('blur', function () {
-    this.parentElement.classList.remove('user_open')
-});
 if (localStorage.getItem('username') !== null){
     user.innerHTML = '@'+localStorage.getItem('username');
     user.onclick = function(event){
