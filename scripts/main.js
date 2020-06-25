@@ -42,18 +42,18 @@ let user = document.getElementById('user');
 if (localStorage.getItem('username') !== null){
     user.innerHTML = '@'+localStorage.getItem('username');
     user.removeAttribute('href');
+    user.tabIndex = 1;
     user.onclick = function(event){
         userMenu();
+        user.addEventListener('blur',function () {
+            user.parentElement.classList.remove('user_open');
+        })
     }
 
 }
 
 /******************* ФУНКЦИИ **********************/
 function userMenu() { //менюшка пользователя
-    user.tabIndex = 1;
-    user.addEventListener('blur',function () {
-        user.parentElement.classList.remove('user_open');
-    })
     toggleClassNameParent(user,'open');
     document.getElementById('log-out').addEventListener('click', function () {
         localStorage.removeItem('username');
